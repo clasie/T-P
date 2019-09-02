@@ -1,0 +1,7 @@
+C:\projects\PluginSandbox\GED.Access.dll
+C:\projects\PluginSandbox\GED.Access.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\GED.Access\obj\Debug\GED.Access.csproj.CoreCompileInputs.cache
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\GED.Access\obj\Debug\GED.Access.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\GED.Access\obj\Debug\GED.Access.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\GED.Access\obj\Debug\GED.Access.csproj.CopyComplete
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\GED.Access\obj\Debug\GED.Access.csprojAssemblyReference.cache

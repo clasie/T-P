@@ -1,0 +1,819 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TP.SessionManager</name>
+    </assembly>
+    <members>
+        <member name="T:TP.SessionManager.ContexteSSO">
+            <summary>
+            Classe représentant les contextes. Différente de celle dans TP.Entities car on peut recevoir des contextes additionnels
+            au moment de l'exécution.
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.ContexteSSO.Societe">
+            <summary>
+            Nom de la société auquel on a accès.
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.ContexteSSO.Division">
+            <summary>
+            Nom de la division auquel on a accès.
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.ContexteSSO.Pays">
+            <summary>
+            Nom du pays auquel on a accès.
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.ContexteSSO.Label">
+            <summary>
+            Label du contexte courant (à afficher dans la barre d'état).
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.ContexteSSO.#ctor(System.Guid,System.Guid,System.Guid,System.String)">
+            <summary>
+            Constructeur.
+            </summary>
+            <param name="inSociete"></param>
+            <param name="inDivision"></param>
+            <param name="inPays"></param>
+            <param name="inLabel"></param>
+        </member>
+        <member name="M:TP.SessionManager.ContexteSSO.ToString">
+            <summary>
+            Conversion directe en string pour l'affichange dans le binding.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.SessionManager.SessionController">
+            <summary>
+            Donne accès à toutes les informations sur l'utilisateur en cours d'utilisation du système. 
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.SessionController.Instance">
+            <summary>
+            Accès direct à l'instance.
+            </summary>
+        </member>
+        <member name="E:TP.SessionManager.SessionController.PropertyChanged">
+            <summary>
+            Evénement pour le two-way binding. 
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.#ctor">
+            <summary>
+            Constructeur.
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.Deconnecter">
+            <summary>
+            Fin de la connexion
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.SessionController.NomComplet">
+            <summary>
+            Nom complet pour l'affichage.
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.SessionController.theRessource">
+            <summary>
+            Guid du token
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.SessionController.Login">
+            <summary>
+            Login de l'utilisateur. 
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.SessionController.ALoadError">
+            <summary>
+            Login de l'utilisateur. 
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.SessionController.ApplicationName">
+            <summary>
+            Nom de l'application lancée.
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.SessionController.isRibbonCollapsed">
+            <summary>
+            Nom de l'application lancée.
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.SessionController.theSynapsisDebugger">
+            <summary>
+            Affiche ou cache le débugger.
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.SessionController.isSynapsisDebugger">
+            <summary>
+            Indique que le Débugger Synapsis doit être utilisé. Méthode temporaire, pendant le développement Synapsis. 
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.SetVersion(System.String,System.DateTime,System.Nullable{System.Double})">
+            <summary>
+            Méthode appelée automatiquement lors du chargement des différent plugins, pour indiquer à quel moment ils ont été compilés. Cette information est utilisée
+            pour générer le numéro de version. 
+            </summary>
+            <param name="inModuleName"></param>
+            <param name="inVersion"></param>
+            <param name="inLoadDuration"></param>
+        </member>
+        <member name="P:TP.SessionManager.SessionController.LabelAllVersions">
+            <summary>
+            Retourne un paragraphe de texte reprenant la version de tous les modules chargés. 
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.SessionController.LabelVersion">
+            <summary>
+            Retourne la version "globale", qui est le maximum des versions de tous les modules. 
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.SessionController.ContextesDisponibles">
+            <summary>
+            Liste des contextes activables.
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.SessionController.btnChoixContexte">
+            <summary>
+            BarButton du choix des contextes venant de TP.SessionManagerHelper
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.SessionController.LabelContexteActuel">
+            <summary>
+            Description textuelle du contexte actif. 
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.AjouterContexteDisponible(TP.SessionManager.ContexteSSO)">
+            <summary>
+            Ajoute un contexte dans la liste des contextes utilisables. 
+            </summary>
+            <param name="inContexte"></param>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.ActiverContexte(TP.SessionManager.ContexteSSO)">
+            <summary>
+            Rend le contexte choisi actif.
+            </summary>
+            <param name="inContexte"></param>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.ChangerTitreApplication(System.String)">
+            <summary>
+            Méthode appelée par l'interface SSO pour modifier le nom de l'application (apparait comme "titre" de la fenêtre principale, la valeur par défaut est "wRessources"). 
+            </summary>
+            <param name="inApplicationName"></param>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.ChangerEtatRibbon(System.Boolean)">
+            <summary>
+            Méthode appelée par l'interface SSO pour modifier l'état du Ribbon). 
+            </summary>
+            <param name="inRibbonCollapsed"></param>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.ConnecterUtilisateur(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.String)">
+            <summary>
+            Connection d'un utilisateur suite à l'ientification par SSO.
+            </summary>
+            <param name="inUtilisateur"></param>
+            <param name="inRessource"></param>
+            <param name="inNom"></param>
+            <param name="inLogin"></param>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.SocieteCourante``1(System.String)">
+            <summary>
+            Retourne la société courante. Obligation d'utiliser le type TP.Entities.Societe pour inType. 
+            </summary>
+            <typeparam name="inType"></typeparam>
+            <param name="inPluginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.DivisionCourante``1(System.String)">
+            <summary>
+            Retourne la division courante. Obligation d'utiliser le type TP.Entities Division pour inType. 
+            </summary>
+            <typeparam name="inType"></typeparam>
+            <param name="inPluginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.ServiceCourant``2(System.String)">
+            <summary>
+            Retourne le service courant. Obligation d'utiliser le type TP.Entities Service pour inType. 
+            </summary>
+            <typeparam name="inTypeService"></typeparam>
+            <typeparam name="inTypeUtilisateur"></typeparam>
+            <param name="inPluginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.PaysCourant``1(System.String)">
+            <summary>
+            Retourne le pays courant. Obligation d'utiliser le type TP.Entities RefPays pour inType. 
+            </summary>
+            <typeparam name="inType"></typeparam>
+            <param name="inPluginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.RessourceCourante``1(System.String)">
+            <summary>
+            Retourne la ressource courante. Attention, il est possible de se connecter avec un login qui n'est pas lié à une ressource,
+            auquel cal la ressource courante est nulle !
+            Obligation d'utiliser le type TP.Entities Ressource pour inType. 
+            </summary>
+            <typeparam name="inType"></typeparam>
+            <param name="inPluginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.UtilisateurCourant``1(System.String)">
+            <summary>
+            Retourne l'utilisateur courant. 
+            Obligation d'utiliser le type TP.Entities Utilisateur pour inType. 
+            </summary>
+            <typeparam name="inType"></typeparam>
+            <param name="inPluginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.DivisionsAccessibles``1(System.String)">
+            <summary>
+            Ensemble des divisions auxquelles l'utilisateur a access. 
+            </summary>
+            <typeparam name="inType"></typeparam>
+            <param name="inPluginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.PermissionsFonctionnalitesAccessibles``1(System.String)">
+            <summary>
+            Ensemble des Permissions/Fonctionnalité auxquelles l'utilisateur a accès (toutes divisions). 
+            </summary>
+            <typeparam name="inType">Le type d'objet</typeparam>
+            <param name="inPluginName">Le nom du plugin</param>
+            <returns>Retourne la liste des Permissions/Fonctionnalités en fonction de la sécurité chargée</returns>
+            <exception cref="T:System.Exception">Se déclenche en cas de soucis lors du chargement des permission/fonctionnalités</exception>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.PermissionsFonctionnalitesAccessiblesDivisionCourante``1(System.String,System.Guid)">
+            <summary>
+            Ensemble des Permissions/Fonctionnalité auxquelles l'utilisateur a accès (toutes divisions). 
+            </summary>
+            <typeparam name="inType">Le type d'objet</typeparam>
+            <param name="inPluginName">Le nom du plugin</param>
+            <param name="divisionCourante">La division courante</param>
+            <returns>Retourne la liste des Permissions/Fonctionnalités en fonction de la sécurité chargée</returns>
+            <exception cref="T:System.Exception">Se déclenche en cas de soucis lors du chargement des permission/fonctionnalités</exception>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.LoginsDisponibles(System.Guid)">
+            <summary>
+            Donne la liste des logins existant dans le système, afin de pouvoir les assigner à des ressources et créer les comptes utilisateurs et 
+            contextes correspondants.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.UpdateSecurity">
+            <summary>
+            Update la liste des operations actives
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.ModulesCharges">
+            <summary>
+            Donne la liste ds modules chargés (interaction SSO / Loader). 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.ApplicationChargee">
+            <summary>
+            Donne le guid de l application chargée. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.SetModulesCharges(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Définit la liste des modules chargés (méthode exclusivement appelée par le SSO/FakeSSO). 
+            </summary>
+            <param name="inListe"></param>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.SetApplicationChargee(System.Guid)">
+            <summary>
+            Définit la liste des modules chargés (méthode exclusivement appelée par le SSO/FakeSSO). 
+            </summary>
+            <param name="currentAppli"></param>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.SetCallBackOperation(System.Object)">
+            <summary>
+            Permet au SSO helper d'intéragir avec le session controller. 
+            </summary>
+            <param name="inSSOHelper"></param>
+        </member>
+        <member name="T:TP.SessionManager.SessionController.MasterHide">
+            <summary>
+            Delegate qui permet d'accéder aux méthodes de désactivation des droits pour cacher les boutons. 
+            </summary>
+            <param name="inModule"></param>
+            <param name="inOperation"></param>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.SetMasterHide(TP.SessionManager.SessionController.MasterHide)">
+            <summary>
+            Active le délégate, et permet ainsi au plugin de gérer les droits. 
+            </summary>
+            <param name="inDelegate"></param>
+        </member>
+        <member name="T:TP.SessionManager.SessionController.MasterDisable">
+            <summary>
+            Delegate qui permet d'accéder aux méthodes de désactivation des droits. 
+            </summary>
+            <param name="inModule"></param>
+            <param name="inOperation"></param>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.SetMasterDisable(TP.SessionManager.SessionController.MasterDisable)">
+            <summary>
+            Active le délégate, et permet ainsi au plugin de gérer les droits. 
+            </summary>
+            <param name="inDelegate"></param>
+        </member>
+        <member name="T:TP.SessionManager.SessionController.MasterDisableReset">
+            <summary>
+            Delegate qui permet d'accéder aux méthodes de mise à zéro des droits. 
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.SetMasterDisableReset(TP.SessionManager.SessionController.MasterDisableReset)">
+            <summary>
+            Active le délégate, et permet ainsi au plugin de gérer les droits de remise à zéro. 
+            </summary>
+            <param name="inDelegate"></param>
+        </member>
+        <member name="T:TP.SessionManager.SessionController.MasterDisableHide">
+            <summary>
+            Delegate qui permet d'accéder aux méthodes de mise à zéro des droits. 
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.SessionController.SetMasterHideReset(TP.SessionManager.SessionController.MasterDisableHide)">
+            <summary>
+            Active le délégate, et permet ainsi au plugin de gérer les droits de remise à zéro. 
+            </summary>
+            <param name="inDelegate"></param>
+        </member>
+        <member name="T:TP.SessionManager.Token">
+            <summary>
+            Donne accès à toutes les informations sur l'utilisateur en cours d'utilisation du système. 
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.Token.theInstance">
+            <summary>
+            theInstance
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.Token.idToken">
+            <summary>
+            idToken
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.Token.sModule">
+            <summary>
+            sModule
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.Token.sOperation">
+            <summary>
+            sOperation
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.Token.Instance">
+            <summary>
+            Accès direct à l'instance.
+            </summary>
+        </member>
+        <member name="T:TP.SessionManager.TPCustomObject">
+            <summary>
+            Classe fournie par TP pour transformer les caractéristiques des objets XPO.
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.TPCustomObject.#ctor(DevExpress.Xpo.Session)">
+            <summary>
+            Constructeur.
+            </summary>
+            <param name="inSession"></param>
+        </member>
+        <member name="F:TP.SessionManager.TPCustomObject.fId">
+            <summary>
+            fId
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.TPCustomObject.Id">
+            <summary>Clé primaire</summary>
+        </member>
+        <member name="F:TP.SessionManager.TPCustomObject.bIsSpecialRow">
+            <summary>
+            bIsSpecialRow
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.TPCustomObject.IsRowSpecial">
+            <summary>
+            Permet d'afficher une ligne en rouge dans les grid 
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.TPCustomObject.fDtCrea">
+            <summary>Date de création du record</summary>
+        </member>
+        <member name="P:TP.SessionManager.TPCustomObject.DateCreation">
+            <summary>Date de création du record</summary>
+        </member>
+        <member name="F:TP.SessionManager.TPCustomObject.fDtModif">
+            <summary>Date de modification du record</summary>
+        </member>
+        <member name="P:TP.SessionManager.TPCustomObject.DateModification">
+            <summary>Date de modification du record</summary>
+        </member>
+        <member name="F:TP.SessionManager.TPCustomObject.fUserCrea">
+            <summary>Utilisateur qui a créé le record</summary>
+        </member>
+        <member name="P:TP.SessionManager.TPCustomObject.UtilisateurCreation">
+            <summary>Utilisateur qui a créé le record</summary>
+        </member>
+        <member name="F:TP.SessionManager.TPCustomObject.fUserModif">
+            <summary>Utilisateur qui a modifié le record</summary>
+        </member>
+        <member name="P:TP.SessionManager.TPCustomObject.UtilisateurModification">
+            <summary>Utilisateur qui a modifié le record</summary>
+        </member>
+        <member name="M:TP.SessionManager.TPCustomObject.AfterConstruction">
+            <summary>
+            S'execute après l'initialisation XPO.
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.TPCustomObject.OnSaving">
+            <summary>
+            S'exécute avant l'écriture SQL;
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.TPCustomObject.isCopyMode">
+            <summary>
+            isCopyMode
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.TPCustomObject.SetCopyMode(System.DateTime,System.DateTime,System.String,System.String)">
+            <summary>
+            Méthode pour François utilisant des données spécifique dans l'objet, de façon à pouvoir copier d'une DB à l'autre. 
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.TPCustomObject.ForceSave">
+            <summary>
+            Force la sauvegarde de l'objet même si aucun champ n'a été modifié. 
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.TPCustomObject.oldTime">
+            <summary>
+            oldTime
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.TPCustomObject.oldServerTime">
+            <summary>
+            oldServerTime
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.TPCustomObject.GetServerDateTime">
+            <summary>
+            Obtient la date serveur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.TPCustomObject.SetErrorInfo(DevExpress.XtraEditors.DXErrorProvider.ErrorInfo,System.String,DevExpress.XtraEditors.DXErrorProvider.ErrorType)">
+            <summary>
+             Methode pour traitement d'erreur (interface IDXDataErrorInfo)
+            </summary>
+            <param name="info"></param>
+            <param name="errorText"></param>
+            <param name="errorType"></param>
+        </member>
+        <member name="T:TP.SessionManager.XPOController">
+            <summary>
+            Permet d'interagir avec XPO, maintenir les UoW, etc. 
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.XPOController.Instance">
+            <summary>
+            Accès direct à l'instance.
+            </summary>
+        </member>
+        <member name="E:TP.SessionManager.XPOController.PropertyChanged">
+            <summary>
+            Evénement pour le two-way binding. 
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.XPOController.DBName">
+            <summary>
+            Nom de la DB
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.XPOController.DBLogin">
+            <summary>
+            Login de la DB
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.XPOController.DBPasswd">
+            <summary>
+            Password de la DB
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.XPOController.DBAddress">
+            <summary>
+            Adresse de la DB
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.XPOController.DataLayer">
+            <summary>
+            DataLayer principal (DONNEES)
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.XPOController.SessionPrincipale">
+            <summary>
+            Session Principale (DONNEES)
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.XPOController.UOWPrincipale">
+            <summary>
+            Uow Principale (DONNEES)
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.XPOController.rcGeneral">
+            <summary>
+            Ribbon
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.XPOController.DataSQL_DataLayer">
+            <summary>
+            DataLayer secondaire (DataSQL)
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.XPOController.DataSQL_Session">
+            <summary>
+            Session secondaire (DataSQL)
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.XPOController.DataSQL_DBName">
+            <summary>
+            Nom de la DB
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.XPOController.DataSQL_DBLogin">
+            <summary>
+            Login de la DB
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.XPOController.DataSQL_DBPasswd">
+            <summary>
+            Password de la DB
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.XPOController.DataSQL_DBAddress">
+            <summary>
+            Adresse de la DB
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.DecryptString(System.String,System.String)">
+            <summary>
+            Decrypter mdp
+            </summary>
+            <param name="Message"></param>
+            <param name="Passphrase"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.SwitchToSpecificDataContext(System.String)">
+            <summary>
+            Copie du data context n'une autre session
+            </summary>
+            <param name="inPluginName"></param>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.SetDataLayer(DevExpress.Xpo.IDataLayer)">
+            <summary>
+            Spécifiquement conçu pour le Web.
+            </summary>
+            <param name="inDataLayer"></param>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.UpdateSchema">
+            <summary>
+            Demande explicitement la mise à jour du schéma, lorsque XPO n'arrive pas à déclencher cette mise à jour de façon automatique. 
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.NoServerTime">
+            <summary>
+            Indique qu'on utilise le PC et pas la base SQL pour définir l'heure des modifications. Ceci permet d'accélérer ENORMEMENT les tâches de migration. 
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.Finalize">
+            <summary>
+            Destructeur.
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.IsCorrectUOW(DevExpress.Xpo.XPBaseObject,System.String,System.String)">
+            <summary>
+            Check si un objet est utilisable dans le changeset courrant. 
+            </summary>
+            <param name="inObject"></param>
+            <param name="inPlugin"></param>
+            <param name="inDescription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.CurrentUoW(System.String)">
+            <summary>
+            Retourne l'unit of work active.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.NewChangeSet(System.String,System.String)">
+            <summary>
+            Crée une nested unit of work.
+            </summary>
+            <param name="inChangeSetName"></param>
+            <param name="inPlugin"></param>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.CancelChangeSet(System.String,System.String)">
+            <summary>
+            Abandonne tous les changements de l'unit of work courante, et supprime le changeset
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.SaveChanges(System.String)">
+            <summary>
+            Sauve les transactions en cours dans le changeset courant. 
+            </summary>
+            <param name="inPlugin"></param>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.FinalizeChangeSet(System.String,System.String)">
+            <summary>
+            Cloture l'unit of work courant après avoir fait un commit des changements.
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.DropDB(System.String)">
+            <summary>
+            Cloture l'unit of work courant et vide la DB. ATTENTION: détruit l'unit of work courante, donc aucune variable XPO ne survit!
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.GetChanges(System.String)">
+            <summary>
+            Détermine s'il y a eu des changements dans le changeset courant, et s'il faut donc sauver.
+            </summary>
+            <param name="inPlugin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.ResetChanges(System.String)">
+            <summary>
+            Relance le check des changements dans le changeset courant. 
+            </summary>
+            <param name="inPlugin"></param>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.DeleteCollection(System.String,System.Collections.ICollection)">
+            <summary>
+            Efface de la DB tous les objets d'une collection donnée.  
+            </summary>
+            <param name="inPlugin"></param>
+            <param name="inCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.NewXPCollection``1(System.String,System.Boolean)">
+            <summary>
+            Crée une XPCollection. 
+            </summary>
+            <typeparam name="TypeObject"></typeparam>
+            <param name="inLoad">inLoad=false implique que l'on désire une XPCollection vide.</param>
+            <param name="inPlugin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.NewXPCollectionByType``1(System.Type,System.String,System.Boolean)">
+            <summary>
+            Crée une XPCollection sur base d'un type.
+            </summary>
+            <typeparam name="TypeObject"></typeparam>
+            <param name="inType"></param>
+            <param name="inPlugin"></param>
+            <param name="inLoad"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.NewXPCollectionByType(System.Type,System.String,System.Boolean)">
+            <summary>
+            Crée une XPCollection sur base d'un type.
+            </summary>
+            <param name="inType"></param>
+            <param name="inPlugin"></param>
+            <param name="inLoad"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.NewXPQueryByType``1(System.Type,System.String,System.Boolean)">
+            <summary>
+            Crée une XPQuery sur base d'un type.
+            </summary>
+            <typeparam name="TypeObject"></typeparam>
+            <param name="inType"></param>
+            <param name="inPlugin"></param>
+            <param name="inTransaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.NewXPCollection``1(System.String,DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+            Crée une XPCollection avec la unit of work courante.
+            </summary>
+            <typeparam name="TypeObject"></typeparam>
+            <param name="inOperator">CriteriaOperator permettant de ne charger que les objets concernés.</param>
+            <param name="inPlugin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.NewXPQuery``1(System.String,System.Boolean)">
+            <summary>
+            Crée une XPQuery avec la unit of work courante.
+            </summary>
+            <typeparam name="TypeObject"></typeparam>
+            <param name="inPlugin"></param>
+            <returns></returns>
+            <param name="inTransaction">Indique s'il faut récuperer les objets qui sont en cours de modification ou qui n'ont pas encore été sauvés en DB.</param>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.NewXPObject``1(System.String)">
+            <summary>
+            Crée une XPQuery avec la unit of work courante.
+            </summary>
+            <typeparam name="TypeObject"></typeparam>
+            <param name="inPlugin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.ChangeSession``1(TP.SessionManager.TPCustomObject,System.String)">
+            <summary>
+            Transfère le même objet dans une autre session XPO.
+            </summary>
+            <typeparam name="TypeObject"></typeparam>
+            <param name="inObject"></param>
+            <param name="inPlugin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.GetByGuid``1(System.Nullable{System.Guid},System.String)">
+            <summary>
+            Trouve un objet sur base de son guid.
+            </summary>
+            <typeparam name="inType"></typeparam>
+            <param name="inGuid"></param>
+            <param name="inPluginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SessionManager.XPOController.GetByGuid(System.Nullable{System.Guid},System.String,System.Type)">
+            <summary>
+            Trouve un objet sur base de son guid et de son type. 
+            </summary>
+            <param name="inGuid"></param>
+            <param name="inPluginName"></param>
+            <param name="inType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TP.SessionManager.XPOControllerConstants">
+            <summary>
+            Pour éviter les strings éparpillés.
+            </summary>
+        </member>
+        <member name="T:TP.SessionManager.XPOPluginVersion">
+            <summary>
+            Classe temporaire de vérification des versions, afin d'éviter d'endommager le schéma XPO. 
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.XPOPluginVersion.labelVersion">
+            <summary>
+            libellé de la version
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.XPOPluginVersion.versionDate">
+            <summary>
+             date à laquelle le plugin a été compilé
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.XPOPluginVersion.maxLoadTime">
+            <summary>
+            Plus long temps de chargement pour ce plugin et cet utilisateur.
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.XPOPluginVersion.minLoadTime">
+            <summary>
+            Plus court temps de chargement pour ce plugin et cet utilisateur.
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.XPOPluginVersion.maxSpec">
+            <summary>
+            Caractéristiques de la machine lorsque l'utilisateur a obtenu un mauvais (max) temps. 
+            </summary>
+        </member>
+        <member name="P:TP.SessionManager.XPOPluginVersion.minSpec">
+            <summary>
+            Caractéristiques de la machine lorsque l'utilisateur a obtenu un bon (min) temps. 
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.XPOPluginVersion.loginUser">
+            <summary>
+            Utilisateur concerné. 
+            </summary>
+        </member>
+        <member name="F:TP.SessionManager.XPOPluginVersion.plugin">
+            <summary>
+            libelle du plugin. 
+            </summary>
+        </member>
+        <member name="M:TP.SessionManager.XPOPluginVersion.#ctor(DevExpress.Xpo.Session)">
+            <summary>
+            Constructeur.
+            </summary>
+            <param name="inSession"></param>
+        </member>
+        <member name="P:TP.SessionManager.XPOPluginVersion.labelComplet">
+            <summary>
+            Information complète de version
+            </summary>
+        </member>
+    </members>
+</doc>

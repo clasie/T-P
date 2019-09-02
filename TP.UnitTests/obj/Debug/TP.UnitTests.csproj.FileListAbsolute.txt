@@ -1,0 +1,505 @@
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.UnitTests.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.UnitTests.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\xunit.abstractions.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\xunit.assert.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\xunit.core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\xunit.execution.desktop.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\xunit.assert.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\xunit.core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\xunit.execution.desktop.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\obj\Debug\TP.UnitTests.csprojAssemblyReference.cache
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\obj\Debug\TP.UnitTests.csproj.CoreCompileInputs.cache
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\obj\Debug\TP.UnitTests.csproj.CopyComplete
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\obj\Debug\TP.UnitTests.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\obj\Debug\TP.UnitTests.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Data.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Mvvm.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Printing.v14.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Core.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Docking.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Grid.v14.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Grid.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Layout.v14.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Printing.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Ribbon.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpo.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Entities.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.SessionManager.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Validators.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Entities.Compta.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Common.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.LayoutControl.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Plugin.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.RichEdit.v14.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.RichEdit.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.XtraPrinting.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.XtraRichEdit.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Office.v14.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Utils.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.XtraEditors.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.XtraBars.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.XtraTreeList.v14.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Sparkline.v14.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Entities.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Entities.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.SessionManager.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.SessionManager.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Validators.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Validators.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Data.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Mvvm.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Printing.v14.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Core.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Docking.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Grid.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Grid.v14.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Layout.v14.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Printing.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.Ribbon.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpo.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Entities.Compta.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Common.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Common.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.LayoutControl.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Plugin.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Plugin.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.RichEdit.v14.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Xpf.RichEdit.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.XtraPrinting.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.XtraRichEdit.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Office.v14.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Utils.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.XtraEditors.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.XtraBars.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.XtraTreeList.v14.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\DevExpress.Sparkline.v14.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.Data.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.Data.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.Data.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.Data.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.Printing.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.Printing.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.Printing.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.Printing.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.Core.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.Core.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.Core.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.Core.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.Docking.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.Docking.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.Docking.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.Docking.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.Grid.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.Grid.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.Grid.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.Grid.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.Printing.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.Printing.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.Printing.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.Printing.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.Ribbon.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.Ribbon.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.Ribbon.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.Ribbon.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.Xpo.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.Xpo.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.Xpo.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.Xpo.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.LayoutControl.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.LayoutControl.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.LayoutControl.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.LayoutControl.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.RichEdit.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.RichEdit.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.RichEdit.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.RichEdit.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.RichEdit.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.RichEdit.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.RichEdit.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.RichEdit.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.XtraPrinting.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.XtraPrinting.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.XtraPrinting.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.XtraPrinting.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.XtraRichEdit.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.XtraRichEdit.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.XtraRichEdit.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.XtraRichEdit.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.Office.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.Office.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.Office.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.Office.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.Utils.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.Utils.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.Utils.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.Utils.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.XtraEditors.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.XtraEditors.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.XtraEditors.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.XtraEditors.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.XtraBars.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.XtraBars.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.XtraBars.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.XtraBars.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.XtraTreeList.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.XtraTreeList.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.XtraTreeList.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.XtraTreeList.v14.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\DevExpress.Sparkline.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\es\DevExpress.Sparkline.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ja\DevExpress.Sparkline.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\ru\DevExpress.Sparkline.v14.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\xunit.runner.reporters.net452.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\xunit.runner.utility.net452.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.SSOHelper.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.SecuritySSO.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\InterfaceSSO.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Utilities.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\PdfSharp.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\log4net.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\Newtonsoft.Json.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\HtmlRenderer.PdfSharp.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\HtmlRenderer.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.SSOHelper.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.SSOHelper.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.SSOHelper.dll.config
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.SecuritySSO.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\InterfaceSSO.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\InterfaceSSO.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\InterfaceSSO.dll.config
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Utilities.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.Utilities.dll.config
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\PdfSharp.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\log4net.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\HtmlRenderer.PdfSharp.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\HtmlRenderer.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\de\PdfSharp.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP\TP.UnitTests\bin\Debug\TP.UnitTests.dll.config
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\obj\Debug\TP.UnitTests.csprojAssemblyReference.cache
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\obj\Debug\TP.UnitTests.csproj.CoreCompileInputs.cache
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\obj\Debug\TP.UnitTests.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\obj\Debug\TP.UnitTests.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\xunit.runner.reporters.net452.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\xunit.runner.utility.net452.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\xunit.abstractions.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.UnitTests.dll.config
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.UnitTests.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.UnitTests.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Data.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Mvvm.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Office.v18.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Pdf.v18.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Printing.v18.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.RichEdit.v18.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.RichEdit.v18.1.Export.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.CodeView.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Core.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Docking.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Grid.v18.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Grid.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Layout.v18.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Printing.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Ribbon.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpo.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Entities.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.SessionManager.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.SSOHelper.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Validators.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\xunit.assert.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\xunit.core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\xunit.execution.desktop.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Entities.Compta.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Common.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.LayoutControl.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.SecuritySSO.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\InterfaceSSO.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Plugin.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Images.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.CodeParser.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.DocumentViewer.v18.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Attributes.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Enums.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.RichEdit.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraPrinting.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraRichEdit.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Utilities.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Utils.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraBars.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraEditors.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraTreeList.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraLayout.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraGrid.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\PdfSharp.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\log4net.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Newtonsoft.Json.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\HtmlRenderer.PdfSharp.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\HtmlRenderer.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Sparkline.v18.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Entities.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Entities.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.SessionManager.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.SessionManager.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Validators.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Validators.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.SSOHelper.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.SSOHelper.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.SSOHelper.dll.config
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Data.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Mvvm.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Pdf.v18.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Office.v18.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.RichEdit.v18.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Printing.v18.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Core.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Docking.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Grid.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Grid.v18.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Layout.v18.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Printing.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Ribbon.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpo.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\xunit.assert.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\xunit.core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\xunit.execution.desktop.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Entities.Compta.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Common.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Common.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.LayoutControl.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.SecuritySSO.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\InterfaceSSO.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\InterfaceSSO.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\InterfaceSSO.dll.config
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Plugin.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Plugin.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.DocumentViewer.v18.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.RichEdit.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraPrinting.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraRichEdit.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Utilities.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Utilities.dll.config
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Utils.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraBars.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraEditors.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraTreeList.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraLayout.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraGrid.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\PdfSharp.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\log4net.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\HtmlRenderer.PdfSharp.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\HtmlRenderer.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Sparkline.v18.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Data.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Data.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Data.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Data.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Office.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Office.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Office.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Office.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Printing.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Printing.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Printing.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Printing.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.Core.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.Core.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.Core.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.Core.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.Docking.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.Docking.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.Docking.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.Docking.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.Grid.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.Grid.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.Grid.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.Grid.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.Printing.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.Printing.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.Printing.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.Printing.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.Ribbon.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.Ribbon.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.Ribbon.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.Ribbon.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpo.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpo.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpo.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpo.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.LayoutControl.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.LayoutControl.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.LayoutControl.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.LayoutControl.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.DocumentViewer.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.DocumentViewer.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.DocumentViewer.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.DocumentViewer.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.RichEdit.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.RichEdit.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.RichEdit.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.RichEdit.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.XtraRichEdit.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.XtraRichEdit.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.XtraRichEdit.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.XtraRichEdit.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Utils.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Utils.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Utils.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Utils.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.XtraBars.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.XtraBars.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.XtraBars.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.XtraBars.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.XtraEditors.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.XtraEditors.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.XtraEditors.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.XtraEditors.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.XtraLayout.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.XtraLayout.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.XtraLayout.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.XtraLayout.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.XtraGrid.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.XtraGrid.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.XtraGrid.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.XtraGrid.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\PdfSharp.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\obj\Debug\TP.UnitTests.csproj.CopyComplete
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Robots.exe
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\VueHierarchie.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.SecurityRobot.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.GED.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.EntitiesWEB.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Tamir.SharpSSH.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraReports.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Renci.SshNet.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Spreadsheet.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Spreadsheet.v18.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.EntitiesGG.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\MathParser.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DocumentDataExtractor.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DiffieHellman.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Org.Mentalis.Security.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.DataAccess.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraCharts.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Charts.v18.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraGauges.v18.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.PivotGrid.v18.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.NavBar.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Charts.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Controls.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Controls.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.SpellChecker.v18.1.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.SpellChecker.v18.1.Core.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\GestionDocuments.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Robots.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Robots.exe.config
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\CPTModels.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\VueHierarchie.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.SecurityRobot.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.SecurityRobot.dll.config
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.GED.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.GED.dll.config
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.EntitiesWEB.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Tamir.SharpSSH.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraReports.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Spreadsheet.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Spreadsheet.v18.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.EntitiesGG.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\MathParser.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\MathParser.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\MathParser.dll.config
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Attributes.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Enums.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.DataAccess.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraCharts.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.XtraGauges.v18.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.PivotGrid.v18.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.NavBar.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Charts.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Controls.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Controls.dll.config
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.Controls.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.Xpf.SpellChecker.v18.1.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\DevExpress.SpellChecker.v18.1.Core.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\GestionDocuments.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\GestionDocuments.xml
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\GestionDocuments.dll.config
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.XtraReports.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.XtraReports.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.XtraReports.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.XtraReports.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.Spreadsheet.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.Spreadsheet.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.Spreadsheet.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.Spreadsheet.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Spreadsheet.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Spreadsheet.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Spreadsheet.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Spreadsheet.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.DataAccess.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.DataAccess.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.DataAccess.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.DataAccess.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.XtraCharts.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.XtraCharts.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.XtraCharts.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.XtraCharts.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.XtraGauges.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.XtraGauges.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.XtraGauges.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.XtraGauges.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.PivotGrid.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.PivotGrid.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.PivotGrid.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.PivotGrid.v18.1.Core.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.NavBar.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.NavBar.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.NavBar.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.NavBar.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.Charts.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.Charts.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.Charts.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.Charts.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.Controls.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.Controls.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.Controls.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.Controls.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\de\DevExpress.Xpf.SpellChecker.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\es\DevExpress.Xpf.SpellChecker.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ja\DevExpress.Xpf.SpellChecker.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ru\DevExpress.Xpf.SpellChecker.v18.1.resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Resources.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\TP.Resources.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\GED.Access.dll
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\GED.Access.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Resources\E1903693365_541449020000700550_190605.pdf
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Resources\N1900420442_541449060017014325_190605.pdf
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Resources\SFM402173INV359097Annexe1.PDF
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Resources\SFM402173INV359097Annexe2.PDF
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\Resources\WrongExtensionTxt.txt
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\obj\Debug\TP.UnitTests.Properties.Resources.resources
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\obj\Debug\TP.UnitTests.csproj.GenerateResource.cache
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\log4net.config
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ExternalGed.exe
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ExternalGed.pdb
+C:\job\clients\TP\TP projects 2019\Groupe TP-Migration DevExpress2018\TP.UnitTests\bin\Debug\ExternalGed.exe.config

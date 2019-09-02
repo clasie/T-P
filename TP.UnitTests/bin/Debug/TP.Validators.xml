@@ -1,0 +1,2425 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TP.Validators</name>
+    </assembly>
+    <members>
+        <member name="T:TP.Validators.BLGroup">
+            <summary>
+            Classe représentant une unité business logique. 
+            </summary>
+        </member>
+        <member name="F:TP.Validators.BLGroup.theValidatedObjects">
+            <summary>
+            theValidatedObjects
+            </summary>
+        </member>
+        <member name="F:TP.Validators.BLGroup.theValidatedProperties">
+            <summary>
+            theValidatedProperties
+            </summary>
+        </member>
+        <member name="F:TP.Validators.BLGroup.theWPFEditors">
+            <summary>
+            theWPFEditors
+            </summary>
+        </member>
+        <member name="F:TP.Validators.BLGroup.theWPFGrids">
+            <summary>
+            theWPFGrids
+            </summary>
+        </member>
+        <member name="F:TP.Validators.BLGroup.theSubGroups">
+            <summary>
+            theSubGroups
+            </summary>
+        </member>
+        <member name="F:TP.Validators.BLGroup.tabGroup">
+            <summary>
+            /tabGroup
+            </summary>
+        </member>
+        <member name="F:TP.Validators.BLGroup.tabIndex">
+            <summary>
+            tabIndex
+            </summary>
+        </member>
+        <member name="F:TP.Validators.BLGroup.isTabAttached">
+            <summary>
+            isTabAttached
+            </summary>
+        </member>
+        <member name="M:TP.Validators.BLGroup.#ctor(DevExpress.Xpf.LayoutControl.LayoutGroup,System.Int32)">
+            <summary>
+            BLGroup
+            </summary>
+            <param name="inLayoutGroup"></param>
+            <param name="inTabIndex"></param>
+        </member>
+        <member name="M:TP.Validators.BLGroup.#ctor">
+            <summary>
+            Constructeur.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.BLGroup.Add(TP.Validators.IValidatedObject)">
+            <summary>
+            Ajoute un objet à la liste des dépendences. 
+            </summary>
+            <param name="inValidatedObject"></param>
+        </member>
+        <member name="M:TP.Validators.BLGroup.Add(TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Ajoute une propriété d'un objet à la liste des dépendences. 
+            </summary>
+            <param name="inValidatedObject"></param>
+            <param name="inValidatedProperty"></param>
+        </member>
+        <member name="M:TP.Validators.BLGroup.Add(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Ajoute un contrôle visuel à la liste des dépendances. 
+            </summary>
+            <param name="inBaseEdit"></param>
+        </member>
+        <member name="M:TP.Validators.BLGroup.Add(DevExpress.Xpf.Grid.GridControl)">
+            <summary>
+            Ajoute un contrôle visuel à la liste des dépendences. 
+            </summary>
+            <param name="inGrid"></param>
+        </member>
+        <member name="M:TP.Validators.BLGroup.NewSubGroup">
+            <summary>
+            Création d'un sous-groupe de règles business à valider, par exemple pour permettre de valider un tab à la fois. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.BLGroup.NewSubGroup(DevExpress.Xpf.LayoutControl.LayoutGroup,System.Int32)">
+            <summary>
+            Création d'un sous-groupe de règles business à valider, par exemple pour permettre de valider un tab à la fois. 
+            </summary>
+            <returns></returns>
+            <param name="inTabGroup"></param>
+            <param name="inTabIndex"></param>
+        </member>
+        <member name="M:TP.Validators.BLGroup.ChangeAllLayoutGroup(DevExpress.Xpf.LayoutControl.LayoutGroup)">
+            <summary>
+            Change le layoutgroup utilisé par tous les subgroup du BLGroup courant. 
+            </summary>
+            <param name="inTabGroup"></param>
+        </member>
+        <member name="M:TP.Validators.BLGroup.CheckField">
+            <summary>
+            CheckField
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.BLGroup.CheckField(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            CheckField
+            </summary>
+            <param name="inWPFEditor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.BLGroup.Validate">
+            <summary>
+            Validation du BLGroup: teste si toutes les contraintes de tous les objets sont respectées. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.VNumeric64">
+            <summary>
+            Validateur qui s'assure que c'est numérique.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VNumeric64.theErrorMessage">
+            <summary>
+            theErrorMessage
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VNumeric64.theMin">
+            <summary>
+            theMin
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VNumeric64.theMax">
+            <summary>
+            theMax
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VNumeric64.#ctor(System.Int64,System.Int64)">
+            <summary>
+            Constructeur du validateur, qui stocke le minimum et le maximum.
+            </summary>
+            <param name="inMin"></param>
+            <param name="inMax"></param>
+        </member>
+        <member name="M:TP.Validators.VNumeric64.#ctor">
+            <summary>
+            Constructeur du validateur qui vérifie simplment si c'est un nombre.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VNumeric64.Validate(System.Object)">
+            <summary>
+            Fonction de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VNumeric64.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VNumeric64.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.NotifyChangeAttribute">
+            <summary>
+            Attribut qui indique qu'il faut notifier l'interface prisma du fait que quelque chose a changé. 
+            </summary>
+        </member>
+        <member name="F:TP.Validators.NotifyChangeAttribute.groupName">
+            <summary>
+            intitulé du groupe de choses qui ont changé. Exemple: infoAdresse pourrait être utilisé pour tous les champs d'une ressource liés à l'adresse et qui impactent l'interface prisma. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.NotifyChangeAttribute.#ctor(System.String)">
+            <summary>
+            Constructeur.
+            </summary>
+        </member>
+        <member name="T:TP.Validators.VBP">
+            <summary>
+            Validateur qui s'assure que l'objet est une chaîne alphanumérique.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VBP.Validate(System.Object)">
+            <summary>
+            Validateur qui s'assure que l'objet est une chaîne alphanumérique.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VBP.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VBP.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.VPhoneNumberGDL">
+            <summary>
+            Validateur qui s'assure que c'est un numéro de téléphone.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VPhoneNumberGDL.#ctor">
+            <summary>
+            Constructeur du validateur qui s'assure que c'est un numéro de téléphone.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VPhoneNumberGDL.Validate(System.Object)">
+            <summary>
+            Fonction de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VPhoneNumberGDL.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VPhoneNumberGDL.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VPhoneNumberGDL.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="M:TP.Validators.VPhoneNumberGDL.BaseEdit_Validate(System.Object,DevExpress.Xpf.Editors.ValidationEventArgs)">
+            <summary>
+            On surcharge l'événement de validation pour introduire automatiquement +32 quand on tappe 0. 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:TP.Validators.VStringLength">
+            <summary>
+            Validateur qui s'assure que l'objet est une chaîne alphanumérique.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VStringLength.theLength">
+            <summary>
+            theLength
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VStringLength.#ctor(System.Int32)">
+            <summary>
+            Constructeur du validateur, qui stocke la longueur de la chaine
+            </summary>
+            <param name="inStringLength"></param>
+        </member>
+        <member name="M:TP.Validators.VStringLength.#ctor">
+            <summary>
+            Constructeur du validateur, qui stocke la longueur de la chaine
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VStringLength.Validate(System.Object)">
+            <summary>
+            Validateur qui s'assure que l'objet est une chaîne alphanumérique.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VStringLength.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VStringLength.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VStringLength.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.NotificationPrisma">
+            <summary>
+            NotificationPrisma Class: table contenant un record par ressource changée. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.NotificationPrisma.#ctor(DevExpress.Xpo.Session)">
+            <summary>
+            CorrespondanceRessources constructor with session
+            </summary>
+        </member>
+        <member name="P:TP.Validators.NotificationPrisma.idwRessource">
+            <summary>
+            identifiant (guid) de la ressource
+            </summary>
+        </member>
+        <member name="P:TP.Validators.NotificationPrisma.groupe">
+            <summary>
+            indique le type de changement qui a eu lieu. Exemple: le groupe "adresse" pourrait être appliqué à toutes les propriétés liées à l'adresse d'une ressource. 
+            </summary>
+        </member>
+        <member name="P:TP.Validators.NotificationPrisma.isDone">
+            <summary>
+            Indique si ce changement a déjà été traité par le robot. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.NotificationPrisma.AfterConstruction">
+            <summary>
+            Méthode standard XPO.
+            </summary>
+        </member>
+        <member name="T:TP.Validators.ValidatedXPOViewAttribute">
+            <summary>
+            Attribut qui indique qu'il s'agit d'objets issus d'une vue. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOViewAttribute.#ctor">
+            <summary>
+            Constructeur.
+            </summary>
+        </member>
+        <member name="T:TP.Validators.VIBAN">
+            <summary>
+            Validateur de compte IBAN Européen.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VIBAN.theErrorMessage">
+            <summary>
+            theErrorMessage
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VIBAN.#ctor">
+            <summary>
+            Constructeur du validateur
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VIBAN.Validate(System.Object)">
+            <summary>
+            Fonction de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VIBAN.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VIBAN.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VIBAN.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.VMatriculeGDL">
+            <summary>
+            Validateur d'heure. 
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VMatriculeGDL.theErrorMessage">
+            <summary>
+            theErrorMessage
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VMatriculeGDL.#ctor">
+            <summary>
+            Constructeur du validateur, qui stocke le minimum et le maximum.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VMatriculeGDL.Validate(System.Object)">
+            <summary>
+            Fonction de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VMatriculeGDL.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VMatriculeGDL.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VMatriculeGDL.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.VWeb">
+            <summary>
+            Validateur qui teste s'il s'agit bien d'un string contenant une adresse http.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VWeb.Validate(System.Object)">
+            <summary>
+            Validateur qui teste s'il s'agit bien d'un string contenant une adresse http.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VWeb.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VWeb.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.VBadge">
+            <summary>
+            Validateur qui s'assure que c'est numérique.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VBadge.theErrorMessage">
+            <summary>
+            theErrorMessage
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VBadge.theMin">
+            <summary>
+            theMin
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VBadge.theMax">
+            <summary>
+            theMax
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VBadge.#ctor">
+            <summary>
+            Constructeur du validateur, qui stocke le minimum et le maximum.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VBadge.Validate(System.Object)">
+            <summary>
+            Fonction de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VBadge.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VBadge.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VBadge.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.VONSS">
+            <summary>
+            Validateur d'ONSS
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VONSS.theErrorMessage">
+            <summary>
+            theErrorMessage
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VONSS.#ctor">
+            <summary>
+            Constructeur du validateur.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VONSS.Validate(System.Object)">
+            <summary>
+            Fonction de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VONSS.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VONSS.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VONSS.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.VTVA">
+            <summary>
+            Validateur de TVA Européenne.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VTVA.theErrorMessage">
+            <summary>
+            theErrorMessage
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VTVA.#ctor">
+            <summary>
+            Constructeur du validateur
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VTVA.Validate(System.Object)">
+            <summary>
+            Fonction de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VTVA.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VTVA.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VTVA.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.VNumeroNational">
+            <summary>
+            Validateur d'heure. 
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VNumeroNational.theErrorMessage">
+            <summary>
+            theErrorMessage
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VNumeroNational.#ctor">
+            <summary>
+            Constructeur du validateur, qui stocke le minimum et le maximum.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VNumeroNational.Validate(System.Object)">
+            <summary>
+            Fonction de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VNumeroNational.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VNumeroNational.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VNumeroNational.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.VTime">
+            <summary>
+            Validateur d'heure. 
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VTime.theErrorMessage">
+            <summary>
+            theErrorMessage
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VTime.#ctor">
+            <summary>
+            Constructeur du validateur, qui stocke le minimum et le maximum.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VTime.Validate(System.Object)">
+            <summary>
+            Fonction de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VTime.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VTime.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VTime.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.VAlphaNumeric">
+            <summary>
+            Validateur qui s'assure que l'objet est une chaîne alphanumérique.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VAlphaNumeric.Validate(System.Object)">
+            <summary>
+            Validateur qui s'assure que l'objet est une chaîne alphanumérique.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VAlphaNumeric.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VAlphaNumeric.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.IUpdatable">
+            <summary>
+            Interface pour les dépendences de binding. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.IUpdatable.Update">
+            <summary>
+            Méthode de mise à jour du binding. 
+            </summary>
+        </member>
+        <member name="T:TP.Validators.IValidatedObject">
+            <summary>
+            Interface pour ValidatedXPOObject et ValidatedObject.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.IValidatedObject.GetProperties">
+            <summary>
+            Donne la liste de toutes les propriétés de l'objet courant. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.IValidatedObject.GetValidators(System.String)">
+            <summary>
+            Retourne la liste des validateurs pour la propriété courante. 
+            </summary>
+            <param name="inObjectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.IValidatedObject.InvokeGetter(System.String)">
+            <summary>
+            Appel du get d'une propriété de l'extérieur de l'objet, pour le binding. 
+            </summary>
+            <param name="inObjectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.IValidatedObject.InvokeSetter(System.String,System.Object)">
+            <summary>
+            Permet de changer la valeur d'une propriété depuis l'extérieur de l'objet, pour le binding. 
+            </summary>
+            <param name="inObjectName"></param>
+            <param name="inValue"></param>
+        </member>
+        <member name="M:TP.Validators.IValidatedObject.ReadOnly(System.String)">
+            <summary>
+            Détermine si une propriété est disponible en lecture-écriture.
+            </summary>
+            <param name="inObjectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.IValidatedObject.Getter(System.String)">
+            <summary>
+            A utiliser dans toutes les propriétés à valider ou a binder. 
+            </summary>
+            <param name="inObjectName"></param>
+        </member>
+        <member name="M:TP.Validators.IValidatedObject.Setter(System.String,System.Object)">
+            <summary>
+            A utiliser dans toutes les propriétés à valider ou a binder. 
+            </summary>
+            <param name="inObjectName"></param>
+            <param name="inValue"></param>
+        </member>
+        <member name="M:TP.Validators.IValidatedObject.SetBLMessage(System.String)">
+            <summary>
+            Indique quel est le message d'erreur à retourner, expliquant la raison pour laquelle la logique business n'est pas respectée.
+            </summary>
+            <param name="inErrorMessage"></param>
+        </member>
+        <member name="M:TP.Validators.IValidatedObject.AddBLWrongProperty(System.String)">
+            <summary>
+            Indique quelle est la propriété à changer dans l'objet courant pour que la logique business soit à nouveau respectée. 
+            </summary>
+            <param name="inPropertyName"></param>
+        </member>
+        <member name="M:TP.Validators.IValidatedObject.ClearBLWrongProperties">
+            <summary>
+            Efface toutes les propriétés incorrectes. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.IValidatedObject.AddUpdate(System.String,TP.Validators.IUpdatable)">
+            <summary>
+            Ajout d'une dépendence (binding).
+            </summary>
+            <param name="inPropertyName"></param>
+            <param name="inTarget"></param>
+        </member>
+        <member name="M:TP.Validators.IValidatedObject.RemoveUpdate(System.String,TP.Validators.IUpdatable)">
+            <summary>
+            Suppression d'une dépendence (binding).
+            </summary>
+            <param name="inPropertyName"></param>
+            <param name="inTarget"></param>
+        </member>
+        <member name="M:TP.Validators.IValidatedObject.ValidateBL">
+            <summary>
+            Méthode de validation de la logique business. A surcharger dans les descendants. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.PrismaAttribute">
+            <summary>
+            Attribut qui indique qu'une propriété n'est éditable que si prisma n'est pas maître. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.PrismaAttribute.#ctor">
+            <summary>
+            Constructeur.
+            </summary>
+        </member>
+        <member name="T:TP.Validators.ValidatedField">
+            <summary>
+            ValidatedField
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedField.Field">
+            <summary>
+            Field
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedField.Validators">
+            <summary>
+            Validators
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedField.ObjectType">
+            <summary>
+            ObjectType
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedField.Prisma">
+            <summary>
+            Prisma
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedField.VisuallyReadOnly">
+            <summary>
+            VisuallyReadOnly
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedField.Dependencies">
+            <summary>
+            Dependencies
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedField.NotifyChanges">
+            <summary>
+            NotifyChanges
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedField.ChangeGroup">
+            <summary>
+            ChangeGroup
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedField.#ctor">
+            <summary>
+            ValidatedField
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedField.GetDefault(System.Type)">
+            <summary>
+            GetDefault
+            </summary>
+            <param name="inType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedField.#ctor(System.Type)">
+            <summary>
+            ValidatedField
+            </summary>
+            <param name="inObjectType"></param>
+        </member>
+        <member name="T:TP.Validators.ValidatedGrid">
+            <summary>
+            ValidatedGrid
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedGrid.Properties">
+            <summary>
+            Properties
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedGrid.Headers">
+            <summary>
+            Headers
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedGrid.SelectionObject">
+            <summary>
+            SelectionObject
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedGrid.SelectionProperty">
+            <summary>
+            SelectionProperty
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedGrid.GridReference">
+            <summary>
+            GridReference
+            </summary>
+        </member>
+        <member name="E:TP.Validators.ValidatedGrid.PropertyChanged">
+            <summary>
+            Evénement pour le two-way binding. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedGrid.OnPropertyChanged(System.String)">
+            <summary>
+            OnPropertyChanged
+            </summary>
+            <param name="inField"></param>
+        </member>
+        <member name="P:TP.Validators.ValidatedGrid.Error">
+            <summary>
+            Interface IDataError.
+            </summary>
+        </member>
+        <member name="P:TP.Validators.ValidatedGrid.Item(System.String)">
+            <summary>
+            Interface IDataError.
+            </summary>
+            <param name="inProperty"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TP.Validators.ValidatedGrid.BoundSelectionProperty">
+            <summary>
+            BoundSelectionProperty
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedGrid.Update">
+            <summary>
+            Update
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedGrid.#ctor(System.Object,System.String[],System.String[],TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            ValidatedGrid
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inProperties"></param>
+            <param name="inHeaders"></param>
+            <param name="inSelectionObject"></param>
+            <param name="inSelectionProperty"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedGrid.ChangeSelection(TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            ChangeSelection
+            </summary>
+            <param name="inSelectionObject"></param>
+            <param name="inSelectionProperty"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedGrid.Finalize">
+            <summary>
+            Desctructor
+            </summary>
+        </member>
+        <member name="T:TP.Validators.ValidatedObject">
+            <summary>
+            Classe de base permettant la validation sans XPO.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedObject.theValidatedFieldDictionary">
+            <summary>
+            theValidatedFieldDictionary
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedObject.theWrongProperties">
+            <summary>
+            theWrongProperties
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedObject.BLMessage">
+            <summary>
+            BLMessage
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedObject.isDictionaryInitalized">
+            <summary>
+            isDictionaryInitalized
+            </summary>
+        </member>
+        <member name="E:TP.Validators.ValidatedObject.PropertyChanged">
+            <summary>
+            Evénement pour INotifyPropertyChanged. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.OnChanged(System.String,System.Object,System.Object)">
+            <summary>
+            OnChanged
+            </summary>
+            <param name="inProperty"></param>
+            <param name="inOld"></param>
+            <param name="inNew"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.RaisePropertyChangedEvent(System.String)">
+            <summary>
+            RaisePropertyChangedEvent
+            </summary>
+            <param name="inProperty"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.#ctor">
+            <summary>
+            Constructeur.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.ValidateBL">
+            <summary>
+            Méthode par défaut pour valider la business logic. A surcharger dans les objets. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.ValidateBL(System.Boolean)">
+            <summary>
+            Méthode de validation de la logique business. A surcharger dans les descendants. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.SetBLMessage(System.String)">
+            <summary>
+            Permet de préciser quel est le message d'erreur de validation business.
+            </summary>
+            <param name="inErrorMessage"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.AddBLWrongProperty(System.String)">
+            <summary>
+            Indique le nom de la propriété qui doit être changée pour que l'erreur disparaisse. 
+            </summary>
+            <param name="inProperty"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.ClearBLWrongProperties">
+            <summary>
+            Efface la liste des propriétés erronées. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.UpdateBL(System.String)">
+            <summary>
+            Mise à jour de IDataError sur besoin spécifique. 
+            </summary>
+            <param name="inProperty"></param>
+        </member>
+        <member name="P:TP.Validators.ValidatedObject.Error">
+            <summary>
+            Interface IDataError.
+            </summary>
+        </member>
+        <member name="P:TP.Validators.ValidatedObject.isValidateBLOverrided">
+            <summary>
+            Savoir si la méthode ValidateBL(boolean) a été surchargée dans la classe parent
+            </summary>
+        </member>
+        <member name="P:TP.Validators.ValidatedObject.Item(System.String)">
+            <summary>
+            Interface IDataError.
+            </summary>
+            <param name="inProperty"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.CheckAttributes">
+            <summary>
+            CheckAttributes
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.GetValidators(System.String)">
+            <summary>
+            Retourne la liste des validateurs d'une propriété.
+            </summary>
+            <param name="inObjectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.GetDefault(System.Type)">
+            <summary>
+            GetDefault
+            </summary>
+            <param name="inType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.ReadOnly(System.String)">
+            <summary>
+            Détermine si une propriété est disponible en lecture-écriture.
+            </summary>
+            <param name="inObjectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.GetProperties">
+            <summary>
+            Méthode de débug
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.InvokeGetter(System.String)">
+            <summary>
+            Appel du get d'une propriété de l'extérieur de l'objet, pour le binding. 
+            </summary>
+            <param name="inObjectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.Getter(System.String)">
+            <summary>
+            A utiliser dans toutes les propriétés à valider ou a binder. 
+            </summary>
+            <param name="inObjectName"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.GetPrismaState">
+            <summary>
+            Retourne true si prisma est le maitre. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.InvokeSetter(System.String,System.Object)">
+            <summary>
+            Permet de changer la valeur d'une propriété depuis l'extérieur de l'objet, pour le binding. 
+            </summary>
+            <param name="inObjectName"></param>
+            <param name="inValue"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.Setter(System.String,System.Object)">
+            <summary>
+            A utiliser dans toutes les propriétés à valider ou a binder. 
+            </summary>
+            <param name="inObjectName"></param>
+            <param name="inValue"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.AddUpdate(System.String,TP.Validators.IUpdatable)">
+            <summary>
+            Ajout d'une dépendence (binding).
+            </summary>
+            <param name="inPropertyName"></param>
+            <param name="inTarget"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedObject.RemoveUpdate(System.String,TP.Validators.IUpdatable)">
+            <summary>
+            Suppression d'une dépendence (binding).
+            </summary>
+            <param name="inPropertyName"></param>
+            <param name="inTarget"></param>
+        </member>
+        <member name="T:TP.Validators.ValidatedXPOObject">
+            <summary>
+            Classe de base permettant la validation. 
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedXPOObject.theValidatedFieldDictionary">
+            <summary>
+            theValidatedFieldDictionary
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedXPOObject.theWrongProperties">
+            <summary>
+            theWrongProperties
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedXPOObject.theNotifications">
+            <summary>
+            theNotifications
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedXPOObject.BLMessage">
+            <summary>
+            BLMessage
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedXPOObject.isDictionaryInitalized">
+            <summary>
+            isDictionaryInitalized
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedXPOObject.isView">
+            <summary>
+            isView
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.#ctor(DevExpress.Xpo.Session)">
+            <summary>
+            Constructeur.
+            </summary>
+            <param name="inSession"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.AfterConstruction">
+            <summary>
+            Initialisation, après construction par XPO. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.ValidateBL">
+            <summary>
+            Méthode de validation de la logique business. A surcharger dans les descendants. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.ValidateBL(System.Boolean)">
+            <summary>
+            Méthode de validation de la logique business. A surcharger dans les descendants. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.IsNewObject">
+            <summary>
+            Méthode de vérification si c'est un nouveau record
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.IsEditedObject">
+            <summary>
+            Méthode de vérification si c'est un record édité
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:TP.Validators.ValidatedXPOObject.bIsNewRecord">
+            <summary>
+            bIsNewRecord
+            </summary>
+        </member>
+        <member name="P:TP.Validators.ValidatedXPOObject.IsNewRecord">
+            <summary>
+            Est-ce un nouveau record?
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatedXPOObject.bIsEditedRecord">
+            <summary>
+            bIsEditedRecord
+            </summary>
+        </member>
+        <member name="P:TP.Validators.ValidatedXPOObject.IsEditedRecord">
+            <summary>
+            Est-ce un record édité?
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.SetBLMessage(System.String)">
+            <summary>
+            Indique quel est le message d'erreur à retourner, expliquant la raison pour laquelle la logique business n'est pas respectée.
+            </summary>
+            <param name="inErrorMessage"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.AddBLWrongProperty(System.String)">
+            <summary>
+            Indique quelle est la propriété à changer dans l'objet courant pour que la logique business soit à nouveau respectée. 
+            </summary>
+            <param name="inProperty"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.RemoveBLWrongProperty(System.String)">
+            <summary>
+            Supprimer un message d'erreur. 
+            </summary>
+            <param name="inProperty"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.ClearBLWrongProperties">
+            <summary>
+            Efface toutes les propriétés incorrectes. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.UpdateBL(System.String)">
+            <summary>
+            Mise à jour de IDataError sur besoin spécifique. 
+            </summary>
+            <param name="inProperty"></param>
+        </member>
+        <member name="P:TP.Validators.ValidatedXPOObject.Error">
+            <summary>
+            Interface IDataError.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TP.Validators.ValidatedXPOObject.isValidateBLOverrided">
+            <summary>
+            Savoir si la méthode ValidateBL(boolean) a été surchargée dans la classe parent
+            </summary>
+        </member>
+        <member name="P:TP.Validators.ValidatedXPOObject.Item(System.String)">
+            <summary>
+            Interface IDataError.
+            </summary>
+            <param name="inProperty"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.ShowDictionary">
+            <summary>
+            Affichage du dictionnaire avec l'entièreté des propriétés et de leurs validateurs, pour debugger. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.CheckAttributes">
+            <summary>
+            CheckAttributes
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.GetValidators(System.String)">
+            <summary>
+            Retourne la liste des validateurs d'une propriété.
+            </summary>
+            <param name="inObjectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.GetDefault(System.Type)">
+            <summary>
+            GetDefault
+            </summary>
+            <param name="inType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.ReadOnly(System.String)">
+            <summary>
+            Détermine si une propriété est disponible en lecture-écriture.
+            </summary>
+            <param name="inObjectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.InvokeGetter(System.String)">
+            <summary>
+            Appel du get d'une propriété de l'extérieur de l'objet, pour le binding. 
+            </summary>
+            <param name="inObjectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.Getter(System.String)">
+            <summary>
+            A utiliser dans toutes les propriétés à valider ou a binder. 
+            </summary>
+            <param name="inObjectName"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.GetPrismaState">
+            <summary>
+            Retourne true si prisma est le maitre. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.GetProperties">
+            <summary>
+            Methode de débug
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.InvokeSetter(System.String,System.Object)">
+            <summary>
+            Permet de changer la valeur d'une propriété depuis l'extérieur de l'objet, pour le binding. 
+            </summary>
+            <param name="inObjectName"></param>
+            <param name="inValue"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.Setter(System.String,System.Object)">
+            <summary>
+            A utiliser dans toutes les propriétés à valider ou a binder. 
+            </summary>
+            <param name="inObjectName"></param>
+            <param name="inValue"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.AddNotificationPrisma(System.String)">
+            <summary>
+            Ajoute un événement à la liste des événements devant être notifiés. s
+            </summary>
+            <param name="inNotificationName"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.GetGuid(TP.Validators.ValidatedXPOObject)">
+            <summary>
+            Get the guid
+            </summary>
+            <param name="theObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.OnSaved">
+            <summary>
+            S'exécute après l'écriture. Utilisation d'une AUTRE session, sinon cycle :-)
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.GetObjectForNotification(System.String)">
+            <summary>
+            Obtient la ressource concernée par le changement. 
+            </summary>
+            <param name="inNotificationGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.GetObjectsForNotification(System.String)">
+            <summary>
+            Obtient les ressources concernées par le changement. 
+            </summary>
+            <param name="inNotificationGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.ObjectDisabledForNotification">
+            <summary>
+            Permet de supprimer des notifications pour certains objets, dans certains contextes. Exemple: check si on est une classe dérivée. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.AddUpdate(System.String,TP.Validators.IUpdatable)">
+            <summary>
+            Ajout d'une dépendence (binding).
+            </summary>
+            <param name="inPropertyName"></param>
+            <param name="inTarget"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.RemoveUpdate(System.String,TP.Validators.IUpdatable)">
+            <summary>
+            Suppression d'une dépendence (binding).
+            </summary>
+            <param name="inPropertyName"></param>
+            <param name="inTarget"></param>
+        </member>
+        <member name="F:TP.Validators.ValidatedXPOObject.syncVersion">
+            <summary>
+            syncVersion
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.LockObject">
+            <summary>
+            Lock l'objet pour tous les autres utilisateurs
+            </summary>
+            <returns>True si lock</returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.ViewObject">
+            <summary>
+            Indique si on peut consulter l'objet
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.SaveObject">
+            <summary>
+            Sauvegarde de l'objet
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.UnlockObject">
+            <summary>
+            unlock de l'objet, dans le cas où on avait eu un lock qu'il faut libérer. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatedXPOObject.ForceUnlockObject">
+            <summary>
+            forcer le délock de l'objet
+            </summary>
+        </member>
+        <member name="T:TP.Validators.ValidatorAttribute">
+            <summary>
+            Attribut de validation, qui indique qu'une propriété doit être validée. 
+            Il faut impérativement utiliser le Getter et Setter correspondants, défini dans la classe
+            ValidatedXPOObject.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.ValidatorAttribute.theValidator">
+            <summary>
+            Instance du validateur correspondant. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatorAttribute.#ctor(System.Type)">
+            <summary>
+            Attribut de validateur sans paramètre.
+            </summary>
+            <param name="inValidatorType"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatorAttribute.#ctor(System.Type,System.Object[])">
+            <summary>
+            Attribut de validateur avec paramètres.
+            </summary>
+            <param name="inValidatorType"></param>
+            <param name="args"></param>
+        </member>
+        <member name="T:TP.Validators.Validators">
+            <summary>
+            Inteface avec les validateurs et le binding automatique.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.theGridDictionary">
+            <summary>
+            theGridDictionary
+            </summary>
+        </member>
+        <member name="M:TP.Validators.Validators.Display(DevExpress.Xpf.Editors.BaseEdit,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Méthode de binding, qui affiche une propriété dans un éditeur.  
+            </summary>
+            <param name="inObject"></param>
+            <param name="inProperty"></param>
+            <param name="inEditor"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.Display(System.Windows.Controls.Label,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Méthode de binding, qui affiche une propriété dans un label.
+            </summary>
+            <param name="inLabel"></param>
+            <param name="inProperty"></param>
+            <param name="inObject"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.Connect(System.Windows.Controls.TextBox,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Méthode de binding, qui affiche une propriété dans un textbox
+            </summary>
+            <param name="inTextBox"></param>
+            <param name="inProperty"></param>
+            <param name="inObject"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.Display(System.Windows.Controls.TextBox,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Méthode de binding, qui affiche une propriété dans un label.
+            </summary>
+            <param name="inTextBox"></param>
+            <param name="inProperty"></param>
+            <param name="inObject"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.Display(System.Windows.Controls.TextBlock,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Méthode de binding, qui affiche une propriété dans un label.
+            </summary>
+            <param name="inTextBlock"></param>
+            <param name="inProperty"></param>
+            <param name="inObject"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.Display(DevExpress.Xpf.LayoutControl.LayoutItem,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Méthode de binding, qui affiche une propriété dans un label d'un layoutItem.
+            </summary>
+            <param name="inLayoutItem"></param>
+            <param name="inObject"></param>
+            <param name="inProperty"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.DisplayWithValidate(DevExpress.Xpf.Editors.BaseEdit,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Méthode de binding, qui affiche une propriété dans un éditeur.  
+            </summary>
+            <param name="inObject"></param>
+            <param name="inProperty"></param>
+            <param name="inEditor"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.DisplayWithValidate(TP.Validators.BLGroup,DevExpress.Xpf.Editors.BaseEdit,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Connecte un éditeur à une propriété.
+            </summary>
+            <param name="inBLGroup"></param>
+            <param name="inEditor"></param>
+            <param name="inObject"></param>
+            <param name="inProperty"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.Connect(TP.Validators.BLGroup,DevExpress.Xpf.Editors.BaseEdit,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Connecte un éditeur à une propriété.
+            </summary>
+            <param name="inBLGroup"></param>
+            <param name="inEditor"></param>
+            <param name="inObject"></param>
+            <param name="inProperty"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.Connect(DevExpress.Xpf.Editors.BaseEdit,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Méthode de binding, qui connecte une propriété à un éditeur. 
+            </summary>
+            <param name="inObject"></param>
+            <param name="inProperty"></param>
+            <param name="inEditor"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.Reconnect(DevExpress.Xpf.Editors.BaseEdit,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Changement du binding. Attention, il doit s'agir du même type d'objet (même validateurs et même business logic).
+            </summary>
+            <param name="inEditor"></param>
+            <param name="inObject"></param>
+            <param name="inProperty"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectInternal(DevExpress.Xpf.Editors.BaseEdit,TP.Validators.IValidatedObject,System.String,System.Boolean)">
+            <summary>
+            ConnectInternal
+            </summary>
+            <param name="inEditor"></param>
+            <param name="inObject"></param>
+            <param name="inProperty"></param>
+            <param name="inReadOnly"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.IsReadOnlyProp(DevExpress.Xpf.Editors.BaseEdit,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Associe une propriété booléenne au fait d'activer ou désactiver un éditeur.
+            </summary>
+            <param name="inEditor"></param>
+            <param name="inObject"></param>
+            <param name="inProperty"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.IsEnabledByProp(DevExpress.Xpf.Editors.BaseEdit,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Associe une propriété booléenne au fait d'activer ou désactiver un éditeur.
+            </summary>
+            <param name="inEditor"></param>
+            <param name="inObject"></param>
+            <param name="inProperty"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.IsEnabledByProp(System.Windows.Controls.Button,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Associe une propriété booléenne au fait d'activer ou désactiver un bouton. 
+            </summary>
+            <param name="inButton"></param>
+            <param name="inObject"></param>
+            <param name="inProperty"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.CleanDictionary">
+            <summary>
+            CleanDictionary
+            </summary>
+        </member>
+        <member name="M:TP.Validators.Validators.FindInDictionary(System.Object)">
+            <summary>
+            FindInDictionary
+            </summary>
+            <param name="inGrid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.Validators.grid_Unloaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            grid_Unloaded
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.lookUpEdit_PreviewKeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            lookUpEdit_PreviewKeyDown
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.lookUpEdit_PopupOpenedMinimal(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            lookUpEdit_PopupOpenedMinimal
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.lookUpEdit_PopupOpened(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            lookUpEdit_PopupOpened
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectLookUp(TP.Validators.BLGroup,DevExpress.Xpf.Grid.LookUp.LookUpEdit,System.Collections.Generic.IEnumerable{TP.Validators.IValidatedObject},TP.Validators.IValidatedObject,System.String,System.String,System.String[],System.String[])">
+            <summary>
+            Connecte un lookup a une collection et ajoute les objets correspondant à un BLGroup. 
+            </summary>
+            <param name="inBLGroup"></param>
+            <param name="inLookUpEdit"></param>
+            <param name="inLookUpCollection"></param>
+            <param name="inSelectedObject"></param>
+            <param name="inSelectedProperty"></param>
+            <param name="inShownProperty"></param>
+            <param name="inColumnsProperties"></param>
+            <param name="inColumnHeaders"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectLookUp(DevExpress.Xpf.Grid.LookUp.LookUpEdit,System.Collections.Generic.IEnumerable{TP.Validators.IValidatedObject},TP.Validators.IValidatedObject,System.String,System.String,System.String[],System.String[])">
+            <summary>
+            Connecte visuellement un objet à un LookUpEdit. 
+            </summary>
+            <param name="inLookUpCollection">Collection à connecter</param>
+            <param name="inSelectedObject">Objet qui possède la propriété où on stockera l'élément sélectionné</param>
+            <param name="inSelectedProperty">Propriété où on stockera l'élément sélectionné</param>
+            <param name="inLookUpEdit">LookupEdit à utiliser</param>
+            <param name="inColumnsProperties">Liste des propriétés de l'objet qui seront affichées dans les colonnes</param>
+            <param name="inColumnHeaders">Intitulés des colonnes</param>
+            <param name="inShownProperty">Propriété affichée dans le champ d'édition</param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectLookUpProp(TP.Validators.BLGroup,DevExpress.Xpf.Grid.LookUp.LookUpEdit,TP.Validators.IValidatedObject,System.String,TP.Validators.IValidatedObject,System.String,System.String,System.String[],System.String[])">
+            <summary>
+            Permet de connecter un Lookup a une collection contenue dans une propriété, et ajoute les objets correspondant à un BLGroup.
+            </summary>
+            <param name="inBLGroup"></param>
+            <param name="inLookUpEdit"></param>
+            <param name="inCollectionObject"></param>
+            <param name="inCollectionProperty"></param>
+            <param name="inSelectedObject"></param>
+            <param name="inSelectedProperty"></param>
+            <param name="inShownProperty"></param>
+            <param name="inColumnsProperties"></param>
+            <param name="inColumnHeaders"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ReconnectLookUpSelect(DevExpress.Xpf.Grid.LookUp.LookUpEdit,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Changement du binding de la propriété de sélection d'un lookupedit.
+            </summary>
+            <param name="inLookUpEdit"></param>
+            <param name="inSelectedObject"></param>
+            <param name="inSelectedProperty"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectLookUpPropAuto(DevExpress.Xpf.Grid.LookUp.LookUpEdit,TP.Validators.IValidatedObject,System.String,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Connecte un Lookup à une collection contenur dans une propriété.
+            </summary>
+            <param name="inLookUpEdit"></param>
+            <param name="inCollectionObject"></param>
+            <param name="inCollectionProperty"></param>
+            <param name="inSelectedObject"></param>
+            <param name="inSelectedProperty"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectLookUpProp(DevExpress.Xpf.Grid.LookUp.LookUpEdit,TP.Validators.IValidatedObject,System.String,TP.Validators.IValidatedObject,System.String,System.String,System.String[],System.String[])">
+            <summary>
+            Connecte un Lookup à une collection contenur dans une propriété.
+            </summary>
+            <param name="inLookUpEdit"></param>
+            <param name="inCollectionObject"></param>
+            <param name="inCollectionProperty"></param>
+            <param name="inSelectedObject"></param>
+            <param name="inSelectedProperty"></param>
+            <param name="inShownProperty"></param>
+            <param name="inColumnsProperties"></param>
+            <param name="inColumnHeaders"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectComboBoxEditProp(DevExpress.Xpf.Editors.ComboBoxEdit,TP.Validators.IValidatedObject,System.String,TP.Validators.IValidatedObject,System.String,System.String)">
+            <summary>
+            Connecter une comboboxedit à une propriété
+            </summary>
+            <param name="inComboBox"></param>
+            <param name="inCollectionObject"></param>
+            <param name="inCollectionProperty"></param>
+            <param name="inSelectedObject"></param>
+            <param name="inSelectedProperty"></param>
+            <param name="inShownProperty"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ReconnectLookUpProp(DevExpress.Xpf.Grid.LookUp.LookUpEdit,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Changement de la source du binding pour un lookupedit.
+            </summary>
+            <param name="inLookUpEdit"></param>
+            <param name="inCollectionObject"></param>
+            <param name="inCollectionProperty"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ReconnectLookUp(DevExpress.Xpf.Grid.LookUp.LookUpEdit,System.Collections.Generic.IEnumerable{TP.Validators.IValidatedObject})">
+            <summary>
+            Changement de la source du binding pour un lookupedit.
+            </summary>
+            <param name="inLookUpEdit"></param>
+            <param name="inLookUpCollection"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ChangeColumnWidth(DevExpress.Xpf.Grid.GridControl,System.String,System.Int32)">
+            <summary>
+            Permet d'adapter de façon statique la largeur d'une colonne. 
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inColumnHeader"></param>
+            <param name="inWidth"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ChangeColumnWidthByFieldname(DevExpress.Xpf.Grid.GridControl,System.String,System.Int32)">
+            <summary>
+            Permet d'adapter de façon statique la largeur d'une colonne. 
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inFieldname"></param>
+            <param name="inWidth"></param>
+        </member>
+        <member name="T:TP.Validators.Validators.kEnumStyle">
+            <summary>
+            Styles de cellule possibles pour ChangeColumnStyle
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumStyle.ShortDate">
+            <summary>
+            Date courte (10/10/2010)
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumStyle.LongDate">
+            <summary>
+            Date longue (lundi 10 octobre 2010)
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumStyle.DateTime">
+            <summary>
+            Date et heure (10/10/2010 10h10)
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumStyle.Text">
+            <summary>
+            Texte sans formatage
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumStyle.DropDown">
+            <summary>
+            LookupEdit
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumStyle.Badge">
+            <summary>
+            Numéro de badge TP
+            </summary>
+        </member>
+        <member name="M:TP.Validators.Validators.GetColumn(DevExpress.Xpf.Grid.GridControl,System.String)">
+            <summary>
+            Retourne un objet de type colonne.
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inColumnHeader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.Validators.ChangeColumnStyle(DevExpress.Xpf.Grid.GridControl,System.String,TP.Validators.Validators.kEnumStyle,TP.Validators.IValidatedObject,System.String)">
+            <summary>
+            Adapte le style d'affichage d'une colonne. 
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inColumnHeader"></param>
+            <param name="inStyle"></param>
+            <param name="inCollectionObject"></param>
+            <param name="inCollectionProperty"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.RemoveColumns(DevExpress.Xpf.Grid.GridControl,System.String[])">
+            <summary>
+            Supprime des colonnes de la table.
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inFieldnames"></param>
+        </member>
+        <member name="T:TP.Validators.Validators.kEnumUnboundStyle">
+            <summary>
+            Styles de cellule possibles pour UnbindColumn
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumUnboundStyle.Date">
+            <summary>
+            Date.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumUnboundStyle.WrappedText">
+            <summary>
+            Champ texte avec wrapping.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumUnboundStyle.Text">
+            <summary>
+            Champ texte.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumUnboundStyle.Object">
+            <summary>
+            Champ objet.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumUnboundStyle.Bool">
+            <summary>
+            Champ booléen.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumUnboundStyle.Numeric">
+            <summary>
+            Champ numérique
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumUnboundStyle.None">
+            <summary>
+            N'est pas unbound
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumUnboundStyle.Image">
+            <summary>
+            Image
+            </summary>
+        </member>
+        <member name="F:TP.Validators.Validators.kEnumUnboundStyle.Decimal">
+            <summary>
+            Champ numérique à virgule
+            </summary>
+        </member>
+        <member name="M:TP.Validators.Validators.EditableColumn(DevExpress.Xpf.Grid.GridControl,System.Int32,System.String,System.String,TP.Validators.Validators.kEnumUnboundStyle)">
+            <summary>
+            Crée une colonne éditable. 
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inColumnIndex"></param>
+            <param name="inColumnField"></param>
+            <param name="inColumnHeader"></param>
+            <param name="inStyle"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.NoFocusColumn(DevExpress.Xpf.Grid.GridControl,System.String,System.Boolean)">
+            <summary>
+            Indique qu'il s'agit d'une colonne ne pouvant pas obtenir le "focus". 
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inColumnHeader"></param>
+            <param name="inFocusAllowed"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.UnboundColumn(DevExpress.Xpf.Grid.GridControl,System.Int32,System.String,System.String,TP.Validators.Validators.kEnumUnboundStyle,System.Boolean)">
+            <summary>
+            Crée une colonne non-liée, dont le contenu sera géré par l'événement inGrid.CustomUnboundColumnData.
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inColumnIndex"></param>
+            <param name="inColumnField"></param>
+            <param name="inColumnHeader"></param>
+            <param name="inStyle"></param>
+            <param name="isEditable"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.UnboundColumn(DevExpress.Xpf.Grid.GridControl,System.Int32,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Crée une colonne non-liée, dont le contenu sera géré par l'événement inGrid.CustomUnboundColumnData.
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inColumnIndex"></param>
+            <param name="inColumnField"></param>
+            <param name="inColumnHeader"></param>
+            <param name="inTemplate"></param>
+            <param name="isEditable"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectGridCol(TP.Validators.BLGroup,DevExpress.Xpf.Grid.GridControl,System.Collections.Generic.IEnumerable{TP.Validators.IValidatedObject},System.String[],System.String[])">
+            <summary>
+            Connecte une grille a une collection, et la place dans un BLGroup.
+            </summary>
+            <param name="inBLGroup"></param>
+            <param name="inGrid"></param>
+            <param name="inCollection"></param>
+            <param name="inColumnsProperties"></param>
+            <param name="inColumnHeaders"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectGridColSelect(TP.Validators.BLGroup,DevExpress.Xpf.Grid.GridControl,System.Collections.Generic.IEnumerable{TP.Validators.IValidatedObject},TP.Validators.IValidatedObject,System.String,System.String[],System.String[])">
+            <summary>
+            Connecte une grille a une collection, et place la ligne séléctionnée dans la propriété inSelectedProperty de inSelectedObject.
+            </summary>
+            <param name="inBLGroup"></param>
+            <param name="inGrid"></param>
+            <param name="inCollection"></param>
+            <param name="inSelectedObject"></param>
+            <param name="inSelectedProperty"></param>
+            <param name="inColumnsProperties"></param>
+            <param name="inColumnHeaders"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectGridCol(DevExpress.Xpf.Grid.GridControl,System.Collections.Generic.IEnumerable{TP.Validators.IValidatedObject},System.String[],System.String[])">
+            <summary>
+            Connecte une grille à une collection.
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inCollection"></param>
+            <param name="inColumnsProperties"></param>
+            <param name="inColumnHeaders"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectGridColSelect(DevExpress.Xpf.Grid.GridControl,System.Collections.Generic.IEnumerable{TP.Validators.IValidatedObject},TP.Validators.IValidatedObject,System.String,System.String[],System.String[],DevExpress.Xpf.Grid.GridViewNavigationStyle)">
+            <summary>
+            Connecte visuellement un objet à une grille. 
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inCollection"></param>
+            <param name="inColumnsProperties"></param>
+            <param name="inColumnHeaders"></param>
+            <param name="inSelectedObject"></param>
+            <param name="inSelectedProperty"></param>
+            <param name="customViewNavigation"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectGridProp(TP.Validators.BLGroup,DevExpress.Xpf.Grid.GridControl,TP.Validators.IValidatedObject,System.String,System.String[],System.String[])">
+            <summary>
+            Connection d'une grille à une collection sans garder la sélection courante. 
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inCollectionObject"></param>
+            <param name="inCollectionProperty"></param>
+            <param name="inColumnsProperties"></param>
+            <param name="inColumnHeaders"></param>
+            <param name="inBLGroup"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectGridPropSelect(TP.Validators.BLGroup,DevExpress.Xpf.Grid.GridControl,TP.Validators.IValidatedObject,System.String,TP.Validators.IValidatedObject,System.String,System.String[],System.String[])">
+            <summary>
+            Connection d'une grille a une collection contenue dans une propriété, en mettant la ligne sélectionnée dans l'objet inSelected 
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inCollectionObject"></param>
+            <param name="inCollectionProperty"></param>
+            <param name="inSelectedObject"></param>
+            <param name="inSelectedProperty"></param>
+            <param name="inColumnsProperties"></param>
+            <param name="inColumnHeaders"></param>
+            <param name="inBLGroup"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectGridProp(DevExpress.Xpf.Grid.GridControl,TP.Validators.IValidatedObject,System.String,System.String[],System.String[])">
+            <summary>
+            Connection d'une grille à une collection sans garder la sélection courante. 
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inCollectionObject"></param>
+            <param name="inCollectionProperty"></param>
+            <param name="inColumnsProperties"></param>
+            <param name="inColumnHeaders"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectGridPropSelect(DevExpress.Xpf.Grid.GridControl,TP.Validators.IValidatedObject,System.String,TP.Validators.IValidatedObject,System.String,System.String[],System.String[],DevExpress.Xpf.Grid.GridViewNavigationStyle)">
+            <summary>
+            Connection d'une grille a une collection contenue dans une propriété, en mettant la ligne sélectionnée dans l'objet inSelected 
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inCollectionObject"></param>
+            <param name="inCollectionProperty"></param>
+            <param name="inSelectedObject"></param>
+            <param name="inSelectedProperty"></param>
+            <param name="inColumnsProperties"></param>
+            <param name="inColumnHeaders"></param>
+            <param name="customViewNavigation"></param>
+        </member>
+        <member name="M:TP.Validators.Validators.ConnectGridPropSelectAuto(DevExpress.Xpf.Grid.GridControl,TP.Validators.IValidatedObject,System.String,TP.Validators.IValidatedObject,System.String,DevExpress.Xpf.Grid.GridViewNavigationStyle)">
+            <summary>
+            Connection d'une grille a une collection contenue dans une propriété, en mettant la ligne sélectionnée dans l'objet inSelected 
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inCollectionObject"></param>
+            <param name="inCollectionProperty"></param>
+            <param name="inSelectedObject"></param>
+            <param name="inSelectedProperty"></param>
+            <param name="customViewNavigation"></param>
+        </member>
+        <member name="T:TP.Validators.ValidatorType">
+            <summary>
+            Classe dont les validateurs doivent hériter. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.ValidatorType.Validate(System.Object)">
+            <summary>
+            Méthode de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatorType.GetErrorMessage">
+            <summary>
+            Méthode qui détermine le message d'erreur renvoyé visuellement à l'utilisateur.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatorType.GetErrorType">
+            <summary>
+            Méthode qui spécifie le type d'erreur, afin de permettre un retour visuel.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.ValidatorType.BaseEdit_Validate(System.Object,DevExpress.Xpf.Editors.ValidationEventArgs)">
+            <summary>
+            Validation pour les éditeurs descendant de BaseEdit.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Validators.ValidatorType.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.VAlpha">
+            <summary>
+            Validateur qui s'assure que l'objet est une chaîne alphanumérique.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VAlpha.Validate(System.Object)">
+            <summary>
+            Validateur qui s'assure que l'objet est une chaîne alphanumérique.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VAlpha.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VAlpha.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.VCurrency">
+            <summary>
+            Validateur qui s'assure que c'est numérique.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VCurrency.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.VEMail">
+            <summary>
+            Validateur qui teste s'il s'agit bien d'un string contenant une adresse e-mail.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VEMail.Validate(System.Object)">
+            <summary>
+            Validateur qui teste s'il s'agit bien d'un string contenant une adresse e-mail.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VEMail.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VEMail.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.VFloat">
+            <summary>
+            Validateur qui s'assure que c'est numérique.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VFloat.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.VHour">
+            <summary>
+            Validateur d'heure. 
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VHour.theErrorMessage">
+            <summary>
+            theErrorMessage
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VHour.theMin">
+            <summary>
+            theMin
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VHour.theMax">
+            <summary>
+            theMax
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VHour.#ctor">
+            <summary>
+            Constructeur du validateur, qui stocke le minimum et le maximum.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VHour.Validate(System.Object)">
+            <summary>
+            Fonction de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VHour.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VHour.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VHour.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.MinuteConverter">
+            <summary>
+            Classe de conversion pour l'affichage des minutes et des heures. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.MinuteConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Conversion pour l'affichage en 2 caractères et gestion du null / "".
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.MinuteConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Conversion non-implémentée.
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.VMinute">
+            <summary>
+            Validateur qui s'assure que c'est numérique.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VMinute.#ctor">
+            <summary>
+            Constructeur du validateur, qui stocke le minimum et le maximum.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VMinute.Validate(System.Object)">
+            <summary>
+            Fonction de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VMinute.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VMinute.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VMinute.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.VNonEmpty">
+            <summary>
+            Validateur qui s'assure que l'objet n'est pas une chaine vide.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VNonEmpty.Validate(System.Object)">
+            <summary>
+            Validateur qui s'assure que l'objet n'est pas une chaine vide.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VNonEmpty.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VNonEmpty.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.VNonNull">
+            <summary>
+            Validateur qui s'assure que l'objet n'est pas null.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VNonNull.Validate(System.Object)">
+            <summary>
+            Validateur qui s'assure que l'objet n'est pas null.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VNonNull.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VNonNull.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.VNoSpecialCharacter">
+            <summary>
+            Validateur qui s'assure que l'objet est une chaîne sans caractères spéciaux. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VNoSpecialCharacter.Validate(System.Object)">
+            <summary>
+            Validateur qui s'assure que l'objet est une chaîne sans caractères spéciaux. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VNoSpecialCharacter.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VNoSpecialCharacter.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.VNumeric">
+            <summary>
+            Validateur qui s'assure que c'est numérique.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VNumeric.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructeur du validateur, qui stocke le minimum et le maximum.
+            </summary>
+            <param name="inMin"></param>
+            <param name="inMax"></param>
+        </member>
+        <member name="M:TP.Validators.VNumeric.#ctor">
+            <summary>
+            Constructeur du validateur qui vérifie simplment si c'est un nombre.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VNumeric.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="T:TP.Validators.VNumericBase">
+            <summary>
+            Validateur qui s'assure que c'est numérique.
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VNumericBase.theErrorMessage">
+            <summary>
+            theErrorMessage
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VNumericBase.theMin">
+            <summary>
+            theMin
+            </summary>
+        </member>
+        <member name="F:TP.Validators.VNumericBase.theMax">
+            <summary>
+            theMax
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VNumericBase.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructeur du validateur, qui stocke le minimum et le maximum.
+            </summary>
+            <param name="inMin"></param>
+            <param name="inMax"></param>
+        </member>
+        <member name="M:TP.Validators.VNumericBase.#ctor">
+            <summary>
+            Constructeur du validateur qui vérifie simplment si c'est un nombre.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VNumericBase.Validate(System.Object)">
+            <summary>
+            Fonction de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VNumericBase.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VNumericBase.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.VPhoneNumber">
+            <summary>
+            Validateur qui s'assure que c'est un numéro de téléphone.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VPhoneNumber.#ctor">
+            <summary>
+            Constructeur du validateur qui s'assure que c'est un numéro de téléphone.
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VPhoneNumber.Validate(System.Object)">
+            <summary>
+            Fonction de validation.
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VPhoneNumber.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VPhoneNumber.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VPhoneNumber.AddFeatures(DevExpress.Xpf.Editors.BaseEdit)">
+            <summary>
+            Modifie les propriétés de l'éditeur (ex: masque d'édition).
+            </summary>
+            <param name="inEditor"></param>
+        </member>
+        <member name="M:TP.Validators.VPhoneNumber.BaseEdit_Validate(System.Object,DevExpress.Xpf.Editors.ValidationEventArgs)">
+            <summary>
+            On surcharge l'événement de validation pour introduire automatiquement +32 quand on tappe 0. 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:TP.Validators.VTest">
+            <summary>
+            Validateur de test (interne).
+            </summary>
+        </member>
+        <member name="M:TP.Validators.VTest.Validate(System.Object)">
+            <summary>
+            Validateur de test (interne).
+            </summary>
+            <param name="inObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VTest.GetErrorType">
+            <summary>
+            Type d'erreur à renvoyer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Validators.VTest.GetErrorMessage">
+            <summary>
+            Message d'erreur. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Validators.XPOLock">
+            <summary>
+            Objet permettant de ne pas utiliser la stratégie de locking XPO standard. A la place, nous définissons les locks nous-même. 
+            </summary>
+        </member>
+        <member name="P:TP.Validators.XPOLock.lockedObject">
+            <summary>
+            Guid de l'objet qui est locké.
+            </summary>
+        </member>
+        <member name="P:TP.Validators.XPOLock.lockVersion">
+            <summary>
+            Version du verrou. 
+            </summary>
+        </member>
+        <member name="P:TP.Validators.XPOLock.isLocked">
+            <summary>
+            Booléen indiquand si c'est effectivement locké
+            </summary>
+        </member>
+        <member name="P:TP.Validators.XPOLock.lockedBy">
+            <summary>
+            nom de la ressource ayant locké l'objet. Peut être utile pour dire à l'utilisateur qui est fautif. 
+            </summary>
+        </member>
+        <member name="M:TP.Validators.XPOLock.#ctor(DevExpress.Xpo.Session)">
+            <summary>
+            Constructeur.
+            </summary>
+            <param name="inSession"></param>
+        </member>
+    </members>
+</doc>

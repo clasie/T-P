@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InterfaceSSO</name>
+    </assembly>
+    <members>
+        <member name="T:TP.SSO.kEnumEtatSSO">
+            <summary>
+            Codes d'erreur pour le SSO. A compléter en fonction de tous les cas possibles.
+            </summary>
+        </member>
+        <member name="F:TP.SSO.kEnumEtatSSO.OK">
+            <summary>
+            Pas d'erreur, utilisateur connecté sans problème.
+            </summary>
+        </member>
+        <member name="F:TP.SSO.kEnumEtatSSO.ErreurDB">
+            <summary>
+            Problème de connexion à la DB SSO.
+            </summary>
+        </member>
+        <member name="T:TP.SSO.InterfaceSSO">
+            <summary>
+            Classe exemple qui réalise un faux login SSO.
+            </summary>
+        </member>
+        <member name="P:TP.SSO.InterfaceSSO.Instance">
+            <summary>
+            Méthode qui retourne une instance de la classe, comme défini dans le modèle du 
+            singleton.
+            </summary>
+        </member>
+        <member name="F:TP.SSO.InterfaceSSO.theDataLayer">
+            <summary>
+            Il est indispensable d'avoir une data layer specifique, afin que chaque module puisse utiliser une DB différente (SSO, GED, ...).
+            </summary>
+        </member>
+        <member name="M:TP.SSO.InterfaceSSO.ConnectDB">
+            <summary>
+            Méthode de connection à la DB
+            </summary>
+        </member>
+        <member name="M:TP.SSO.InterfaceSSO.LectureRegistryKey">
+            <summary>
+            Méthode lisant la clé de registre afin de lire l'information dans le tokenSSO
+            </summary>
+        </member>
+        <member name="M:TP.SSO.InterfaceSSO.#ctor">
+            <summary>
+            Constructeur qui crée des données de démo. A remplacer par le véritable code du SSO.
+            </summary>
+        </member>
+        <member name="P:TP.SSO.InterfaceSSO.Etat">
+            <summary>
+            Indique l'état courant. 
+            </summary>
+        </member>
+        <member name="P:TP.SSO.InterfaceSSO.Utilisateur">
+            <summary>
+            nom de l'utilisateur connecté. 
+            Exemple: "Pierre Dupond" pour l'utilisateur Pierre Dupond.
+            </summary>
+        </member>
+        <member name="P:TP.SSO.InterfaceSSO.UtilisateurReel">
+            <summary>
+            nom de l'utilisateur qui a lancé la session simulée. 
+            UtilisateurReel est null si on est pas en mode "utilisateur simulé".
+            </summary>
+        </member>
+        <member name="P:TP.SSO.InterfaceSSO.Login">
+            <summary>
+            Login de l'utilisateur connecté. 
+            Exemple: "pdupond" pour l'utilisateur Pierre Dupond.
+            </summary>
+        </member>
+        <member name="P:TP.SSO.InterfaceSSO.LoginReel">
+            <summary>
+            Login de l'utilisateur qui a lancé la session simulée. 
+            UtilisateurReel est null si on est pas en mode "utilisateur simulé".
+            </summary>
+        </member>
+        <member name="P:TP.SSO.InterfaceSSO.TitreApplicationGenerique">
+            <summary>
+            Titre de l'application. 
+            Exemple: "gestion des ressources" pour l'application gestion des ressources.
+            </summary>
+        </member>
+        <member name="P:TP.SSO.InterfaceSSO.DivisionsAccessibles">
+            <summary>
+            Liste des sociétés/divisions auxquelles le compte doit avoir accès. 
+            </summary>
+        </member>
+        <member name="P:TP.SSO.InterfaceSSO.DivisionCourante">
+            <summary>
+            Société/division à laquelle il faut se connecter par défaut.
+            </summary>
+        </member>
+        <member name="P:TP.SSO.InterfaceSSO.ApplicationCourante">
+            <summary>
+            Application lancée.
+            </summary>
+        </member>
+        <member name="P:TP.SSO.InterfaceSSO.ModulesActifs">
+            <summary>
+            Liste des modules qui doivent être chargés.
+            </summary>
+        </member>
+        <member name="P:TP.SSO.InterfaceSSO.LoginsDisponibles">
+            <summary>
+            Liste des logins qui peuvent être assignés aux utilisateurs.
+            </summary>
+        </member>
+        <member name="M:TP.SSO.InterfaceSSO.OperationsInactives(System.Guid)">
+            <summary>
+            Liste des opérations à désactiver lorsque l'on est dans le contexte de la division "inDivision". Données de démo à remplacer. 
+            </summary>
+        </member>
+        <member name="M:TP.SSO.InterfaceSSO.CleanInterfaceSSO(System.Boolean)">
+            <summary>
+            Méthode à appeler lors de la fermeture de l'appgen afin de désactiver la tokenSSO
+            </summary>
+            <param name="debug"></param>
+        </member>
+        <member name="M:TP.SSO.InterfaceSSO.BarMinimised">
+            <summary>
+            Méthode indiquant si la barmanager doit être réduite
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSO.InterfaceSSO.ChangeContexte(System.Boolean,System.Guid)">
+            <summary>
+            Méthode gérant la changement de division
+            </summary>
+            <param name="debug"></param>
+            <param name="inDivision"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TP.SSO.Operation">
+            <summary>
+            Cette classe représente une opération à désactiver. C'est une paire 
+            module-opération, indiquant à quel module l'opération à désactiver 
+            appartient. 
+            </summary>
+        </member>
+        <member name="M:TP.SSO.Operation.#ctor(System.String,System.String)">
+            <summary>
+            Constructeur sur base du nom de module et de l'opération. 
+            </summary>
+            <param name="inModule"></param>
+            <param name="inOperation"></param>
+        </member>
+        <member name="F:TP.SSO.Operation.Module">
+            <summary>
+            Chaîne de caractère représentant le module.
+            </summary>
+        </member>
+        <member name="F:TP.SSO.Operation.NomOperation">
+            <summary>
+            Nom de l'opération.
+            </summary>
+        </member>
+    </members>
+</doc>

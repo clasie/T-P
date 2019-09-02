@@ -1,0 +1,915 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GestionDocuments</name>
+    </assembly>
+    <members>
+        <member name="T:GestionDocuments.ConstantesGED">
+            <summary>
+            Classe contenant les constantes pour identifier les types de document à sauver
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kCarteIdentite">
+            <summary>
+            Constante contenant le guid de la catégorie de document pour la sauvegarde des cartes d'identités
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kCompositionMenage">
+            <summary>
+            Constante contenant le guid de la catégorie de document pour la sauvegarde des compositions de ménages
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFormulaireIntranet">
+            <summary>
+            Constante contenant le guid de la catégorie de document pour la sauvegarde des formulaire intranet
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kProcedureIntranet">
+            <summary>
+            Constante contenant le guid de la catégorie de document pour la sauvegarde des procédures intranet
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kDocQualiteIntranet">
+            <summary>
+            Constante contenant le guid de la catégorie de document pour la sauvegarde des documents Qualmite TP intranet
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterPDF">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents PDF
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterImageBMP">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents BMP,JPG
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterImageJPG">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents BMP,JPG
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterImageJPEG">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents BMP,JPG
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterImageDWG">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents BMP,JPG
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterWord">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents DOC
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterWord2010">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents DOCX
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterExcell">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents XLS
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterExcell2010">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents XLSX
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterPpt">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents PPT
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterPpt2010">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents PPTX
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterTxt">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents TXT
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterRtf">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents RTF
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterXml">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents XML
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterDat">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents DAT
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterXsd">
+            <summary>
+            Constante contenant le filtre du showdialog pour les documents XSD
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.ConstantesGED.kFilterAllFiles">
+            <summary>
+            Constante contenant le filtre du showdialog pour tous les documents
+            </summary>
+        </member>
+        <member name="T:GestionDocuments.GEDWS">
+            <summary>
+            Classe permettant de gérer le stockage des documents à travers la GED.
+            </summary>
+        </member>
+        <member name="M:GestionDocuments.GEDWS.SauvegarderDocument(System.Guid,System.Guid@,System.Guid,System.String)">
+            <summary>
+            Cette méthode permettra de sauver les document venant de l'application ressource
+            Cette méthode ouvrira une fenêtre permetant d'ajouter un document
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="kTypededocument">Constante correspondant au type de document(voir classe ConstantesGed.cs)</param>
+            <param name="idTypeDocu">guid du document passé en réféence (sortira un Guid.Empty si il y a un soucis lors de la sauvegarde)</param>
+            <param name="divisionCourante">Guid de la division courante</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            14 : Impossible d’initialiser une session 
+            0 : Sauvegarde d’un document réussie
+            21 : Annulation de la sélection d’un fichier
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWS.SauvegarderDocument(System.Guid,System.Guid,System.Guid@,System.Guid,System.String)">
+            <summary>
+            Cette méthode permettra de sauver les document venant de l'application ressource
+            Cette méthode ouvrira une fenêtre permetant d'ajouter un document
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="idRessource">Guid de la ressource</param>
+            <param name="kTypededocument">Constante correspondant au type de document(voir classe ConstantesGed.cs)</param>
+            <param name="idTypeDocu">guid du document passé en réféence (sortira un Guid.Empty si il y a un soucis lors de la sauvegarde)</param>
+            <param name="divisionCourante">Guid de la division courante</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            14 : Impossible d’initialiser une session 
+            0 : Sauvegarde d’un document réussie
+            21 : Annulation de la sélection d’un fichier
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWS.SauvegarderDocument(System.String)">
+            <summary>
+            Cette méthode permettra de sauver les document venant de l'application wGED(PLAN)
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="dataXML">string contenant la structure xml</param>
+            <returns>
+            14 : Problème de connection à la base de données GED
+            Guid du document : Sauvegarde d’un document réussie
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWS.RemplacerDocument(System.Guid,System.String)">
+            <summary>
+            Cette méthode ouvre la même fenêtre que lors de l'enregsitrement.
+            Tous les paramètres précisés lors de l'enregistrement seront automatiquement chargés dans la fenêtre et seront éventuellemnt modifiable.
+            Il y aura également la possibilité de modifier le document.
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            0 : Remplacement d’un document réussi
+            31 : Annulation remplacement fichier
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            16 : Le document est déjà archivé
+            33 : Problème lors du remplacement du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWS.RemplacerDocument(System.String,System.String)">
+            <summary>
+            Cette méthode permettra de remplacer les document venant de l'application wGED(PLAN)
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <param name="dataXML">string contenant la structure xml</param>
+            <returns>
+            14 : Problème de connection à la base de données GED
+            15 : le document n’existe plus
+            Guid du document : Sauvegarde d’un document réussie
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+            
+        </member>
+        <member name="M:GestionDocuments.GEDWS.ArchiverDocument(System.Guid,System.String)">
+            <summary>
+            Cette méthode permet d'archiver un document, il n'y a pas de suppresion propremant dite des documents
+            Un document est archivé et sera encore disponible dans la db pendant un certain temps.
+            On mettra en place une routirne permettant de supprimer definitivement ces documents.
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            0 : Archivage document réussi
+            16 : Le document est déjà archivé
+            41 : Problème lors de l’archivage du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWS.ArchiverDocument(System.String,System.String)">
+            <summary>
+            Cette méthode permet d'archiver un document, il n'y a pas de suppresion propremant dite des documents
+            Un document est archivé et sera encore disponible dans la db pendant un certain temps.
+            On mettra en place une routirne permettant de supprimer definitivement ces documents.
+            </summary>
+            <param name="idDocument">string contenant le guid du document</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            0 : Archivage document réussi
+            16 : Le document est déjà archivé
+            41 : Problème lors de l’archivage du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWS.VisualiserDocument(System.Guid)">
+            <summary>
+            Cette méthode permettra de visualiser un document
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <returns>
+            0 : Visualisation du document réussie
+            51 : Problème lors de la visualisation du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWS.VisualiserDocument(System.Guid,System.String)">
+            <summary>
+            Cette méthode permettra de visualiser un document
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <param name="username">Nom utilisateur</param>
+            <returns>
+            0 : Visualisation du document réussie
+            51 : Problème lors de la visualisation du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWS.VisualiserDocument(System.String,System.String,System.String)">
+            <summary>
+            Cette méthode permettra de visualiser un document
+            </summary>
+            <param name="idDocument">string contenant le Guid du document</param>
+            <param name="table">nom de la table qui contient le fichier</param>
+            <param name="username">nom utilisateur</param>
+            <returns>
+            0 : Visualisation du document réussie
+            51 : Problème lors de la visualisation du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWS.ReadXMLDocu(System.Xml.XmlDocument,TP.GED.GED.Document,TP.GED.GED.Version,TP.GED.GED.Fichier,DevExpress.Xpo.Session,TP.GED.GED.Categorie@)">
+            <summary>
+            Méthode de lecture du fichier XML
+            </summary>
+            <param name="doc">xml document</param>
+            <param name="d">Document</param>
+            <param name="v">Version</param>
+            <param name="f">Fichier</param>
+            <param name="ss">session</param>
+            <param name="c">Catégorie</param>
+            <returns></returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWS.InitDAL">
+            <summary>
+            Méthode permettant d'initialiser la connection XPO
+            </summary>
+            <returns>
+            0 : Connexion DB réussie
+            11 : Fichier de configuration non présent
+            12 : Fichier de configuration incorrect
+            13 : Connexion à la DB impossible
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWS.Serialize(System.Object)">
+            <summary>
+            Méthode de sérialisation du fichier xml
+            </summary>
+            <param name="Obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWS.Deserialize(System.String)">
+            <summary>
+            Méthode de désérialisation du fichier xml
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GestionDocuments.GEDWSold">
+            <summary>
+            Classe permettant de gérer le stockage des documents à travers la GED.
+            </summary>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.#ctor">
+            <summary>
+            constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.Finalize">
+            <summary>
+            Destructeur de la classe
+            </summary>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.GetInstanceGED">
+            <summary>
+            get instance de la classe singleton
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.SauvegarderDocument(System.Guid,System.Guid@,System.Guid,System.String)">
+            <summary>
+            Cette méthode permettra de sauver les document venant de l'application ressource
+            Cette méthode ouvrira une fenêtre permetant d'ajouter un document
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="kTypededocument">Constante correspondant au type de document(voir classe ConstantesGed.cs)</param>
+            <param name="idTypeDocu">guid du document passé en réféence (sortira un Guid.Empty si il y a un soucis lors de la sauvegarde)</param>
+            <param name="divisionCourante">Guid de la division courante</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            14 : Impossible d’initialiser une session 
+            0 : Sauvegarde d’un document réussie
+            21 : Annulation de la sélection d’un fichier
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.SauvegarderDocument(System.Guid,System.Guid,System.Guid@,System.Guid,System.String)">
+            <summary>
+            Cette méthode permettra de sauver les document venant de l'application ressource
+            Cette méthode ouvrira une fenêtre permetant d'ajouter un document
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="idRessource">Guid de la ressource</param>
+            <param name="kTypededocument">Constante correspondant au type de document(voir classe ConstantesGed.cs)</param>
+            <param name="idTypeDocu">guid du document passé en réféence (sortira un Guid.Empty si il y a un soucis lors de la sauvegarde)</param>
+            <param name="divisionCourante">Guid de la division courante</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            14 : Impossible d’initialiser une session 
+            0 : Sauvegarde d’un document réussie
+            21 : Annulation de la sélection d’un fichier
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.SauvegarderDocument(System.String)">
+            <summary>
+            Cette méthode permettra de sauver les document venant de l'application wGED(PLAN)
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="dataXML">string contenant la structure xml</param>
+            <returns>
+            14 : Problème de connection à la base de données GED
+            Guid du document : Sauvegarde d’un document réussie
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.RemplacerDocument(System.Guid,System.String)">
+            <summary>
+            Cette méthode ouvre la même fenêtre que lors de l'enregsitrement.
+            Tous les paramètres précisés lors de l'enregistrement seront automatiquement chargés dans la fenêtre et seront éventuellemnt modifiable.
+            Il y aura également la possibilité de modifier le document.
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            0 : Remplacement d’un document réussi
+            31 : Annulation remplacement fichier
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            16 : Le document est déjà archivé
+            33 : Problème lors du remplacement du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.RemplacerDocument(System.String,System.String)">
+            <summary>
+            Cette méthode permettra de remplacer les document venant de l'application wGED(PLAN)
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <param name="dataXML">string contenant la structure xml</param>
+            <returns>
+            14 : Problème de connection à la base de données GED
+            15 : le document n’existe plus
+            Guid du document : Sauvegarde d’un document réussie
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+            
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.ArchiverDocument(System.Guid,System.String)">
+            <summary>
+            Cette méthode permet d'archiver un document, il n'y a pas de suppresion propremant dite des documents
+            Un document est archivé et sera encore disponible dans la db pendant un certain temps.
+            On mettra en place une routirne permettant de supprimer definitivement ces documents.
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            0 : Archivage document réussi
+            16 : Le document est déjà archivé
+            41 : Problème lors de l’archivage du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.UserArchiverDocument(System.String,System.String)">
+            <summary>
+            Cette méthode permet d'archiver un document, il n'y a pas de suppresion propremant dite des documents
+            Un document est archivé et sera encore disponible dans la db pendant un certain temps.
+            On mettra en place une routirne permettant de supprimer definitivement ces documents.
+            </summary>
+            <param name="idDocument">string contenant le guid du document</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            0 : Archivage document réussi
+            16 : Le document est déjà archivé
+            41 : Problème lors de l’archivage du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.VisualiserDocument(System.Guid)">
+            <summary>
+            Cette méthode permettra de visualiser un document
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <returns>
+            0 : Visualisation du document réussie
+            51 : Problème lors de la visualisation du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.VisualiserDocument(System.Guid,System.String)">
+            <summary>
+            Cette méthode permettra de visualiser un document
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <param name="username"></param>
+            <returns>
+            0 : Visualisation du document réussie
+            51 : Problème lors de la visualisation du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.VisualiserDocument(System.String,System.String,System.String)">
+            <summary>
+            Cette méthode permettra de visualiser un document
+            </summary>
+            <param name="idDocument">string contenant le Guid du document</param>
+            <param name="table">nom de la table qui contient le fichier</param>
+            <param name="username">nom utilisateur</param>
+            <returns>
+            0 : Visualisation du document réussie
+            51 : Problème lors de la visualisation du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.ReadXMLDocu(System.Xml.XmlDocument,TP.GED.GED.Document,TP.GED.GED.Version,TP.GED.GED.Fichier,DevExpress.Xpo.Session,TP.GED.GED.Categorie@)">
+            <summary>
+            Méthode de lecture du fichier XML
+            </summary>
+            <param name="doc">xml document</param>
+            <param name="d">Document</param>
+            <param name="v">Version</param>
+            <param name="f">Fichier</param>
+            <param name="ss">session</param>
+            <param name="c">Catégorie</param>
+            <returns></returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.InitDAL">
+            <summary>
+            Méthode permettant d'initialiser la connection XPO
+            </summary>
+            <returns>
+            0 : Connexion DB réussie
+            11 : Fichier de configuration non présent
+            12 : Fichier de configuration incorrect
+            13 : Connexion à la DB impossible
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.Serialize(System.Object)">
+            <summary>
+            Méthode de sérialisation du fichier xml
+            </summary>
+            <param name="Obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GestionDocuments.GEDWSold.Deserialize(System.String)">
+            <summary>
+            Méthode de désérialisation du fichier xml
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GestionDocuments.GED">
+            <summary>
+            Classe permettant de gérer le stockage des documents à travers la GED.
+            </summary>
+        </member>
+        <member name="M:GestionDocuments.GED.#ctor">
+            <summary>
+            constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:GestionDocuments.GED.Finalize">
+            <summary>
+            Destructeur de la classe
+            </summary>
+        </member>
+        <member name="M:GestionDocuments.GED.GetInstanceGED">
+            <summary>
+            get instance de la classe singleton
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GestionDocuments.GED.SauvegarderDocument(System.Guid,System.Guid@,System.Guid,System.String)">
+            <summary>
+            Cette méthode permettra de sauver les document venant de l'application ressource
+            Cette méthode ouvrira une fenêtre permetant d'ajouter un document
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="kTypededocument">Constante correspondant au type de document(voir classe ConstantesGed.cs)</param>
+            <param name="idTypeDocu">guid du document passé en réféence (sortira un Guid.Empty si il y a un soucis lors de la sauvegarde)</param>
+            <param name="divisionCourante">Guid de la division courante</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            14 : Impossible d’initialiser une session 
+            0 : Sauvegarde d’un document réussie
+            21 : Annulation de la sélection d’un fichier
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GED.SauvegarderDocument(System.Guid,System.Guid,System.Guid@,System.Guid,System.String)">
+            <summary>
+            Cette méthode permettra de sauver les document venant de l'application ressource
+            Cette méthode ouvrira une fenêtre permetant d'ajouter un document
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="idRessource">Guid de la ressource</param>
+            <param name="kTypededocument">Constante correspondant au type de document(voir classe ConstantesGed.cs)</param>
+            <param name="idTypeDocu">guid du document passé en réféence (sortira un Guid.Empty si il y a un soucis lors de la sauvegarde)</param>
+            <param name="divisionCourante">Guid de la division courante</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            14 : Impossible d’initialiser une session 
+            0 : Sauvegarde d’un document réussie
+            21 : Annulation de la sélection d’un fichier
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GED.SauvegarderDocument(System.String)">
+            <summary>
+            Cette méthode permettra de sauver les document venant de l'application wGED(PLAN)
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="dataXML">string contenant la structure xml</param>
+            <returns>
+            14 : Problème de connection à la base de données GED
+            Guid du document : Sauvegarde d’un document réussie
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GED.SauvegarderDocument(System.Guid,System.Guid@,System.Guid,System.String,DevExpress.Xpo.Session,System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.Boolean)">
+            <summary>
+            Cette méthode permettra de sauver les document venant d'une application externe
+            Cette méthode ouvrira une fenêtre permetant d'ajouter un document
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="kTypededocument">Correspond au code de la catégorie du document</param>
+            <param name="idDocu">Correspond au nouvel identifiant du document à sauvegarder</param>
+            <param name="divisionCourante">Correspond à la division courante</param>
+            <param name="username">Correspond à l'utilisateur courant</param>
+            <param name="ss">Correspond à la session courante (!! pas celle de la GED !!)</param>
+            <param name="niveauCourant">Correspond au niveau courant (division ou service)</param>
+            <param name="EPLCourant">Correspond à l'EPL courant</param>
+            <param name="clientCourant">Correspond au client courant</param>
+            <param name="articleCourant">Correspond à l'article courant</param>
+            <param name="uniteCourante">Correspond à l'unité courante</param>
+            <param name="ressourceInterneCourante">Correspond à la ressource interne courante</param>
+            <param name="corpsEtatCourant">Correspond au corps état courant</param>
+            <param name="fournisseurCourant">Correspond au fournisseur courant</param>
+            <param name="deleteFileAfterSaved">Faut-il effacer le fichier local après sauvegarde dans la GED?</param>
+            <returns>
+            14 : Impossible d’initialiser une session 
+            0 : Sauvegarde d’un document réussie
+            21 : Annulation de la sélection d’un fichier
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            24 : Checksum identique
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="T:GestionDocuments.GED.kEnumReturnCode">
+            <summary>
+            Enumération des codes retournés par méthode sauvegarde générique pour la GED
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.GED.kEnumReturnCode.SessionError">
+            <summary>
+            SessionError
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.GED.kEnumReturnCode.SauvegardeOK">
+            <summary>
+            SauvegardeOK
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.GED.kEnumReturnCode.AnnulationSelection">
+            <summary>
+            AnnulationSelection
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.GED.kEnumReturnCode.CategorieInexistante">
+            <summary>
+            CategorieInexistante
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.GED.kEnumReturnCode.ProblemeSauvegarde">
+            <summary>
+            ProblemeSauvegarde
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.GED.kEnumReturnCode.ChecksumExistant">
+            <summary>
+            ChecksumExistant
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.GED.kEnumReturnCode.TypeFichierNonAutorise">
+            <summary>
+            TypeFichierNonAutorise
+            </summary>
+        </member>
+        <member name="F:GestionDocuments.GED.kEnumReturnCode.TailleFichierProbleme">
+            <summary>
+            TailleFichierProbleme
+            </summary>
+        </member>
+        <member name="M:GestionDocuments.GED.SauvegarderDocumentWithoutOpenDialog(System.Guid,System.Guid@,System.Guid,System.String,System.String)">
+            <summary>
+            Cette méthode permettra de sauver les document venant d'un drag and drop(sans passer de Guid particulier)
+            Cette méthode permet d'ajouter un document sans devoir passer par un OPENFILEDIALOG
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="kTypededocument">Constante correspondant au type de document(voir classe ConstantesGed.cs)</param>
+            <param name="idTypeDocu">guid du document passé en réféence (sortira un Guid.Empty si il y a un soucis lors de la sauvegarde)</param>
+            <param name="divisionCourante">Guid de la division courante</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <param name="filepath"></param>
+            <returns>
+            14 : Impossible d’initialiser une session 
+            0 : Sauvegarde d’un document réussie
+            21 : Annulation de la sélection d’un fichier
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GED.SauvegarderDocumentWithoutOpenDialog(System.Guid,System.Guid@,System.Guid,System.String,System.String,DevExpress.Xpo.Session,System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.Boolean)">
+            <summary>
+            Cette méthode permettra de sauver les document venant d'un drag and drop OU sauvegarde automatique (avec paramètres EPL, client, ...)
+            Cette méthode permet d'ajouter un document sans devoir passer par un OPENFILEDIALOG
+            </summary>
+            <param name="kTypededocument"></param>
+            <param name="idDocu"></param>
+            <param name="divisionCourante"></param>
+            <param name="username"></param>
+            <param name="filepath"></param>
+            <param name="ss"></param>
+            <param name="niveauCourant"></param>
+            <param name="EPLCourant"></param>
+            <param name="clientCourant"></param>
+            <param name="articleCourant"></param>
+            <param name="uniteCourante"></param>
+            <param name="ressourceInterneCourante"></param>
+            <param name="corpsEtatCourant"></param>
+            <param name="fournisseurCourant"></param>
+            <param name="deleteFileAfterSaved"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GestionDocuments.GED.RemplacerDocument(System.Guid,System.String)">
+            <summary>
+            Cette méthode ouvre la même fenêtre que lors de l'enregsitrement.
+            Tous les paramètres précisés lors de l'enregistrement seront automatiquement chargés dans la fenêtre et seront éventuellemnt modifiable.
+            Il y aura également la possibilité de modifier le document.
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            0 : Remplacement d’un document réussi
+            31 : Annulation remplacement fichier
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            16 : Le document est déjà archivé
+            33 : Problème lors du remplacement du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GED.RemplacerDocument(System.String,System.String)">
+            <summary>
+            Cette méthode permettra de remplacer les document venant de l'application wGED(PLAN)
+            Cette méthode retournera le guid du document ou un new guid si l'enregistrement à poser soucis
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <param name="dataXML">string contenant la structure xml</param>
+            <returns>
+            14 : Problème de connection à la base de données GED
+            15 : le document n’existe plus
+            Guid du document : Sauvegarde d’un document réussie
+            22 : Catégorie de document inexistante
+            23 : Problème lors de la sauvegarde du document
+            17 : ce type de fichier n’est pas autorisé
+            18 : taille du fichier trop grande
+            </returns>
+            
+        </member>
+        <member name="M:GestionDocuments.GED.ArchiverDocument(System.Guid,System.String)">
+            <summary>
+            Cette méthode permet d'archiver un document, il n'y a pas de suppresion propremant dite des documents
+            Un document est archivé et sera encore disponible dans la db pendant un certain temps.
+            On mettra en place une routirne permettant de supprimer definitivement ces documents.
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            0 : Archivage document réussi
+            16 : Le document est déjà archivé
+            41 : Problème lors de l’archivage du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GED.ArchiverDocument(System.String,System.String)">
+            <summary>
+            Cette méthode permet d'archiver un document, il n'y a pas de suppresion propremant dite des documents
+            Un document est archivé et sera encore disponible dans la db pendant un certain temps.
+            On mettra en place une routirne permettant de supprimer definitivement ces documents.
+            </summary>
+            <param name="idDocument">string contenant le guid du document</param>
+            <param name="username">login de l'utilisateur connecté</param>
+            <returns>
+            0 : Archivage document réussi
+            16 : Le document est déjà archivé
+            41 : Problème lors de l’archivage du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GED.VisualiserDocument(System.Guid)">
+            <summary>
+            Cette méthode permettra de visualiser un document
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <returns>
+            0 : Visualisation du document réussie
+            51 : Problème lors de la visualisation du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GED.VisualiserDocument(System.Guid,System.String)">
+            <summary>
+            Cette méthode permettra de visualiser un document
+            </summary>
+            <param name="idDocument">Guid du document</param>
+            <param name="username">Nom utilisateur</param>
+            <returns>
+            0 : Visualisation du document réussie
+            51 : Problème lors de la visualisation du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GED.VisualiserDocument(System.String,System.String,System.String)">
+            <summary>
+            Cette méthode permettra de visualiser un document
+            </summary>
+            <param name="idDocument">string contenant le Guid du document</param>
+            <param name="table">nom de la table qui contient le fichier</param>
+            <param name="username">nom utilisateur</param>
+            <returns>
+            0 : Visualisation du document réussie
+            51 : Problème lors de la visualisation du document
+            14 : Impossible d’initialiser une session 
+            15 : le document n’existe plus
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GED.ReadXMLDocu(System.Xml.XmlDocument,TP.GED.GED.Document,TP.GED.GED.Version,TP.GED.GED.Fichier,DevExpress.Xpo.Session,TP.GED.GED.Categorie@)">
+            <summary>
+            Méthode de lecture du fichier XML
+            </summary>
+            <param name="doc">xml document</param>
+            <param name="d">Document</param>
+            <param name="v">Version</param>
+            <param name="f">Fichier</param>
+            <param name="ss">session</param>
+            <param name="c">Catégorie</param>
+            <returns></returns>
+        </member>
+        <member name="M:GestionDocuments.GED.VerifCheckSum(System.String,TP.GED.GED.Fichier@,TP.GED.GED.CptGed@,System.String@,DevExpress.Xpo.Session)">
+            <summary>
+            Vérification checksum d'un fichier
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GestionDocuments.GED.SuppressionDocument(System.String)">
+            <summary>
+            Suppression document
+            </summary>
+        </member>
+        <member name="M:GestionDocuments.GED.TrtAjout(System.Boolean,DevExpress.Xpo.Session,TP.GED.GED.Document,TP.GED.GED.Version,TP.GED.GED.Fichier,System.Boolean,System.String)">
+            <summary>
+            Ajout du document en DB --> si versionnable
+            </summary>
+            <param name="bVerifCtrol"></param>
+            <param name="ss"></param>
+            <param name="d"></param>
+            <param name="v"></param>
+            <param name="f"></param>
+            <param name="refer"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:GestionDocuments.GED.InitDAL">
+            <summary>
+            Méthode permettant d'initialiser la connection XPO
+            </summary>
+            <returns>
+            0 : Connexion DB réussie
+            11 : Fichier de configuration non présent
+            12 : Fichier de configuration incorrect
+            13 : Connexion à la DB impossible
+            </returns>
+        </member>
+        <member name="M:GestionDocuments.GED.Serialize(System.Object)">
+            <summary>
+            Méthode de sérialisation du fichier xml
+            </summary>
+            <param name="Obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GestionDocuments.GED.Deserialize(System.String)">
+            <summary>
+            Méthode de désérialisation du fichier xml
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

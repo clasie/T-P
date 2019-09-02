@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!--<DataSQLserver>10.21.16.29\INFDVP</DataSQLserver>-->
+	<!--<DataSQLserver>10.25.16.27\INFTEST</DataSQLserver>-->
+	<!--<DataSQLserver>10.250.16.33\OURSQLDVP</DataSQLserver>-->
+	<DataSQLserver>10.250.16.99\OURTST</DataSQLserver>
+	<DataSQLdatabase>DataSQL</DataSQLdatabase>
+	<!--<DataSQLuser>SA</DataSQLuser>-->
+	<DataSQLuser>UserERPRW</DataSQLuser>
+	<!--<DataSQLuserpassword>JdDmbpNDX3Y=</DataSQLuserpassword>-->
+	<!--<DataSQLuserpassword>BIlyryxNrkuYKBoF5aHR1g==</DataSQLuserpassword>-->
+	<DataSQLuserpassword>PP5kETSHij/oI4wVU+nfdQ==</DataSQLuserpassword>
+	<PEECH_GENERATECHANGEN>True</PEECH_GENERATECHANGEN>
+</config>

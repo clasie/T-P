@@ -1,0 +1,1006 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TP.Plugin</name>
+    </assembly>
+    <members>
+        <member name="T:TP.Plugin.GetFocusAttribute">
+            <summary>
+            Attribut qui détermine si l'opération doit activer le focus de ce plugin.
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.DefaultDisabledAttribute">
+            <summary>
+            Attribut qui détermine si le bouton doit être automatiquement actif quand le focus est obtenu
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.CallWhenInBackgroundAttribute">
+            <summary>
+            Attribut qui détermine si l'opération doit s'exécuter quand le plugin n'a pas le focus.
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.PluginAttribute">
+            <summary>
+            Attribut qui détermine si l'opération doit être visible pour le PluginManager.
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.WorkflowAttribute">
+            <summary>
+            Attribut qui détermine si l'opération doit être visible pour le WorkflowController.
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.ReturnAttribute">
+            <summary>
+            Attribut qui indique si l'opération admet une valeur de retour. Attention, pas de type générique.
+            </summary>
+            <example>
+            Return(typeof(bool)) indique qu'on retourne un "bool".
+            </example>
+        </member>
+        <member name="F:TP.Plugin.ReturnAttribute.AttributeType">
+            <summary>
+            Type de la valeur de retour de l'opération.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.ReturnAttribute.#ctor(System.Type)">
+            <summary>
+            Constructeur de l'attribut.
+            </summary>
+            <param name="inAttributeType"></param>
+        </member>
+        <member name="T:TP.Plugin.ParamAttribute">
+            <summary>
+            Attribut qui indique si l'opération admet une valeur de retour et un paramètre. Attention, pas de type générique.
+            </summary>
+            <example>
+            Param(typeof(bool),typeof(string)) indique qu'il sagit de bool func(string s).
+            </example>
+        </member>
+        <member name="F:TP.Plugin.ParamAttribute.ReturnAttributeType">
+            <summary>
+            Type de la valeur de retour de l'opération.
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.ParamAttribute.ParamAttributeType">
+            <summary>
+            Type du paramètre de l'opération.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.ParamAttribute.#ctor(System.Type,System.Type)">
+            <summary>
+            Constructeur de l'attribut.
+            </summary>
+            <param name="inReturnAttributeType">Type de retour</param>
+            <param name="inParamAttributeType">Type du paramètre</param>
+        </member>
+        <member name="T:TP.Plugin.CallBackType">
+            <summary>
+            L'instance CallBack, de la classe CallBackType, contient des méthodes qui permettent la communication avec le PluginManager.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.SaveOrQuit">
+            <summary>
+            Vérifie si l'utilisateur désire quitter sans sauver.
+            True = sauver
+            False = ne pas sauver (annuler les changements)
+            Null = annuler l'opération (revenir à la fenêtre courante, comme si rien ne s'était passé).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.ShowMessageBox(System.String,System.Drawing.Icon)">
+            <summary>
+            Affiche un message.
+            </summary>
+            <param name="inMessage"></param>
+            <param name="inErrorIcon"></param>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.ShowMessageBoxOKCancel(System.String,System.Drawing.Icon,System.String,System.String)">
+            <summary>
+            Affiche un message.
+            </summary>
+            <param name="inMessage"></param>
+            <returns>True si OK, False si cancel</returns>
+            <param name="inLabelCancel"></param>
+            <param name="inLabelOk"></param>
+            <param name="inErrorIcon"></param>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.ShowMessageBoxEnterAnswer(System.String,System.Drawing.Icon,System.String,System.String,System.String)">
+            <summary>
+            Affiche un message, avec demande de réponse.
+            </summary>
+            <param name="inMessage"></param>
+            <returns>Null si annuler, réponse si ok</returns>
+            <param name="inLabelCancel"></param>
+            <param name="inLabelOk"></param>
+            <param name="inErrorIcon"></param>
+            <param name="inPreFill"></param>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.ShowUnit(System.String)">
+            <summary>
+            Affiche l'unité dont le nom est passé en paramètre.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.ShowUnitAndCloseOthers(System.String)">
+            <summary>
+            Affiche l'unité dont le nom est passé en paramètre.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.ShowUnitAndCloseOthersInAllPlugins(System.String)">
+            <summary>
+            Affiche l'unité dont le nom est passé en paramètre.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.HideUnit(System.String)">
+            <summary>
+            Cache (sans la fermer) l'unité dont le nom est passé en paramètre. Si l'unité est de nouveau affichée plus tard, le contenu 
+            des champs est préservé.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.ReplaceUnits(System.String)">
+            <summary>
+            Cache les unités ouvertes appartenant à ce plugin, et affiche l'unité dont le nom est donné en paramètre.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.CloseUnit(System.String)">
+            <summary>
+            Ferme l'unité. A la différence de la fonction HideUnit, l'état ne sera pas préservé si on affiche de nouveau l'unité plus 
+            tard.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.ExecuteWithParam``2(System.String,``0@,``1)">
+            <summary>
+            Execute une opération avec paramètres dans un autre plugin.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.ExecuteWithReturn``1(System.String,``0@)">
+            <summary>
+            Execute une opération avec retour dans un autre plugin.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.Execute(System.String)">
+            <summary>
+            Execute une opération sans paramètres ni valeur de retour dans un autre plugin.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.CallBackType.GetScreenShot">
+            <summary>
+            Permet d'obtenir un screeshot de l'application, pour permettre le débogage. 
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.TabPlugin">
+            <summary>
+            Classe correspondant  à un tab.
+            </summary>
+        </member>
+        <member name="P:TP.Plugin.TabPlugin.isActive">
+            <summary>
+            Indique si le tab est dans l'état "Actif", c'est à dire visible à l'utilisateur. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPlugin.ChangeContent(System.Object)">
+            <summary>
+            Méthode appelée chaque fois que le contenu du tab doit changer car l'objet lié est modifié. Exemple : si les tabs affichent des informations liées à une ressource, chaque
+            fois que la ressource à afficher change, la méthode ChangeContent est appelée. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPlugin.Maximize">
+            <summary>
+            Indique que la fenêtre a été maximisée, et que donc le tab peut éventuellement afficher une version "détaillée" de son contenu. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPlugin.Minimize">
+            <summary>
+            Indique que la fenêtre n'est plus maximisée, et que le tab doit donc, si possible, afficher une version "résumée" de son contenu. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPlugin.SaveChanges">
+            <summary>
+            Demande au tab de sauver tous ses changements. Vu qu'on est obligés de valider d'abord, la sauvegarde doit se passer correctement. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPlugin.CancelChanges">
+            <summary>
+            Demande au tab de ne pas sauver ses changements
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPlugin.Validate">
+            <summary>
+            Ce tab est-il rempli correctement pour être sauvé ?
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.TabPlugin.Activated">
+            <summary>
+            Appelé lors de l'ouverture du tab. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPlugin.Deactivated">
+            <summary>
+            Appelé lors de la fermeture du tab.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPlugin.Message(TP.Plugin.TabPluginContainer.kEnumMessageTab)">
+            <summary>
+            Transmission de messages (demande d'impression, d'export, etc).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.TabPlugin.IsMessageEnabled(TP.Plugin.TabPluginContainer.kEnumMessageTab)">
+            <summary>
+            Indique si le plugin peut traiter le message donné. Exemple : si un tab n'implémente pas l'impression, il doit retourner "false" lorsqu'on lui demande d'imprimer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Plugin.HandlerWithName">
+            <summary>
+            Classe générique pour les Handlers ayant un nom.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.HandlerWithName.DictionaryName">
+            <summary>
+            Clé à utiliser pour le dictionnaire. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Plugin.Dictionary`1">
+            <summary>
+            Dictionnaire de boutons, regroupant les propriétés d'un bouton et les opération dont le bouton dépend.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.Dictionary`1.#ctor">
+            <summary>
+            Constructeur.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.Dictionary`1.GetKeyForItem(`0)">
+            <summary>
+            Retourne la clé.
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.Dictionary`1.AddUnique(`0)">
+            <summary>
+            Ajoute un élément de façon unique au dictionnaire.
+            </summary>
+            <param name="theObject"></param>
+        </member>
+        <member name="T:TP.Plugin.IPlugin">
+            <summary>
+            Interface que tout plugin doit implémenter pour pouvoir être utilisé dans le PluginManager et l'application générique. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.IPlugin.GetName">
+            <summary>
+            Retourne le nom du plugin.
+            </summary>
+            <returns>Nom du plugin.</returns>
+        </member>
+        <member name="M:TP.Plugin.IPlugin.GetRibbonControl">
+            <summary>
+            Méthode utilisée par le PluginManager pour obtenir le RibbonControl du plugin. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPlugin.GetStatusBarControl">
+            <summary>
+            Méthode utilisée par le PluginManager pour obtenir le RibbonStatusBarControl du plugin. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPlugin.GetBarManager">
+            <summary>
+            Méthode utilisée par le PluginManager pour obtenir le BarManager du plugin.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPlugin.GetUnits">
+            <summary>
+            Méthode utilisée par le PluginManager pour obtenir le dictionnaire des unités du plugin. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPlugin.GetAlwaysActive">
+            <summary>
+            Indique si le plugin désire être toujours affiché (exemple: Messagerie).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPlugin.GetOperations">
+            <summary>
+            Méthode utilisée par le PluginManager pour obtenir le dictionnaire des opérations du plugin. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPlugin.SetCallBack(TP.Plugin.CallBackType)">
+            <summary>
+            Méthode utilisée par le PluginManager pour définir la fonction de Callback.
+            </summary>
+            <param name="inCallBack"></param>
+        </member>
+        <member name="T:TP.Plugin.IPluginBase">
+            <summary>
+            La classe contenant l'implémentation de l'interface du plugin doit dériver d'IPluginBase, qui contient le code générique à tout
+            plugin. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.#ctor">
+            <summary>
+            Constructeur.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.SetRibbonControl(DevExpress.Xpf.Ribbon.RibbonControl)">
+            <summary>
+            Définition du RibbonControl du plugin, afin de pouvoir l'intégrer dans le PluginManager.
+            </summary>
+            <param name="inRibbonControl"></param>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.SetStatusBarControl(DevExpress.Xpf.Ribbon.RibbonStatusBarControl)">
+            <summary>
+            Définition du RibbonStatusBarControl du plugin, afin de pouvoir l'intégrer dans le PluginManager.
+            </summary>
+            <param name="inRibbonStatusBarControl"></param>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.SetBarManager(DevExpress.Xpf.Bars.BarManager)">
+            <summary>
+            Définition du BarManager du plugin, afin de pouvoir l'intégrer dans le PluginManager.
+            </summary>
+            <param name="inBarManager"></param>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.AddUnit(System.Type,System.String)">
+            <summary>
+            Ajout d'une unité, qui sera disponible pour le PluginManager. 
+            </summary>
+            <param name="inOriginatingWindowType">Type de la classe définissant la window où le panel est présent.</param>
+            <param name="inPanelName">"Name" du LayoutPanel correspondant à l'unité</param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.SetAlwaysActive(System.Boolean)">
+            <summary>
+            Determine le plugin doit toujours être actif, par exemple pour un plugin du type "Liste des Tâches".
+            </summary>
+            <param name="inIsAlwaysActive"></param>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.SetOperationClass(System.Object)">
+            <summary>
+            Indique au PluginManager dans quelle classe les opérations se trouvent.
+            </summary>
+            <param name="inOperationClass">Instance de la classe</param>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.DisableOperation(System.String)">
+            <summary>
+            Désactiver (rendre inutilisable et grisé) une opération.
+            </summary>
+            <param name="inOperationName">Nom de l'opération</param>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.EnableOperation(System.String)">
+            <summary>
+            Activer (rendre utilisable) une opération.
+            </summary>
+            <param name="inOperationName">Nom de l'opération</param>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.IsOperationEnabled(System.String)">
+            <summary>
+            Vérifier si une opération est désactivée.
+            </summary>
+            <param name="inOperationName">Nom de l'opération</param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.IsOperationSSOEnabled(System.String)">
+            <summary>
+            Vérifier si une opération est désactivée au niveau SSO.
+            </summary>
+            <param name="inOperationName">Nom de l'opération</param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.HideOperation(System.String)">
+            <summary>
+            Cacher une opération, ce qui a pour effet de rendre invisible les boutons associés à cette opération. 
+            </summary>
+            <param name="inOperationName">Nom de l'opération</param>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.UnhideOperation(System.String)">
+            <summary>
+            Fait apparaître une opération qui était préallablement cachée.
+            </summary>
+            <param name="inOperationName">Nom de l'opération</param>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.GetRibbonControl">
+            <summary>
+            Méthode utilisée par le PluginManager pour obtenir le RibbonControl du plugin. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.GetStatusBarControl">
+            <summary>
+            Méthode utilisée par le PluginManager pour obtenir le RibbonStatusBarControl du plugin. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.GetBarManager">
+            <summary>
+            Méthode utilisée par le PluginManager pour obtenir le BarManager du plugin.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.GetUnits">
+            <summary>
+            Méthode utilisée par le PluginManager pour obtenir le dictionnaire des unités du plugin. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.GetOperations">
+            <summary>
+            Méthode utilisée par le PluginManager pour obtenir le dictionnaire des opérations du plugin. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.GetAlwaysActive">
+            <summary>
+            Indique si le plugin désire être toujours affiché (exemple: Messagerie).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.IPluginBase.SetCallBack(TP.Plugin.CallBackType)">
+            <summary>
+            Méthode utilisée par le PluginManager pour définir la fonction de Callback.
+            </summary>
+            <param name="inCallBack"></param>
+        </member>
+        <member name="T:TP.Plugin.OperationHandlerWithNoRetrun">
+            <summary>
+            Classe héritée de OperationHandler dans le cas ou l'opération n'a pas de valeur de retour.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.OperationHandlerWithNoRetrun.SetStaticDelegate(System.Reflection.MethodInfo)">
+            <summary>
+            Assignation d'une méthode statique à l'opération
+            </summary>
+            <param name="inMethod">Méthode</param>
+        </member>
+        <member name="M:TP.Plugin.OperationHandlerWithNoRetrun.SetInstanceDelegate(System.Reflection.MethodInfo,System.Object)">
+            <summary>
+            Assignation d'une méthode non-statique à l'opération
+            </summary>
+            <param name="inMethod">Méthode</param>
+            <param name="inObject">Instance dont la méthode est membre</param>
+        </member>
+        <member name="T:TP.Plugin.OperationHandlerWithReturn`1">
+            <summary>
+            Classe héritée de OperationHandler dans le cas où la méthode a une valeur de retour. 
+            </summary>
+            <typeparam name="ReturnType">Type de retour</typeparam>
+        </member>
+        <member name="M:TP.Plugin.OperationHandlerWithReturn`1.WrongRun">
+            <summary>
+            Méthode assignée à l'opérateur, dans le cas où on tenterait de l'invoquer avec les mauvais paramètres. 
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.OperationHandlerWithReturn`1.DelRunWithReturn">
+            <summary>
+            "Delegate" qui référence la méthode correspondant à l'opération. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:TP.Plugin.OperationHandlerWithReturn`1.RunWithReturn">
+            <summary>
+            Référence à la méthode corresondant à l'opération.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.OperationHandlerWithReturn`1.SetStaticDelegate(System.Reflection.MethodInfo)">
+            <summary>
+            Assignation d'une méthode statique à l'opération. 
+            </summary>
+            <param name="inMethod">Méthode</param>
+        </member>
+        <member name="M:TP.Plugin.OperationHandlerWithReturn`1.SetInstanceDelegate(System.Reflection.MethodInfo,System.Object)">
+            <summary>
+            Assignation d'une méthode non-statique à l'opération. 
+            </summary>
+            <param name="inMethod">Méthode</param>
+            <param name="inObject">Instance dont la méthode est membre</param>
+        </member>
+        <member name="T:TP.Plugin.OperationHandlerWithReturnAndParam`2">
+            <summary>
+            Classe héritée de OperationHandler dans le cas où la méthode a une valeur de retour et un paramètre.
+            </summary>
+            <typeparam name="ReturnType">Type de retour</typeparam>
+            <typeparam name="ParamType">Type du paramètre</typeparam>
+        </member>
+        <member name="M:TP.Plugin.OperationHandlerWithReturnAndParam`2.WrongRun">
+            <summary>
+            Méthode assignée à l'opérateur, dans le cas où on tenterait de l'invoquer avec les mauvais paramètres. 
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.OperationHandlerWithReturnAndParam`2.DelRunWithReturnAndParam">
+            <summary>
+            "Delegate" qui référence la méthode correspondant à l'opération. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:TP.Plugin.OperationHandlerWithReturnAndParam`2.RunWithReturnAndParam">
+            <summary>
+            Référence à la méthode corresondant à l'opération.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.OperationHandlerWithReturnAndParam`2.SetStaticDelegate(System.Reflection.MethodInfo)">
+            <summary>
+            Assignation d'une méthode statique à l'opération. 
+            </summary>
+            <param name="inMethod">Méthode</param>
+        </member>
+        <member name="M:TP.Plugin.OperationHandlerWithReturnAndParam`2.SetInstanceDelegate(System.Reflection.MethodInfo,System.Object)">
+            <summary>
+            Assignation d'une méthode non-statique à l'opération. 
+            </summary>
+            <param name="inMethod">Méthode</param>
+            <param name="inObject">Instance dont la méthode est membre</param>
+        </member>
+        <member name="T:TP.Plugin.OperationHandler">
+            <summary>
+            Classe représentant l'ensemble des propriétés d'une opération. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.OperationHandler.DictionaryName">
+            <summary>
+            Clé pour le dictionnaire. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TP.Plugin.OperationHandler.Name">
+            <summary>
+            Nom de l'opération. 
+            </summary>
+        </member>
+        <member name="P:TP.Plugin.OperationHandler.GetFocus">
+            <summary>
+            Indique si l'exécution de l'opération entraîne l'activation (focus) du plugin. 
+            </summary>
+        </member>
+        <member name="P:TP.Plugin.OperationHandler.CallWhenInBackground">
+            <summary>
+            Indique si il faut exécuter l'opération quand le plugin n'est pas actif (focused). 
+            </summary>
+        </member>
+        <member name="P:TP.Plugin.OperationHandler.Workflow">
+            <summary>
+            Indique si l'opération doit être visible à partir du workflow. 
+            </summary>
+        </member>
+        <member name="P:TP.Plugin.OperationHandler.Disabled">
+            <summary>
+            Indique si l'opération est inactive (grisée).
+            </summary>
+        </member>
+        <member name="P:TP.Plugin.OperationHandler.MasterDisabled">
+            <summary>
+            Indique si l'opération est inactive (grisée) de façon permanente.
+            </summary>
+        </member>
+        <member name="P:TP.Plugin.OperationHandler.Hidden">
+            <summary>
+            Indique si l'opération est cachée.
+            </summary>
+        </member>
+        <member name="P:TP.Plugin.OperationHandler.MasterHide">
+            <summary>
+            Indique si l'opération est cachée de façon permanente.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.OperationHandler.AddDependency(TP.Plugin.DependencyHandler)">
+            <summary>
+            Permet d'ajouter une dépendence, c'est-à-dire un objet qui doit être notifié lorsqu'une propriété change. 
+            </summary>
+            <param name="inDependency"></param>
+        </member>
+        <member name="M:TP.Plugin.OperationHandler.ClearDependencies">
+            <summary>
+            Permet de supprimer les dépendences. 
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.OperationHandler.DelRun">
+            <summary>
+            "Delegate" de la méthode à exécuter pour cette opération. 
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.OperationHandler.Run">
+            <summary>
+            Méthode correspondant à cette opération. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.OperationHandler.SetStaticDelegate(System.Reflection.MethodInfo)">
+            <summary>
+            Assignation d'une méthode statique à l'opération. 
+            </summary>
+            <param name="inMethod">Méthode</param>
+        </member>
+        <member name="M:TP.Plugin.OperationHandler.SetInstanceDelegate(System.Reflection.MethodInfo,System.Object)">
+            <summary>
+            Assignation d'une méthode non-statique à l'opération. 
+            </summary>
+            <param name="inMethod">Méthode</param>
+            <param name="inObject">Instance contenant la méthode</param>
+        </member>
+        <member name="M:TP.Plugin.OperationHandler.Update">
+            <summary>
+            Méthode appelée lorsqu'une dépendence a changé.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.OperationHandler.NotifyDeps">
+            <summary>
+            Méthode pour notifier toutes les dépendences qu'un des champs a changé.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.OperationHandler.#ctor">
+            <summary>
+            Constructeur.
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.PluginOperationBase">
+            <summary>
+            La classe contenant les opérations du plugin doit hériter de PluginOperationBase, de façon à pouvoir utiliser les fonctions Callback pour communiquer avec le PluginManager.
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.PluginOperationBase.CallBackInstance">
+            <summary>
+            Instance permettant l'interface avec le PluginManager.
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.PluginOperationBase.PluginInstance">
+            <summary>
+            Instance permettant l'interface avec le plugin.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.PluginOperationBase.SetCallBacks(TP.Plugin.CallBackType,System.Object)">
+            <summary>
+            Permet de fournir une instance de l'interface avec PluginManager.
+            </summary>
+            <param name="inCallBack">Instance</param>
+            <param name="inPlugin"></param>
+        </member>
+        <member name="P:TP.Plugin.PluginOperationBase.CallBack">
+            <summary>
+            Accès à toutes les fonctions de CallBack;
+            </summary>
+        </member>
+        <member name="P:TP.Plugin.PluginOperationBase.ThisPlugin">
+            <summary>
+            Accès à toutes les fonctions du plugin.
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.PluginOperationBase.PluginName">
+            <summary>
+            Nom du plugin courant;
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.DependencyHandler">
+            <summary>
+            Les objets ayant des "dépendances" c'est-à-dire d'autres objets qui doivent être notifiés en cas de changements, dérivent de la 
+            classe DependencyHandler. Quand un changement se passe, la notification se fait par appel à la méthode Update().
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.DependencyHandler.Update">
+            <summary>
+            Méthode indiquant qu'un changement dans une dépendance à eu lieu, afin de pouvoir mettre à jour les champs concernés.
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.TabPluginContainer">
+            <summary>
+            Interaction logic for TabPluginContainer.xaml
+            </summary>
+            <summary>
+            TabPluginContainer
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.#ctor">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.Maximize">
+            <summary>
+            Indique que les tabs doivent apparaitre en mode maximisé. Message transmis à tous les tabs. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.Minimize">
+            <summary>
+            Indique que les tabs doivent apparaitre en mode minimisé; message transmis à tous les tabs. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.ChangeContent(System.Object)">
+            <summary>
+            Indique que le contenu des tabs doit changer car l'objet courant est modifié. 
+            </summary>
+            <param name="inObject"></param>
+        </member>
+        <member name="T:TP.Plugin.TabPluginContainer.kEnumMessageTab">
+            <summary>
+            Type de message pouvant être envoyé à un tab.
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.TabPluginContainer.kEnumMessageTab.Print">
+            <summary>
+            Print
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.TabPluginContainer.kEnumMessageTab.Export">
+            <summary>
+            Export
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.SendMessage(TP.Plugin.TabPluginContainer.kEnumMessageTab)">
+            <summary>
+            Indique que le contenu des tabs doit changer car l'objet courant est modifié. 
+            </summary>
+            <param name="inMessage"></param>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.SaveChanges">
+            <summary>
+            Demande à chaque tab d'effectuer sa sauvegarde. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.CancelChanges">
+            <summary>
+            Demande à chaque tab d'annuler tous les changements en cours. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.Focus(TP.Plugin.TabPluginHandler)">
+            <summary>
+            Focus
+            </summary>
+            <param name="inTab"></param>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.ChangeFocus(System.String)">
+            <summary>
+            Change le tab actif. 
+            </summary>
+            <param name="inHeader"></param>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.Validate">
+            <summary>
+            Indique si tous les tabs sont valides. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.AddTab(System.Type,System.String)">
+            <summary>
+            Déclaration d'un nouveau tab. 
+            </summary>
+            <param name="inTabType"></param>
+            <param name="inHeader"></param>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.tabController_SelectedTabChildChanged(System.Object,DevExpress.Xpf.Core.ValueChangedEventArgs{System.Windows.FrameworkElement})">
+            <summary>
+            tabController_SelectedTabChildChanged
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.MessageEnabledReceived(TP.Plugin.TabPluginContainer.kEnumMessageTab,System.Boolean)">
+            <summary>
+            Pour actualiser les boutons en fonction de l'état
+            </summary>
+            <param name="inMessage"></param>
+            <param name="inEnabled"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Plugin.TabPluginContainer.ReceiverDelegate">
+            <summary>
+            ReceiverDelegate
+            </summary>
+            <param name="inMessage"></param>
+            <param name="inEnabled"></param>
+        </member>
+        <member name="F:TP.Plugin.TabPluginContainer.myDelegate">
+            <summary>
+            myDelegate
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.SetMessageEnablerReceiver(TP.Plugin.TabPluginContainer.ReceiverDelegate)">
+            <summary>
+            SetMessageEnablerReceiver
+            </summary>
+            <param name="inDelegate"></param>
+        </member>
+        <member name="M:TP.Plugin.TabPluginContainer.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.TabPluginHandler">
+            <summary>
+            Interface réalisée dans le cadre de wPeech, permettant de séparer le développement de différents onglets dans une même unité. 
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.TabPluginHandler.myContentType">
+            <summary>
+            myContentType
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.TabPluginHandler.myHeader">
+            <summary>
+            myHeader
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.TabPluginHandler.#ctor(System.Type,System.String)">
+            <summary>
+            CTor.
+            </summary>
+            <param name="inUserControlType"></param>
+            <param name="inHeader"></param>
+        </member>
+        <member name="M:TP.Plugin.TabPluginHandler.Instanciate">
+            <summary>
+            Crée le tab. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Plugin.UnitHandler">
+            <summary>
+            Contient toutes les informations relative à une unité.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.UnitHandler.DictionaryName">
+            <summary>
+            Clé pour le dictionnaire. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:TP.Plugin.UnitHandler.OriginatingWindowType">
+            <summary>
+            Type de la fenêtre contenant l'unité. Ce type doit impérativement hériter de UnitWindow.
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.UnitHandler.Modal">
+            <summary>
+            Détermine si l'unité est modale. Utiliser la méthode SetModal() pour modifier la valeur.
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.UnitHandler.IsToolbox">
+            <summary>
+            Indique si l'unité doit avoir une largeur fixe et apparaître à gauche, telle une toolbox.
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.UnitHandler.IsUnitToHidden">
+            <summary>
+            Indique si l'unité doit être cachée au lieu de fermée.
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.UnitHandler.DateHidden">
+            <summary>
+            Indique la date où on cache l'unité  --> remis à nul lors du show.
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.UnitHandler.ClosedWhenPluginUnfocused">
+            <summary>
+            Détermine s'il faut fermer l'unité quand le plugin n'a pas le focus. Utiliser la méthode CloseWhenUnfocused().
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.UnitHandler.GettingFocusWhenUnitClosing">
+            <summary>
+            Détermine si il faut focuser explicitement quand on ferme une autre unité. Attention, s'il y a plusieurs fenêtre comme cela, aucune garantie.
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.UnitHandler.Name">
+            <summary>
+            Nom de l'unité. Le nom doit correspondre à l'attribut Name du LayoutPanel correspondant.
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.UnitHandler.Width">
+            <summary>
+            Largeur de l'unité
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.UnitHandler.Height">
+            <summary>
+            Hauteur de l'unité
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.UnitHandler.EventTriggered">
+            <summary>
+            Indique si l'événement d'initialisation doit encore être traité.
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.UnitHandler.Instance">
+            <summary>
+            Utilisé en interne pour stocker l'instance de l'unité courante lorsqu'elle est créée. 
+            </summary>
+        </member>
+        <member name="F:TP.Plugin.UnitHandler.HiddenByMe">
+            <summary>
+            Liste des unités qui ont été cachées lorsque l'unité courante a été affichée. Ces unités seront restaurées à la fermeture de l'unité courante.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.UnitHandler.#ctor(System.Type,System.String)">
+            <summary>
+            Constructeur pour définir une nouvelle unité, sur base de sa fenêtre et de son nom.
+            </summary>
+            <param name="inOriginatingWindowType">Type de la classe de la window contenant le panel de l'unité.</param>
+            <param name="inUnitName">"Name" de l'unité</param>
+        </member>
+        <member name="M:TP.Plugin.UnitHandler.SetModal">
+            <summary>
+            Indique que l'unité doit s'afficher comme une fenêtre modale. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.UnitHandler.DontCloseWhenUnfocused">
+            <summary>
+            Indique que l'unité doit être fermée quand le plugin n'est pas actif (focused).
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.UnitHandler.GetFocusWhenOthersClosing">
+            <summary>
+            Indique que l'unité doit être fermée quand le plugin n'est pas actif (focused).
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.UnitHandler.Toolbox">
+            <summary>
+            Transforme une unité en "Toolbox", c'est à dire
+                - toujours affichée à gauche de l'écran
+                - toujours visible
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.UnitHandler.Instanciate">
+            <summary>
+            Crée une instance du LayoutPanel. Il est important de ne faire cela que quand on a réellement besoin de l'unité. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Plugin.UnitHandler.Dispose">
+            <summary>
+            Détruit le LayoutPanel, qui devra être réinstancié lors de la prochaine utilisation. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.UnitHandler.IsOpen">
+            <summary>
+            Détermine si l'unité a été instanciée. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Plugin.UnitUserControl">
+            <summary>
+            Classe parente de tous les UserControls, afin de pouvoir imposer la validation, etc. 
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.UnitUserControl.#ctor">
+            <summary>
+            Constreucteur
+            </summary>
+        </member>
+        <member name="T:TP.Plugin.UnitWindow">
+            <summary>
+            La classe correspondant au XAML d'une unité doit impérativement dériver de UnitWindow. Il faut par ailleurs implémenter la méthode
+            ReturnLayoutPanel qui renvoit le LayoutPanel représentant l'unité.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.UnitWindow.#ctor">
+            <summary>
+            Constructeur.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.UnitWindow.ReturnLayoutPanel">
+            <summary>
+            Cette fonction doit renvoyer une instance du LayoutPanel qui contient tous les contrôles visuels de l'unité.
+            </summary>
+            <returns>LayoutPanel de l'unité</returns>
+        </member>
+        <member name="T:TP.Plugin.UserControlResources">
+            <summary>
+            Interaction logic for UserControlResources.xaml
+            </summary>
+            <summary>
+            UserControlResources
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.UserControlResources.#ctor">
+            <summary>
+            Ctor.
+            </summary>
+        </member>
+        <member name="M:TP.Plugin.UserControlResources.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

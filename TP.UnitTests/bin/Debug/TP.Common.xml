@@ -1,0 +1,1509 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TP.Common</name>
+    </assembly>
+    <members>
+        <member name="T:TP.Common.GenericAutoCache`4">
+            <summary>
+            Classe générique de caching, qui permet d'éviter de recalculer les mêmes informations à chaque fois. Sera transformée, au besoin, pour utiliser le système
+            interne de cache de C# 4.0. Pour l'instant, tout ce qui est en cache reste en cache, sauf lors d'un reset.
+            </summary>
+            <typeparam name="X"></typeparam>
+            <typeparam name="Y"></typeparam>
+            <typeparam name="Z"></typeparam>
+            <typeparam name="ValueType"></typeparam>
+        </member>
+        <member name="F:TP.Common.GenericAutoCache`4.cache">
+            <summary>
+            cache
+            </summary>
+        </member>
+        <member name="T:TP.Common.GenericAutoCache`4.GenericProviderDelegate">
+            <summary>
+            Provider générique, pour usage interne.
+            </summary>
+            <param name="key1"></param>
+            <param name="key2"></param>
+            <param name="key3"></param>
+            <returns></returns>
+        </member>
+        <member name="F:TP.Common.GenericAutoCache`4.provider">
+            <summary>
+            provider
+            </summary>
+        </member>
+        <member name="M:TP.Common.GenericAutoCache`4.#ctor">
+            <summary>
+            GenericAutoCache
+            </summary>
+        </member>
+        <member name="M:TP.Common.GenericAutoCache`4.SetProvider(TP.Common.GenericAutoCache{`0,`1,`2,`3}.GenericProviderDelegate)">
+            <summary>
+            SetProvider
+            </summary>
+            <param name="inProvider"></param>
+        </member>
+        <member name="M:TP.Common.GenericAutoCache`4.Reset">
+            <summary>
+            Remise à zéro du cache, toutes les entrées seront reconstruites.
+            </summary>
+        </member>
+        <member name="M:TP.Common.GenericAutoCache`4.Get(`0,`1,`2)">
+            <summary>
+            Obtient la valeur correspondant à une clé, et la stocke en cache pour utilisation future.
+            </summary>
+            <param name="key1"></param>
+            <param name="key2"></param>
+            <param name="key3"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TP.Common.GenericAutoCache`4.Item(`0,`1,`2)">
+            <summary>
+            Accès à un des éléments du cache.
+            </summary>
+            <param name="key1"></param>
+            <param name="key2"></param>
+            <param name="key3"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TP.Common.GenericAutoCache`4.Count">
+            <summary>
+            Nombre d'éléments actuellement présents dans le cache. Certains pourraient devoir être reconstruits pour être utilisés...
+            </summary>
+        </member>
+        <member name="P:TP.Common.GenericAutoCache`4.Values">
+            <summary>
+            Collection des éléments qui sont actuellement présents dans le cache.
+            </summary>
+        </member>
+        <member name="T:TP.Common.AutoCache`4">
+            <summary>
+            Classe de gestion de cache avec une clé triple.
+            </summary>
+            <typeparam name="X"></typeparam>
+            <typeparam name="Y"></typeparam>
+            <typeparam name="Z"></typeparam>
+            <typeparam name="ValueType"></typeparam>
+        </member>
+        <member name="T:TP.Common.AutoCache`4.ProviderDelegate">
+            <summary>
+            Delegate permettant de reconstruire un élément.
+            </summary>
+            <param name="key1"></param>
+            <param name="key2"></param>
+            <param name="key3"></param>
+            <returns></returns>
+        </member>
+        <member name="F:TP.Common.AutoCache`4.internalDelegate">
+            <summary>
+            internalDelegate
+            </summary>
+        </member>
+        <member name="M:TP.Common.AutoCache`4.#ctor(TP.Common.AutoCache{`0,`1,`2,`3}.ProviderDelegate)">
+            <summary>
+            Constructeur.
+            </summary>
+            <param name="inProvider"></param>
+        </member>
+        <member name="M:TP.Common.AutoCache`4.InternalProvider(`0,`1,`2)">
+            <summary>
+            InternalProvider
+            </summary>
+            <param name="key1"></param>
+            <param name="key2"></param>
+            <param name="key3"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Common.AutoCache`3">
+            <summary>
+            Classe de gestion de cache avec une clé double.
+            </summary>
+            <typeparam name="X"></typeparam>
+            <typeparam name="Y"></typeparam>
+            <typeparam name="ValueType"></typeparam>
+        </member>
+        <member name="T:TP.Common.AutoCache`3.ProviderDelegate">
+            <summary>
+            Delegate permettant de reconstruire un élément.
+            </summary>
+            <param name="key1"></param>
+            <param name="key2"></param>
+            <returns></returns>
+        </member>
+        <member name="F:TP.Common.AutoCache`3.internalDelegate">
+            <summary>
+            internalDelegate
+            </summary>
+        </member>
+        <member name="M:TP.Common.AutoCache`3.#ctor(TP.Common.AutoCache{`0,`1,`2}.ProviderDelegate)">
+            <summary>
+            Constructeur.
+            </summary>
+            <param name="inProvider"></param>
+        </member>
+        <member name="M:TP.Common.AutoCache`3.InternalProvider(`0,`1,System.Object)">
+            <summary>
+            InternalProvider
+            </summary>
+            <param name="key1"></param>
+            <param name="key2"></param>
+            <param name="key3"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Common.AutoCache`2">
+            <summary>
+            Classe de gestion de cache avec une clé unique.
+            </summary>
+            <typeparam name="X"></typeparam>
+            <typeparam name="ValueType"></typeparam>
+        </member>
+        <member name="T:TP.Common.AutoCache`2.ProviderDelegate">
+            <summary>
+            Delegate permettant de reconstruire un élément.
+            </summary>
+            <param name="key1"></param>
+            <returns></returns>
+        </member>
+        <member name="F:TP.Common.AutoCache`2.internalDelegate">
+            <summary>
+            internalDelegate
+            </summary>
+        </member>
+        <member name="M:TP.Common.AutoCache`2.#ctor(TP.Common.AutoCache{`0,`1}.ProviderDelegate)">
+            <summary>
+            Constructeur, qui prend en paramètre une méthode qui construit les éléments manquants. 
+            </summary>
+            <param name="inProvider"></param>
+        </member>
+        <member name="M:TP.Common.AutoCache`2.InternalProvider(`0,System.Object,System.Object)">
+            <summary>
+            InternalProvider
+            </summary>
+            <param name="key1"></param>
+            <param name="key2"></param>
+            <param name="key3"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Common.BarreRecherche">
+            <summary>
+            Interaction logic for BarreRechercheRessource.xaml
+            </summary>
+            <summary>
+            BarreRecherche
+            </summary>
+        </member>
+        <member name="M:TP.Common.BarreRecherche.#ctor">
+            <summary>
+            Constructeur.
+            </summary>
+        </member>
+        <member name="M:TP.Common.BarreRecherche.ReturnButtonCherche">
+            <summary>
+            Retourne le bouton de recherche.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.BarreRecherche.ReturnTextEditRecherche">
+            <summary>
+            Retourne le champ texte contenant la requête.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.BarreRecherche.ModeCommencePar">
+            <summary>
+            Détermine si on est en "mode commence par", c'est à dire si la chaine de caractère recherchée doit se trouver au début du mot.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.BarreRecherche.textEditRecherche_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            textEditRecherche_KeyDown
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Common.BarreRecherche.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:TP.Common.BarreRechercheAvancee">
+            <summary>
+            Interaction logic for BarreRechercheRessource.xaml
+            </summary>
+            <summary>
+            BarreRechercheAvancee
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvancee.teRecherche">
+            <summary>
+            TextEdit de recherche
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvancee.beRecherche">
+            <summary>
+            Bouton de recherche
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvancee.ceHS">
+            <summary>
+            CheckEdit HS
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvancee.liRecherche">
+            <summary>
+            LayoutItem recherche
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvancee.lgControls">
+            <summary>
+            LayoutGroup pour ajouter des contrôles customs
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvancee.theGrid">
+            <summary>
+            theGrid
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvancee.isAvance">
+            <summary>
+            isAvance
+            </summary>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvancee.#ctor">
+            <summary>
+            Constructeur.
+            </summary>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvancee.ReturnButtonCherche">
+            <summary>
+            Retourne le bouton de recherche.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvancee.ReturnTextEditRecherche">
+            <summary>
+            Retourne le champ texte contenant la requête.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvancee.ModeCommencePar">
+            <summary>
+            Détermine si on est en "mode commence par", c'est à dire si la chaine de caractère recherchée doit se trouver au début du mot.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvancee.SetGrid(DevExpress.Xpf.Grid.GridControl)">
+            <summary>
+            Permet d'indiquer quelle est la grille qu'il faut filtrer. 
+            </summary>
+            <param name="inGrid"></param>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvancee.CleanFilterEditor(DevExpress.Xpf.Editors.Filtering.FilterControl)">
+            <summary>
+            Nettoyer le filter editeur et retirer les colonnes non affichées
+            </summary>
+            <param name="FilterControl"></param>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvancee.textEditRecherche_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            textEditRecherche_KeyDown
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvancee.buttonRechercheAvancee_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            buttonRechercheAvancee_Click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvancee.buttonChercherAvance_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            buttonChercherAvance_Click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvancee.buttonRechercheSimplifiee_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            buttonRechercheSimplifiee_Click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvancee.CheckEdit_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            CheckEdit_Checked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvancee.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:TP.Common.BarreRechercheAvanceeTreeList">
+            <summary>
+            Interaction logic for BarreRechercheAvanceeTreeList.xaml
+            </summary>
+            <summary>
+            BarreRechercheAvanceeTreeList
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvanceeTreeList.teRecherche">
+            <summary>
+            TextEdit de recherche
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvanceeTreeList.beRecherche">
+            <summary>
+            Bouton de recherche
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvanceeTreeList.ceHS">
+            <summary>
+            CheckEdit HS
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvanceeTreeList.liRecherche">
+            <summary>
+            LayoutItem recherche
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvanceeTreeList.theTreeList">
+            <summary>
+            Treelist
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvanceeTreeList.isAvance">
+            <summary>
+            isAvance
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvanceeTreeList.isCustomFilteria">
+            <summary>
+            Custom filteria?
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvanceeTreeList.currentCriteria">
+            <summary>
+            Critère courant
+            </summary>
+        </member>
+        <member name="F:TP.Common.BarreRechercheAvanceeTreeList.LGBarreRechercheAvancee">
+            <summary>
+            LGBarreRechercheAvancee
+            </summary>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvanceeTreeList.#ctor">
+            <summary>
+            Constructeur.
+            </summary>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvanceeTreeList.ReturnButtonCherche">
+            <summary>
+            Retourne le bouton de recherche.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvanceeTreeList.ReturnTextEditRecherche">
+            <summary>
+            Retourne le champ texte contenant la requête.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvanceeTreeList.ModeCommencePar">
+            <summary>
+            Détermine si on est en "mode commence par", c'est à dire si la chaine de caractère recherchée doit se trouver au début du mot.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvanceeTreeList.SetGrid(DevExpress.Xpf.Grid.TreeListControl)">
+            <summary>
+            Permet d'indiquer quelle est la grille qu'il faut filtrer. 
+            </summary>
+            <param name="inTreeList"></param>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvanceeTreeList.textEditRecherche_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Touche Enter appuyée pour rechercher
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvanceeTreeList.buttonRechercheAvancee_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Click sur recherche
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvanceeTreeList.buttonChercherAvance_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Click sur le bouton pour lancer le filterControl
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvanceeTreeList.buttonRechercheSimplifiee_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Recherche simplifiée
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvanceeTreeList.CheckEdit_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            CheckEdit_Checked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP.Common.BarreRechercheAvanceeTreeList.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:TP.Common.PrintablePublipostRTFDocument">
+            <summary>
+            PrintablePublipostRTFDocument
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintablePublipostRTFDocument.theText">
+            <summary>
+            theText
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintablePublipostRTFDocument.thePublipostEngine">
+            <summary>
+            thePublipostEngine
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintablePublipostRTFDocument.#ctor(System.String,TP.Common.IPublipostEngine)">
+            <summary>
+            PrintablePublipostRTFDocument
+            </summary>
+            <param name="inText"></param>
+            <param name="inPublipostEngine"></param>
+        </member>
+        <member name="M:TP.Common.PrintablePublipostRTFDocument.Print(DevExpress.XtraRichEdit.API.Native.Document,DevExpress.XtraRichEdit.API.Native.SubDocument)">
+            <summary>
+            Print
+            </summary>
+            <param name="inDocument"></param>
+            <param name="inSubDocument"></param>
+        </member>
+        <member name="T:TP.Common.IPublipostEngine">
+            <summary>
+            Interface permettant d'accéder au publipostage à partir de modules où on ne peut y faire référence (création de référence cyclique sinon).
+            </summary>
+        </member>
+        <member name="M:TP.Common.IPublipostEngine.Transform(System.String)">
+            <summary>
+            Méthode pour publiposter un texte simple. 
+            </summary>
+            <param name="inString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.IPublipostEngine.TransformRTF(System.String)">
+            <summary>
+            Méthode pour publiposter un texte RTF. 
+            </summary>
+            <param name="inString"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Common.PrintablePublipostRTFParagraph">
+            <summary>
+            PrintablePublipostRTFParagraph
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintablePublipostRTFParagraph.theText">
+            <summary>
+            theText
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintablePublipostRTFParagraph.thePublipostEngine">
+            <summary>
+            thePublipostEngine
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintablePublipostRTFParagraph.#ctor(System.String,TP.Common.IPublipostEngine)">
+            <summary>
+            PrintablePublipostRTFParagraph
+            </summary>
+            <param name="inText"></param>
+            <param name="inPublipostEngine"></param>
+        </member>
+        <member name="M:TP.Common.PrintablePublipostRTFParagraph.Print(DevExpress.XtraRichEdit.API.Native.Document,DevExpress.XtraRichEdit.API.Native.SubDocument)">
+            <summary>
+            Print
+            </summary>
+            <param name="inDocument"></param>
+            <param name="inSubDocument"></param>
+        </member>
+        <member name="T:TP.Common.PrintableTemplate">
+            <summary>
+            PrintableTemplate
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableTemplate.theText">
+            <summary>
+            theText
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableTemplate.#ctor(System.String)">
+            <summary>
+            PrintableTemplate
+            </summary>
+            <param name="inText"></param>
+        </member>
+        <member name="M:TP.Common.PrintableTemplate.Print">
+            <summary>
+            Print
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Common.PrintableHeaderFooter">
+            <summary>
+            PrintableHeaderFooter
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableHeaderFooter.leftHeader">
+            <summary>
+            leftHeader
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableHeaderFooter.centerHeader">
+            <summary>
+            centerHeader
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableHeaderFooter.rightHeader">
+            <summary>
+            rightHeader
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableHeaderFooter.leftFooter">
+            <summary>
+            leftFooter
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableHeaderFooter.centerFooter">
+            <summary>
+            centerFooter
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableHeaderFooter.rightFooter">
+            <summary>
+            rightFooter
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableHeaderFooter.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            PrintableHeaderFooter
+            </summary>
+            <param name="inLeftHeader"></param>
+            <param name="inCenterHeader"></param>
+            <param name="inRightHeader"></param>
+            <param name="inLeftFooter"></param>
+            <param name="inCenterFooter"></param>
+            <param name="inRightFooter"></param>
+        </member>
+        <member name="M:TP.Common.PrintableHeaderFooter.Print(DevExpress.XtraRichEdit.API.Native.Document)">
+            <summary>
+            Print
+            </summary>
+            <param name="inDocument"></param>
+        </member>
+        <member name="T:TP.Common.PrintableRichEditAppendix">
+            <summary>
+            PrintableRichEditAppendix
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableRichEditAppendix.theControl">
+            <summary>
+            theControl
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableRichEditAppendix.#ctor(DevExpress.Xpf.RichEdit.RichEditControl)">
+            <summary>
+            PrintableRichEditAppendix
+            </summary>
+            <param name="inControl"></param>
+        </member>
+        <member name="M:TP.Common.PrintableRichEditAppendix.Print">
+            <summary>
+            Print
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Common.PrintableRichEditDocument">
+            <summary>
+            PrintableRichEditDocument
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableRichEditDocument.theControl">
+            <summary>
+            theControl
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableRichEditDocument.#ctor(DevExpress.Xpf.RichEdit.RichEditControl)">
+            <summary>
+            PrintableRichEditDocument
+            </summary>
+            <param name="inControl"></param>
+        </member>
+        <member name="M:TP.Common.PrintableRichEditDocument.Print(DevExpress.XtraRichEdit.API.Native.Document,DevExpress.XtraRichEdit.API.Native.SubDocument)">
+            <summary>
+            Print
+            </summary>
+            <param name="inDocument"></param>
+            <param name="inSubDocument"></param>
+        </member>
+        <member name="T:TP.Common.PrintableRichEditParagraph">
+            <summary>
+            PrintableRichEditParagraph
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableRichEditParagraph.theControl">
+            <summary>
+            theControl
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableRichEditParagraph.#ctor(DevExpress.Xpf.RichEdit.RichEditControl)">
+            <summary>
+            PrintableRichEditParagraph
+            </summary>
+            <param name="inControl"></param>
+        </member>
+        <member name="M:TP.Common.PrintableRichEditParagraph.Print(DevExpress.XtraRichEdit.API.Native.Document,DevExpress.XtraRichEdit.API.Native.SubDocument)">
+            <summary>
+            Print
+            </summary>
+            <param name="inDocument"></param>
+            <param name="inSubDocument"></param>
+        </member>
+        <member name="T:TP.Common.PrintableRTFDocument">
+            <summary>
+            PrintableRTFDocument
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableRTFDocument.theText">
+            <summary>
+            theText
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableRTFDocument.#ctor(System.String)">
+            <summary>
+            PrintableRTFDocument
+            </summary>
+            <param name="inText"></param>
+        </member>
+        <member name="M:TP.Common.PrintableRTFDocument.Print(DevExpress.XtraRichEdit.API.Native.Document,DevExpress.XtraRichEdit.API.Native.SubDocument)">
+            <summary>
+            Print
+            </summary>
+            <param name="inDocument"></param>
+            <param name="inSubDocument"></param>
+        </member>
+        <member name="T:TP.Common.PrintablePageBreak">
+            <summary>
+            PrintablePageBreak
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintablePageBreak.Print(DevExpress.XtraRichEdit.API.Native.Document,DevExpress.XtraRichEdit.API.Native.SubDocument)">
+            <summary>
+            Print
+            </summary>
+            <param name="inDocument"></param>
+            <param name="inSubDocument"></param>
+        </member>
+        <member name="T:TP.Common.PrintableAppendixObject">
+            <summary>
+            PrintableAppendixObject
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableAppendixObject.ModifyOriginalState">
+            <summary>
+            ModifyOriginalState
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableAppendixObject.RestoreOriginalState">
+            <summary>
+            RestoreOriginalState
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableAppendixObject.Print">
+            <summary>
+            Print
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Common.PrintableBaseObject">
+            <summary>
+            PrintableBaseObject
+            </summary>
+        </member>
+        <member name="T:TP.Common.PrintableGrid">
+            <summary>
+            PrintableGrid
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableGrid.theGrid">
+            <summary>
+            theGrid
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableGrid.fontSize">
+            <summary>
+            fontSize
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableGrid.#ctor(DevExpress.Xpf.Grid.GridControl,System.Int32)">
+            <summary>
+            PrintableGrid
+            </summary>
+            <param name="inGrid"></param>
+            <param name="inFontSize"></param>
+        </member>
+        <member name="M:TP.Common.PrintableGrid.Print(DevExpress.XtraRichEdit.API.Native.Document,DevExpress.XtraRichEdit.API.Native.SubDocument)">
+            <summary>
+            Print
+            </summary>
+            <param name="inDocument"></param>
+            <param name="inSubDocument"></param>
+        </member>
+        <member name="T:TP.Common.PrintableObject">
+            <summary>
+            PrintableObject
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableObject.Print(DevExpress.XtraRichEdit.API.Native.Document,DevExpress.XtraRichEdit.API.Native.SubDocument)">
+            <summary>
+            Print
+            </summary>
+            <param name="inDocument"></param>
+            <param name="inSubDocument"></param>
+        </member>
+        <member name="T:TP.Common.PrintableRTFAppendix">
+            <summary>
+            PrintableRTFAppendix
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableRTFAppendix.theText">
+            <summary>
+            theText
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableRTFAppendix.#ctor(System.String)">
+            <summary>
+            PrintableRTFAppendix
+            </summary>
+            <param name="inText"></param>
+        </member>
+        <member name="M:TP.Common.PrintableRTFAppendix.ModifyOriginalState">
+            <summary>
+            ModifyOriginalState
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableRTFAppendix.RestoreOriginalState">
+            <summary>
+            RestoreOriginalState
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableRTFAppendix.Print">
+            <summary>
+            Print
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Common.PrintableRTFParagraph">
+            <summary>
+            PrintableRTFParagraph
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableRTFParagraph.theText">
+            <summary>
+            theText
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableRTFParagraph.#ctor(System.String)">
+            <summary>
+            PrintableRTFParagraph
+            </summary>
+            <param name="inText"></param>
+        </member>
+        <member name="M:TP.Common.PrintableRTFParagraph.Print(DevExpress.XtraRichEdit.API.Native.Document,DevExpress.XtraRichEdit.API.Native.SubDocument)">
+            <summary>
+            Print
+            </summary>
+            <param name="inDocument"></param>
+            <param name="inSubDocument"></param>
+        </member>
+        <member name="T:TP.Common.PrintableVisual">
+            <summary>
+            PrintableVisual
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.item">
+            <summary>
+            item
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.width">
+            <summary>
+            width
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.height">
+            <summary>
+            height
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.maxWidth">
+            <summary>
+            maxWidth
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.maxHeight">
+            <summary>
+            maxHeight
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.minWidth">
+            <summary>
+            minWidth
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.minHeight">
+            <summary>
+            minHeight
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.scaling">
+            <summary>
+            scaling
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.HA">
+            <summary>
+            HA
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.VA">
+            <summary>
+            VA
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.oldWidth">
+            <summary>
+            oldWidth
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.oldHeight">
+            <summary>
+            oldHeight
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.oldMaxWidth">
+            <summary>
+            oldMaxWidth
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.oldMaxHeight">
+            <summary>
+            oldMaxHeight
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.oldMinWidth">
+            <summary>
+            oldMinWidth
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.oldMinHeight">
+            <summary>
+            oldMinHeight
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.defaultWidth">
+            <summary>
+            defaultWidth
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.defaultHeight">
+            <summary>
+            defaultHeight
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.oldIndex">
+            <summary>
+            oldIndex
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.oldParent">
+            <summary>
+            oldParent
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.oldHA">
+            <summary>
+            oldHA
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.oldVA">
+            <summary>
+            oldVA
+            </summary>
+        </member>
+        <member name="F:TP.Common.PrintableVisual.oldLT">
+            <summary>
+            oldLT
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableVisual.#ctor(System.Windows.FrameworkElement,System.Double,System.Double,System.Double)">
+            <summary>
+            PrintableVisual
+            </summary>
+            <param name="inUserControl"></param>
+            <param name="inScaling"></param>
+            <param name="inWidth"></param>
+            <param name="inHeight"></param>
+        </member>
+        <member name="M:TP.Common.PrintableVisual.LocalModifyOriginalState">
+            <summary>
+            LocalModifyOriginalState
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableVisual.LocalRestoreOriginalState">
+            <summary>
+            LocalRestoreOriginalState
+            </summary>
+        </member>
+        <member name="M:TP.Common.PrintableVisual.GetPngFromUIElement(System.Windows.UIElement,System.Double)">
+            <summary>
+            GetPngFromUIElement
+            </summary>
+            <param name="source"></param>
+            <param name="inScale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.PrintableVisual.CreatePanel(System.Windows.Size,System.Double,System.Double)">
+            <summary>
+            CreatePanel
+            </summary>
+            <param name="paperSize"></param>
+            <param name="inWidth"></param>
+            <param name="inHeight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.PrintableVisual.MmToPixel(System.Double)">
+            <summary>
+            MmToPixel
+            </summary>
+            <param name="inMeasure"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.PrintableVisual.Print(DevExpress.XtraRichEdit.API.Native.Document,DevExpress.XtraRichEdit.API.Native.SubDocument)">
+            <summary>
+            Print
+            </summary>
+            <param name="inDocument"></param>
+            <param name="inSubDocument"></param>
+        </member>
+        <member name="T:TP.Common.Printing">
+            <summary>
+            Classe de gestion des impressions
+            </summary>
+        </member>
+        <member name="F:TP.Common.Printing.documents">
+            <summary>
+            documents
+            </summary>
+        </member>
+        <member name="M:TP.Common.Printing.#cctor">
+            <summary>
+            Printing
+            </summary>
+        </member>
+        <member name="M:TP.Common.Printing.StartNewDocument(System.String)">
+            <summary>
+            Déclare un nouveau document à imprimer au système d'impression. 
+            </summary>
+            <param name="inDocumentName"></param>
+        </member>
+        <member name="M:TP.Common.Printing.StartNewDocumentWithTemplate(System.String,System.String)">
+            <summary>
+            Déclare un nouveau document à imprimer au système d'impression, sur base d'un template RTF. 
+            </summary>
+            <param name="inDocumentName"></param>
+            <param name="inRTFTemplate"></param>
+        </member>
+        <member name="M:TP.Common.Printing.AddRichEditControlToDocument(System.String,DevExpress.Xpf.RichEdit.RichEditControl,System.Boolean)">
+            <summary>
+            Ajoute un memo, qui sera imprimée avec les outils devexpress. 
+            </summary>
+            <param name="inDocumentName"></param>
+            <param name="inControl"></param>
+            <param name="inFullPage"></param>
+        </member>
+        <member name="M:TP.Common.Printing.AddRichEditControlAsAppendix(System.String,DevExpress.Xpf.RichEdit.RichEditControl)">
+            <summary>
+            Ajoute un memo, qui sera imprimée avec les outils devexpress. 
+            </summary>
+            <param name="inDocumentName"></param>
+            <param name="inControl"></param>
+        </member>
+        <member name="M:TP.Common.Printing.AddRTFToDocument(System.String,System.String,System.Boolean)">
+            <summary>
+            Ajoute un texte RTF, qui sera imprimée avec les outils devexpress. 
+            </summary>
+            <param name="inDocumentName"></param>
+            <param name="inText"></param>
+            <param name="inFullPage"></param>
+        </member>
+        <member name="M:TP.Common.Printing.AddPublipostRTFToDocument(System.String,System.String,TP.Common.IPublipostEngine,System.Boolean)">
+            <summary>
+            Ajoute un texte RTF, qui sera imprimée avec les outils devexpress. Indispensable de passer une classe de publipostage pour permettre d'effectuer la transformation au moment voulu. 
+            </summary>
+            <param name="inDocumentName"></param>
+            <param name="inText"></param>
+            <param name="inFullPage"></param>
+            <param name="inPublipostEngine"></param>
+        </member>
+        <member name="M:TP.Common.Printing.AddRTFAsAppendix(System.String,System.String)">
+            <summary>
+            Ajoute un texte RTF, qui sera imprimée avec les outils devexpress. 
+            </summary>
+            <param name="inDocumentName"></param>
+            <param name="inText"></param>
+        </member>
+        <member name="M:TP.Common.Printing.AddGridToDocument(System.String,DevExpress.Xpf.Grid.GridControl,System.Int32)">
+            <summary>
+            Ajoute une grille, qui sera imprimée avec les outils devexpress. 
+            </summary>
+            <param name="inDocumentName"></param>
+            <param name="inGrid"></param>
+            <param name="inFontSize"></param>
+        </member>
+        <member name="M:TP.Common.Printing.AddItemToDocument(System.String,System.Windows.FrameworkElement,System.Double,System.Double,System.Double)">
+            <summary>
+            Ajoute un élément graphique (inUserControl) au document à imprimer inDocument name. Optionnellement, un facteur de scaling, une largeur et une hauteur peuvent être
+            spécifiés. 
+            </summary>
+            <param name="inDocumentName"></param>
+            <param name="inUserControl"></param>
+            <param name="inScaling"></param>
+            <param name="inWidth"></param>
+            <param name="inHeight"></param>
+        </member>
+        <member name="M:TP.Common.Printing.AddSpaceToDocument(System.String,System.Double)">
+            <summary>
+            Ajoute de l'espace au document à imprimer. 
+            </summary>
+            <param name="inDocumentName"></param>
+            <param name="inValue"></param>
+        </member>
+        <member name="M:TP.Common.Printing.AddTextToDocument(System.String,System.String,System.Int32,System.Windows.TextAlignment)">
+            <summary>
+            Ajoute du texte au document à imprimer. 
+            </summary>
+            <param name="inDocumentName"></param>
+            <param name="inText"></param>
+            <param name="inFontSize"></param>
+            <param name="inTextAlignment"></param>
+        </member>
+        <member name="M:TP.Common.Printing.AddPublipostTextToDocument(System.String,System.String,System.Int32,TP.Common.IPublipostEngine,System.Windows.TextAlignment)">
+            <summary>
+            Ajoute du texte au document à imprimer. 
+            </summary>
+            <param name="inDocumentName"></param>
+            <param name="inText"></param>
+            <param name="inFontSize"></param>
+            <param name="inTextAlignment"></param>
+            <param name="inPublipostEngine"></param>
+        </member>
+        <member name="M:TP.Common.Printing.AddPageBreakToDocument(System.String)">
+            <summary>
+            Ajoute un saut de page au document à imprimer. 
+            </summary>
+            <param name="inDocumentName"></param>
+        </member>
+        <member name="M:TP.Common.Printing.DeleteDocument(System.String)">
+            <summary>
+            Supprime le document à imprimer.
+            </summary>
+            <param name="inDocumentName"></param>
+        </member>
+        <member name="M:TP.Common.Printing.GetIndexInParent(System.Windows.FrameworkElement)">
+            <summary>
+            GetIndexInParent
+            </summary>
+            <param name="inElement"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.Printing.DisconnectParent(System.Windows.FrameworkElement)">
+            <summary>
+            DisconnectParent
+            </summary>
+            <param name="inElement"></param>
+        </member>
+        <member name="M:TP.Common.Printing.ConnectParent(System.Windows.FrameworkElement,System.Windows.FrameworkElement,System.Int32)">
+            <summary>
+            ConnectParent
+            </summary>
+            <param name="inElement"></param>
+            <param name="inParent"></param>
+            <param name="inIndex"></param>
+        </member>
+        <member name="M:TP.Common.Printing.AddHeaderFooter(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Ajoute un header/footer au document concerné. 
+            </summary>
+            <param name="inDocumentName"></param>
+            <param name="inLeftHeader"></param>
+            <param name="inCenterHeader"></param>
+            <param name="inRightHeader"></param>
+            <param name="inLeftFooter"></param>
+            <param name="inCenterFooter"></param>
+            <param name="inRightFooter"></param>
+        </member>
+        <member name="M:TP.Common.Printing.PrintDocument(System.String,System.Boolean)">
+            <summary>
+            Imprime le document défini préallablement. inPreview indique si on imprime simplement, ou si on réalise d'abord un aperçu pour l'utilisateur. 
+            </summary>
+            <param name="inDocumentName"></param>
+            <param name="inPreview"></param>
+        </member>
+        <member name="T:TP.Common.EntityChooser">
+            <summary>
+            Classe permettant de lancer un écran de sélection, pour obtenir rapidement un utilisateur, une société, etc.
+            </summary>
+        </member>
+        <member name="T:TP.Common.EntityChooser.ChooserDelegate">
+            <summary>
+            Méthode qui sera fournie par CommonHelper, et qui effectue la sélection dans une collection;
+            </summary>
+            <param name="inCollection"></param>
+            <param name="inParameter"></param>
+            <param name="isCheckedExterne"></param>
+            <param name="showCheckEditHS"></param>
+            <param name="showRessInCreation"></param>
+            <returns></returns>
+        </member>
+        <member name="F:TP.Common.EntityChooser.InternalRessourceDelegate">
+            <summary>
+            Delegate permettant la communication avec CommonHelper.
+            </summary>
+        </member>
+        <member name="F:TP.Common.EntityChooser.InternalUtilisateurDelegate">
+            <summary>
+            Delegate permettant la communication avec CommonHelper.
+            </summary>
+        </member>
+        <member name="M:TP.Common.EntityChooser.Ressource``1(System.Linq.IQueryable{``0})">
+            <summary>
+            WRESS - Sélecteur de ressource: passer en paramètre une collection de ressource (XPQuery+Linq). S'il faut se limiter à des ouvriers, à une division particulière, etc, 
+            faire d'abord la requête Linq correspondante et fournir la collection filtrée. 
+            </summary>
+            <typeparam name="TypeObject"></typeparam>
+            <param name="inCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.EntityChooser.Ressource``1(System.Linq.IQueryable{``0},System.Boolean,System.Boolean)">
+            <summary>
+            WPEECH - Sélecteur de ressource: passer en paramètre une collection de ressource (XPQuery+Linq). S'il faut se limiter à des ouvriers, à une division particulière, etc, 
+            faire d'abord la requête Linq correspondante et fournir la collection filtrée. 
+            </summary>
+            <typeparam name="TypeObject">Le type de l'objet</typeparam>
+            <param name="inCollection">La collection</param>
+            <param name="isCheckedExterne">CheckEdit "Afficher les externes" cochée?</param>
+            <param name="showCheckEditHS">CheckEdit "Afficher les HS" est-elle affichée?</param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.EntityChooser.RessourceInterneExterne``1(System.Linq.IQueryable{``0})">
+            <summary>
+            Sélecteur de ressource interne et externe: passer en paramètre une collection de ressource (XPQuery+Linq). S'il faut se limiter à des ouvriers, à une division particulière, etc, 
+            faire d'abord la requête Linq correspondante et fournir la collection filtrée. 
+            </summary>
+            <typeparam name="TypeObject"></typeparam>
+            <param name="inCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.EntityChooser.RessourceAvecPrisma``1(System.Linq.IQueryable{``0})">
+            <summary>
+            Sélecteur de ressource: passer en paramètre une collection de ressource (XPQuery+Linq). S'il faut se limiter à des ouvriers, à une division particulière, etc, 
+            faire d'abord la requête Linq correspondante et fournir la collection filtrée. 
+            </summary>
+            <typeparam name="TypeObject"></typeparam>
+            <param name="inCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.EntityChooser.RessourceAvecPrisma``1(System.Linq.IQueryable{``0},System.Boolean)">
+            <summary>
+            Sélecteur de ressource: passer en paramètre une collection de ressource (XPQuery+Linq). S'il faut se limiter à des ouvriers, à une division particulière, etc, 
+            faire d'abord la requête Linq correspondante et fournir la collection filtrée. 
+            </summary>
+            <typeparam name="TypeObject"></typeparam>
+            <param name="inCollection"></param>
+            <param name="showRessInCreation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.Common.EntityChooser.Utilisateur``1(System.Linq.IQueryable{``0})">
+            <summary>
+            Sélecteur de ressource: passer en paramètre une collection de ressource (XPQuery+Linq). S'il faut se limiter à des ouvriers, à une division particulière, etc, 
+            faire d'abord la requête Linq correspondante et fournir la collection filtrée. 
+            </summary>
+            <typeparam name="TypeObject"></typeparam>
+            <param name="inCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TP.Common.GlobalStatus">
+            <summary>
+            Variables globales de l'application
+            </summary>
+        </member>
+        <member name="F:TP.Common.GlobalStatus.isDebug">
+            <summary>
+            Indique si l'application est actuellement en mode debug
+            </summary>
+        </member>
+        <member name="F:TP.Common.GlobalStatus.isAutoBugReport">
+            <summary>
+            Indique si un rapport de bug doit être généré automatiquement en cas d'exception
+            </summary>
+        </member>
+        <member name="F:TP.Common.GlobalStatus.isInternalBugReport">
+            <summary>
+            Indique si les bugs générés doivent être de type "interne"
+            </summary>
+        </member>
+        <member name="T:TP.Common.SimulatedTime">
+            <summary>
+            Classe de gestion du temps, permettant de faire fonctionner le système en mode simulé, où la date n'est pas la date système.
+            Une fois que l'on est en mode simulé on ne peut revenir en arrière. Le temps doit toujours suivre son cours, et avancer d'un jour à la fois.
+            </summary>
+        </member>
+        <member name="M:TP.Common.SimulatedTime.#cctor">
+            <summary>
+            Ctr
+            </summary>
+        </member>
+        <member name="F:TP.Common.SimulatedTime.isTimeVirtualized">
+            <summary>
+            Indique si le temps est réel.
+            </summary>
+        </member>
+        <member name="F:TP.Common.SimulatedTime.deltaToday">
+            <summary>
+            deltaToday
+            </summary>
+        </member>
+        <member name="T:TP.Common.SimulatedTime.DeltaSetterDelegate">
+            <summary>
+            Permet d'intéragir avec CommonHelper.
+            </summary>
+            <param name="inNewTimeDelta"></param>
+        </member>
+        <member name="T:TP.Common.SimulatedTime.DeltaGetterDelegate">
+            <summary>
+            Permet d'intéragir avec CommonHelper.
+            </summary>
+        </member>
+        <member name="F:TP.Common.SimulatedTime.InternalTimeDeltaSetter">
+            <summary>
+            Permet d'intéragir avec CommonHelper.
+            </summary>
+        </member>
+        <member name="F:TP.Common.SimulatedTime.InternalTimeDeltaGetter">
+            <summary>
+            Permet d'intéragir avec CommonHelper.
+            </summary>
+        </member>
+        <member name="F:TP.Common.SimulatedTime.Locker">
+            <summary>
+            Locker
+            </summary>
+        </member>
+        <member name="P:TP.Common.SimulatedTime.Today">
+            <summary>
+            Propriété qui renvoie la date du jour.
+            </summary>
+        </member>
+        <member name="P:TP.Common.SimulatedTime.Now">
+            <summary>
+            Heure simulée;
+            </summary>
+        </member>
+        <member name="M:TP.Common.SimulatedTime.InitializeSimulatedTime(System.DateTime)">
+            <summary>
+            Lance le mode simulé, sur base de la date donnée en paramètre.
+            </summary>
+            <param name="inVirtualToday"></param>
+        </member>
+        <member name="M:TP.Common.SimulatedTime.LetItBeTomorrow">
+            <summary>
+            Aujourd'hui c'est demain.
+            </summary>
+        </member>
+        <member name="M:TP.Common.SimulatedTime.ChangeTimeDelta(System.Int32)">
+            <summary>
+            ChangeTimeDelta
+            </summary>
+            <param name="inNewTimeDelta"></param>
+        </member>
+        <member name="M:TP.Common.SimulatedTime.ResetTime">
+            <summary>
+            Supprime la virtualisation du temps. 
+            </summary>
+        </member>
+        <member name="F:TP.Common.SimulatedTime.countSimulatedUpdates">
+            <summary>
+            countSimulatedUpdates
+            </summary>
+        </member>
+        <member name="F:TP.Common.SimulatedTime.collectionTemps">
+            <summary>
+            collectionTemps
+            </summary>
+        </member>
+        <member name="M:TP.Common.SimulatedTime.UpdateTime">
+            <summary>
+            UpdateTime
+            </summary>
+        </member>
+        <member name="T:TP.Common.TPStrings">
+            <summary>
+            Classe contenant les constantes statiques de l'application.
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kApplicationName">
+            <summary>
+            Nom de l'application par défaut, lorsqu'il n'est pas fourni par le SSO.
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kISOBelgique">
+            <summary>
+            Constantes des codes iso par pays.
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kISOLuxembourg">
+            <summary>
+            Constantes des codes iso par pays.
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kISOFrance">
+            <summary>
+            Constantes des codes iso par pays.
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kServiceProduction">
+            <summary>
+            Libellé court du service de production.
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kCelluleEquipeProduction">
+            <summary>
+            Libellé court de l'équipe de production.
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kDirecteurService">
+            <summary>
+            Nom du rôle "Directeur de service"
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kProblemeBaseDN">
+            <summary>
+            Nom du rôle de gestionnaire prisma. Attention, il faut que le rôle soit bien défini via paramétrage. 
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kGestionnairePrisma">
+            <summary>
+            Nom du rôle de gestionnaire prisma. Attention, il faut que le rôle soit bien défini via paramétrage. 
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kMonitoringMessagerie">
+            <summary>
+            Nom du rôle de gestionnaire prisma. Attention, il faut que le rôle soit bien défini via paramétrage. 
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kAdministrateurMessagerie">
+            <summary>
+            Nom du rôle de gestionnaire prisma. Attention, il faut que le rôle soit bien défini via paramétrage. 
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kAdministrateurPlanAnalytique">
+            <summary>
+            Nom du rôle de l'administrateur plan analytique. Attention, il faut que le rôle soit bien défini via paramétrage. 
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kInitiateur">
+            <summary>
+            Nom du rôle Initiateur. Attention, il faut que le rôle soit bien défini via paramétrage. 
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kAdministrateurSignaletique">
+            <summary>
+            Nom du rôle de gestionnaire prisma. Attention, il faut que le rôle soit bien défini via paramétrage. 
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kResponsableRHEvaluation">
+            <summary>
+            Nom du rôle responsable des RH pour les évaluations
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kSocietesSansProcessusNouveauxArrivantsEmbauche">
+            <summary>
+            liste des sociétés dont on ne peut pas cocher la case "Déclencher le processus nouveaux arrivants" ni choisir le parrain séparées par une virgule
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kLibelleCourtReposCompensatoire">
+            <summary>
+            libellé court utilisé dans la table de référence des types de jours non ouvrables pour les jours de repos compensatoire
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kLibelleCourtVacances">
+            <summary>
+            libellé court utilisé dans la table de référence des types de jours non ouvrables pour les jours de vacances
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kTypeSortieLicenciementAvecIndemnites">
+            <summary>
+            Licenciement avec indemnités de rupture
+            </summary>
+        </member>
+        <member name="F:TP.Common.TPStrings.kTypeSortieLicenciementAvecPrestation">
+            <summary>
+            Licenciement avec prestation du préavis
+            </summary>
+        </member>
+        <member name="T:TP.Common.VirtualTime">
+            <summary>
+            TempsVirtuel Class
+            </summary>
+        </member>
+        <member name="M:TP.Common.VirtualTime.#ctor(DevExpress.Xpo.Session)">
+            <summary>
+            TempsVirtuel constructor with session
+            </summary>
+        </member>
+        <member name="P:TP.Common.VirtualTime.delta">
+            <summary>
+            Décalage temporel
+            </summary>
+        </member>
+        <member name="P:TP.Common.VirtualTime.dateChangement">
+            <summary>
+            Date à laquelle le décalage temporel a été appliqué.
+            </summary>
+        </member>
+        <member name="M:TP.Common.VirtualTime.AfterConstruction">
+            <summary>
+            Exécuté à la fin du constructeur
+            </summary>
+        </member>
+    </members>
+</doc>

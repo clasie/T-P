@@ -1,0 +1,8 @@
+/*
+  This file allows you to specify some aspects of the unit tests explorer 
+  like the methodDisplay property where you can choose 'method' or 'classAndMethod'
+  This impact the display of the name in the tests explorer
+*/
+{
+  "methodDisplay": "method"
+}

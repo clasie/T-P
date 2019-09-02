@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MathParser</name>
+    </assembly>
+    <members>
+        <member name="T:Mathos.Parser.MathParser">
+            <summary>
+            This is a mathematical expression parser that allows you to parser a string value,
+            perform the required calculations, and return a value in form of a decimal.
+            </summary>
+        </member>
+        <member name="M:Mathos.Parser.MathParser.#ctor(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            This constructor will add some basic operators, functions, and variables
+            to the parser. Please note that you are able to change that using
+            boolean flags
+            </summary>
+            <param name="loadPreDefinedFunctions">This will load "abs", "cos", "cosh", "arccos", "sin", "sinh", "arcsin", "tan", "tanh", "arctan", "sqrt", "rem", "round"</param>
+            <param name="loadPreDefinedOperators">This will load "%", "*", ":", "/", "+", "-", ">", "&lt;", "="</param>
+            <param name="loadPreDefinedVariables">This will load "pi" and "e"</param>
+        </member>
+        <member name="P:Mathos.Parser.MathParser.OperatorList">
+            <summary>
+            All operators should be inside this property.
+            The first operator is executed first, et cetera.
+            An operator may only be ONE character.
+            </summary>
+        </member>
+        <member name="P:Mathos.Parser.MathParser.OperatorAction">
+            <summary>
+            When adding a variable in the OperatorList property, you need to assign how that operator should work.
+            </summary>
+        </member>
+        <member name="P:Mathos.Parser.MathParser.LocalFunctions">
+            <summary>
+            All functions that you want to define should be inside this property.
+            </summary>
+        </member>
+        <member name="P:Mathos.Parser.MathParser.LocalVariables">
+            <summary>
+            All variables that you want to define should be inside this property.
+            </summary>
+        </member>
+        <member name="P:Mathos.Parser.MathParser.CultureInfo">
+            <summary>
+            When converting the result from the Parse method or ProgrammaticallyParse method ToString(),
+            please use this cultur info.
+            </summary>
+        </member>
+        <member name="M:Mathos.Parser.MathParser.Parse(System.String)">
+            <summary>
+            Enter the math expression in form of a string.
+            </summary>
+            <param name="mathExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mathos.Parser.MathParser.Parse(System.Collections.ObjectModel.ReadOnlyCollection{System.String})">
+            <summary>
+            Enter the math expression in form of a list of tokens.
+            </summary>
+            <param name="mathExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mathos.Parser.MathParser.ProgrammaticallyParse(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Enter the math expression in form of a string. You might also add/edit variables using "let" keyword.
+            For example, "let sampleVariable = 2+2".
+            
+            Another way of adding/editing a variable is to type "varName := 20"
+            
+            Last way of adding/editing a variable is to type "let varName be 20"
+            </summary>
+            <param name="mathExpression"></param>
+            <param name="correctExpression"></param>
+            <param name="identifyComments"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mathos.Parser.MathParser.TransformExpression(System.String)">
+            <summary>
+            Transforme l'expression en formule --> ex: PI * 5 ==> 3.14 * 5
+            </summary>
+            <param name="mathExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mathos.Parser.MathParser.GetTokens(System.String)">
+            <summary>
+            This will convert a string expression into a list of tokens that can be later executed by Parse or ProgrammaticallyParse methods.
+            </summary>
+            <param name="mathExpression"></param>
+            <returns>A ReadOnlyCollection</returns>
+        </member>
+        <member name="M:Mathos.Parser.MathParser.Correction(System.String)">
+            <summary>
+            This will correct sqrt() and arctan() written in different ways only.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MathParser.MathParserEditor">
+            <summary>
+            Interaction logic.
+            </summary>
+            <summary>
+            MathParserEditor
+            </summary>
+        </member>
+        <member name="F:MathParser.MathParserEditor.parser">
+            <summary>
+            Parser
+            </summary>
+        </member>
+        <member name="F:MathParser.MathParserEditor.formule">
+            <summary>
+            Formule
+            </summary>
+        </member>
+        <member name="M:MathParser.MathParserEditor.#ctor(System.String)">
+            <summary>
+            Constructeur de l'unité.
+            </summary>
+        </member>
+        <member name="M:MathParser.MathParserEditor.ReturnLayoutPanel">
+            <summary>
+            Retourne une référence au panel correspondant à l'unité
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MathParser.MathParserEditor.InitGrid">
+            <summary>
+            Initialisation de la grille des variables
+            </summary>
+        </member>
+        <member name="M:MathParser.MathParserEditor.RefreshVariables">
+            <summary>
+            Refresh des variables disponibles
+            </summary>
+        </member>
+        <member name="M:MathParser.MathParserEditor.gcGrille_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Insérer variable au double-click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MathParser.MathParserEditor.buttonCancel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Annuler changement
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MathParser.MathParserEditor.buttonOK_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Valider la formule
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MathParser.MathParserEditor.BTN_Operator_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Click sur un des boutons opérateurs
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MathParser.MathParserEditor.BTN_FonctionPourcentage_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Fonction permettant d'avoir le résultat d'un pourcentage sur une valeur
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MathParser.MathParserEditor.BTN_FonctionMinimum_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Fonction permettant de retourner un minimum si le résultat est trop petit
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MathParser.MathParserEditor.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

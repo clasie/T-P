@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TP.SSOHelper</name>
+    </assembly>
+    <members>
+        <member name="T:TP.SSOHelper.AbstractInterfaceSSO">
+            <summary>
+            AbstractInterfaceSSO Class
+            </summary>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.DivisionCourante">
+            <summary>
+            Retourne la division courante
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.DivisionsAccessibles">
+            <summary>
+            Retourne la liste des divisions accessibles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.ModulesActifs">
+            <summary>
+            Retourne la liste des Modules actifs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.Login">
+            <summary>
+            Retourne le login 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.LoginReel">
+            <summary>
+            Retourne le login 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.Utilisateur">
+            <summary>
+            Retourne l'utilisateur
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.TitreApplicationGenerique">
+            <summary>
+            Retourne le titre de l'application générique
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.TypeApplicationGenerique">
+            <summary>
+            Retourne le guid de l'application courante
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.UtilisateurReel">
+            <summary>
+            Retourne l'utilisateur
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.CleanInterfaceSSO(System.Boolean)">
+            <summary>
+            Nettoie l'interface SSO
+            </summary>
+            <param name="inDebug"></param>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.ChangeContexte(System.Boolean,System.Guid)">
+            <summary>
+            Permet de changer de contexte (division)
+            </summary>
+            <param name="inDebug"></param>
+            <param name="inDivision"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.OperationsInactives(System.Guid)">
+            <summary>
+            Récupère les opérations inactives
+            </summary>
+            <param name="inDivision"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.OperationsInactivesV2(System.Guid)">
+            <summary>
+            Nouvelle méthode désactivation menus
+            </summary>
+            <param name="inDivision"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.LoginsDisponibles">
+            <summary>
+            Liste des logins disponibles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.Etat">
+            <summary>
+            Etat du SSO
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.AbstractInterfaceSSO.BarMinimised">
+            <summary>
+            Est-ce que la barre est minimisée?
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TP.SSOHelper.FakeSSO">
+            <summary>
+            Ceci est une classe de debug qui ne sera pas utilisée en production. Elle simule la connection par un utilisateur du nom de Pierre Dupond. 
+            </summary>
+        </member>
+        <member name="T:TP.SSOHelper.LoginWindow">
+            <summary>
+            Cette classe est une classe temporaire de débug, qui contourne le SSO, de façon à pouvoir rapidement effectuer des scénarios de test. 
+            </summary>
+            <summary>
+            LoginWindow
+            </summary>
+        </member>
+        <member name="F:TP.SSOHelper.LoginWindow.result">
+            <summary>
+            Utilisateur qui a été sélectionné pour le login. 
+            </summary>
+        </member>
+        <member name="M:TP.SSOHelper.LoginWindow.#ctor">
+            <summary>
+            Constructeur. 
+            </summary>
+        </member>
+        <member name="M:TP.SSOHelper.LoginWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:TP.SSOHelper.SSOHelperOperations">
+            <summary>
+            Contient toutes les méthodes pouvant être appelées depuis le PluginManager
+            </summary>
+        </member>
+        <member name="F:TP.SSOHelper.SSOHelperOperations.TimeInInterfaceSSO">
+            <summary>
+            Temps cumulé pour l'interface SSO.
+            </summary>
+        </member>
+        <member name="P:TP.SSOHelper.SSOHelperOperations.Access">
+            <summary>
+            Méthode d'accès à l'instance du pseudo singleton.
+            </summary>
+        </member>
+        <member name="M:TP.SSOHelper.SSOHelperOperations.#ctor">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:TP.SSOHelper.SSOHelperOperations.Quit">
+            <summary>
+            Méthode appelée au moment où on quitte l'application générique; ceci afin de pouvoir notifier la déconnexion au portail. 
+            </summary>
+        </member>
+        <member name="M:TP.SSOHelper.SSOHelperOperations.GetSSOTime">
+            <summary>
+            Obtient le temps total passé dans le SSO. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.SSOHelperOperations.ContexteOK(System.Guid)">
+            <summary>
+            Vérifie si un changement de contexte est accepté par le SSO. 
+            </summary>
+            <param name="inDivision"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.SSOHelperOperations.GetDisabledOperations">
+            <summary>
+            Donne la liste des opérations qui sont désactivées.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.SSOHelperOperations.GetLogins(System.Guid)">
+            <summary>
+            Donne la liste des logins qui peuvent encore être assignés dans la société courante.
+            </summary>
+            <param name="inSociete"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.SSOHelperOperations.FindRessource(TP.Entities.Utilisateurs.Utilisateur)">
+            <summary>
+            Retrouver la ressource
+            </summary>
+            <param name="inUtilisateur"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.SSOHelperOperations.OnInit">
+            <summary>
+            Le faux SSO initialise simplement les données de façon statique. 
+            </summary>
+        </member>
+        <member name="T:TP.SSOHelper.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:TP.SSOHelper.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:TP.SSOHelper.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="T:TP.SSOHelper.SSOHelperImplementation">
+            <summary>
+            Contient l'initialisation du plugin et l'interface pour PluginManager
+            </summary>
+        </member>
+        <member name="M:TP.SSOHelper.SSOHelperImplementation.GetName">
+            <summary>
+            Méthode qui renvoie le nom du plugin.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TP.SSOHelper.SSOHelperImplementation.#ctor">
+            <summary>
+            Constructeur, appelé lors de l'initialisation du plugin.
+            </summary>
+        </member>
+    </members>
+</doc>
